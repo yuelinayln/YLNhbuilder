@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: com.pandora.mem,com.pandora.mem.core,com.pandora.mem.c
+ ore.md
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,com.pandora.co
+ re.utils;bundle-version="1.0.0",com.pandora.libraries;bundle-version=
+ "1.0.0",com.pandora.core;bundle-version="1.0.0"
+Bundle-Vendor: DCloud
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201705262011
+Bundle-Name: HBuilder Mem
+Bundle-Activator: com.pandora.mem.MemActivator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.pandora.mem;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.pandora.rootfile.jvm.feature"
+      label="JVM"
+      version="1.0.0.201501052240"
+      provider-name="HBuilder">
+
+</feature>

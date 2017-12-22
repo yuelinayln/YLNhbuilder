@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.pandora.nodejs.feature"
+      label="HBuilder Nodejs feature"
+      version="1.0.0.201712121737"
+      provider-name="DCloud">
+
+   <plugin
+         id="com.pandora.nodejs.macosx"
+         os="macosx"
+         ws="cocoa"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201603031741"
+         fragment="true"/>
+
+   <plugin
+         id="com.pandora.nodejs.win32"
+         os="win32"
+         ws="win32"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201603031741"
+         fragment="true"/>
+
+   <plugin
+         id="com.pandora.nodejs"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201706211743"
+         unpack="false"/>
+
+   <plugin
+         id="com.pandora.nodejs.thrift"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201703172049"/>
+         
+   <plugin
+         id="com.pandora.nodejs.tools"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201608021620"/>
+
+</feature>

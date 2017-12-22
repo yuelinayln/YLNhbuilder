@@ -1,0 +1,312 @@
+{
+	"name": "JSDoc 3",
+	"url": "http://usejsdoc.org/",
+	"tags": [
+		{
+			"name": "@abstract",
+			"syntax": "@abstract",
+			"description": "This member must be implemented (or overridden) by the inheritor.",
+			"see": "http://usejsdoc.org/tags-abstract.html",
+			"synonyms": ["@virtual"]
+		}, {
+			"name": "@access",
+			"syntax": "\u003ccode\u003e@access \u0026lt;private|protected|public\u0026gt;\u003c/code\u003e",
+			"description": "Specify the access level of this member (private, public, or protected).",
+			"see": "http://usejsdoc.org/tags-access.html"
+		}, {
+			"name": "@alias",
+			"syntax": "\u003ccode\u003e@alias \u0026lt;aliasNamepath\u0026gt;\u003c/code\u003e",
+			"description": "Treat a member as if it had a different name.",
+			"see": "http://usejsdoc.org/tags-alias.html"
+		}, {
+			"name": "@augments",
+			"syntax": "\u003ccode\u003e@augments \u0026lt;namepath\u0026gt;\u003c/code\u003e",
+			"description": "This object adds onto a parent object.",
+			"see": "http://usejsdoc.org/tags-augments.html",
+			"synonyms": ["@extends"]
+		}, {
+			"name": "@author",
+			"syntax": "\u003ccode\u003e@author \u0026lt;name\u0026gt; [\u0026lt;emailAddress\u0026gt;]\u003c/code\u003e",
+			"description": "Identify the author of an item.",
+			"see": "http://usejsdoc.org/tags-author.html"
+		}, {
+			"name": "@borrows",
+			"syntax": "\u003ccode\u003e@borrows \u0026lt;that namepath\u0026gt; as \u0026lt;this namepath\u0026gt;\u003c/code\u003e",
+			"description": "This object uses something from another object.",
+			"see": "http://usejsdoc.org/tags-borrows.html"
+		}, {
+			"name": "@callback",
+			"syntax": "\u003ccode\u003e@callback \u0026lt;namepath\u0026gt;\u003c/code\u003e",
+			"description": "Document a callback function.",
+			"see": "http://usejsdoc.org/tags-callback.html"
+		}, {
+			"name": "@class",
+			"syntax": "\u003ccode\u003e@class [\u0026lt;type\u0026gt; \u0026lt;name\u0026gt;]\u003c/code\u003e",
+			"description": "This function is intended to be called with the \"new\" keyword.",
+			"see": "http://usejsdoc.org/tags-class.html",
+			"synonyms": ["@constructor"]
+		}, {
+			"name": "@classdesc",
+			"syntax": "\u003ccode\u003e@classdesc \u0026lt;some description\u0026gt;\u003c/code\u003e",
+			"description": "Use the following text to describe the entire class.",
+			"see": "http://usejsdoc.org/tags-classdesc.html"
+		}, {
+			"name": "@constant",
+			"syntax": "\u003ccode\u003e@constant [\u0026lt;type\u0026gt; \u0026lt;name\u0026gt;]\u003c/code\u003e",
+			"description": "Document an object as a constant.",
+			"see": "http://usejsdoc.org/tags-constant.html",
+			"synonyms": ["@const"]
+		}, {
+			"name": "@constructs",
+			"syntax": "\u003ccode\u003e@constructs [\u0026lt;name\u0026gt;]\u003c/code\u003e",
+			"description": "This function member will be the constructor for the previous class.",
+			"see": "http://usejsdoc.org/tags-constructs.html"
+		}, {
+			"name": "@copyright",
+			"syntax": "\u003ccode\u003e@copyright \u0026lt;some copyright text\u0026gt;\u003c/code\u003e",
+			"description": "Document some copyright information.",
+			"see": "http://usejsdoc.org/tags-copyright.html"
+		}, {
+			"name": "@default",
+			"syntax": "\u003ccode\u003e@default [\u0026lt;some value\u0026gt;]\u003c/code\u003e",
+			"description": "Document the default value.",
+			"see": "http://usejsdoc.org/tags-default.html",
+			"synonyms": ["@defaultvalue"]
+		}, {
+			"name": "@deprecated",
+			"syntax": "\u003ccode\u003e@deprecated [\u0026lt;some text\u0026gt;]\u003c/code\u003e",
+			"description": "Document that this is no longer the preferred way.",
+			"see": "http://usejsdoc.org/tags-deprecated.html"
+		}, {
+			"name": "@description",
+			"syntax": "\u003ccode\u003e@description \u0026lt;some description\u0026gt;\u003c/code\u003e",
+			"description": "Describe a symbol.",
+			"see": "http://usejsdoc.org/tags-description.html",
+			"synonyms": ["@desc"]
+		}, {
+			"name": "@enum",
+			"syntax": "\u003ccode\u003e@enum [\u0026lt;type\u0026gt;]\u003c/code\u003e",
+			"description": "Document a collection of related properties.",
+			"see": "http://usejsdoc.org/tags-enum.html"
+		}, {
+			"name": "@event",
+			"syntax": "\u003ccode\u003e@event \u0026lt;className\u0026gt;#[event:]\u0026lt;eventName\u0026gt;\u003c/code\u003e",
+			"description": "Document an event.",
+			"see": "http://usejsdoc.org/tags-event.html"
+		}, {
+			"name": "@example",
+			"syntax": "@example",
+			"description": "Provide an example of how to use a documented item.",
+			"see": "http://usejsdoc.org/tags-example.html"
+		}, {
+			"name": "@exports",
+			"syntax": "\u003ccode\u003e@exports \u0026lt;moduleName\u0026gt;\u003c/code\u003e",
+			"description": "Identify the member that is exported by a JavaScript module.",
+			"see": "http://usejsdoc.org/tags-exports.html"
+		}, {
+			"name": "@external",
+			"syntax": "\u003ccode\u003e@external \u0026lt;NameOfExternal\u0026gt;\u003c/code\u003e",
+			"description": "Document an external class/namespace/module.",
+			"see": "http://usejsdoc.org/tags-external.html",
+			"synonyms": ["@host"]
+		}, {
+			"name": "@file",
+			"syntax": "@file",
+			"description": "Describe a file.",
+			"see": "http://usejsdoc.org/tags-file.html",
+			"synonyms": ["@fileoverview", "@overview"]
+		}, {
+			"name": "@fires",
+			"syntax": "\u003ccode\u003e@fires \u0026lt;className\u0026gt;#[event:]\u0026lt;eventName\u0026gt;\u003c/code\u003e",
+			"description": "Describe the events this method may fire.",
+			"see": "http://usejsdoc.org/tags-fires.html",
+			"synonyms": ["@emits"]
+		}, {
+			"name": "@function",
+			"syntax": "\u003ccode\u003e@function [\u0026lt;FunctionName\u0026gt;]\u003c/code\u003e",
+			"description": "Describe a function or method.",
+			"see": "http://usejsdoc.org/tags-function.html",
+			"synonyms": ["@func", "@method"]
+		}, {
+			"name": "@global",
+			"syntax": "@global",
+			"description": "Document a global object.",
+			"see": "http://usejsdoc.org/tags-global.html"
+		}, {
+			"name": "@ignore",
+			"syntax": "@ignore",
+			"description": "Omit a symbol from the documentation.",
+			"see": "http://usejsdoc.org/tags-ignore.html"
+		}, {
+			"name": "@inner",
+			"syntax": "@inner",
+			"description": "Document an inner object.",
+			"see": "http://usejsdoc.org/tags-inner.html"
+		}, {
+			"name": "@instance",
+			"syntax": "@instance",
+			"description": "Document an instance member.",
+			"see": "http://usejsdoc.org/tags-instance.html"
+		}, {
+			"name": "@kind",
+			"syntax": "\u003ccode\u003e@kind \u0026lt;kindName\u0026gt;\u003c/code\u003e\nwhere \u003ccode\u003e\u0026lt;kindName\u0026gt;\u003c/code\u003e is one of:\n\u003cli\u003eclass\u003c/li\u003e \n\u003cli\u003econstant\u003c/li\u003e \n\u003cli\u003eevent\u003c/li\u003e \n\u003cli\u003eexternal\u003c/li\u003e \n\u003cli\u003efile\u003c/li\u003e \n\u003cli\u003efunction\u003c/li\u003e \n\u003cli\u003emember\u003c/li\u003e \n\u003cli\u003emixin\u003c/li\u003e \n\u003cli\u003emodule\u003c/li\u003e \n\u003cli\u003enamespace\u003c/li\u003e \n\u003cli\u003etypedef\u003c/li\u003e",
+			"description": "What kind of symbol is this?",
+			"see": "http://usejsdoc.org/tags-kind.html"
+		}, {
+			"name": "@lends",
+			"syntax": "\u003ccode\u003e@lends \u0026lt;namepath\u0026gt;\u003c/code\u003e",
+			"description": "Document properties on an object literal as if they belonged to a symbol with a given name.",
+			"see": "http://usejsdoc.org/tags-lends.html"
+		}, {
+			"name": "@license",
+			"syntax": "\u003ccode\u003e@license \u0026lt;identifier\u0026gt;\u003c/code\u003e",
+			"description": "Identify the license that applies to this code.",
+			"see": "http://usejsdoc.org/tags-license.html"
+		}, {
+			"name": "@link",
+			"syntax": "\u003cli\u003e\u003ccode\u003e{@link someSymbol}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@link http://some.url.com}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e[caption here]{@link someSymbol}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e[caption here]{@link http://some.url.com}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@link someSymbol|caption here}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@link http://some.url.com|caption here}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@link http://some.url.com Caption Here (after the first space)}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@link someSymbol Caption Here (after the first space)}\u003c/code\u003e \u003c/li\u003e\nThe following work in the same way as @link but render in monospace or normal font respectively:\n\u003cli\u003e\u003ccode\u003e{@linkcode ...}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e{@linkplain ...}\u003c/code\u003e \u003c/li\u003e",
+			"description": "Inline tag - create a link.",
+			"see": "http://usejsdoc.org/tags-link.html"
+		}, {
+			"name": "@member",
+			"syntax": "\u003ccode\u003e@member [\u0026lt;type\u0026gt;] [\u0026lt;name\u0026gt;]\u003c/code\u003e",
+			"description": "Document a member.",
+			"see": "http://usejsdoc.org/tags-member.html",
+			"synonyms": ["@var"]
+		}, {
+			"name": "@memberof",
+			"syntax": "\u003cli\u003e\u003ccode\u003e@memberof \u0026lt;parentNamepath\u0026gt;\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e@memberof! \u0026lt;parentNamepath\u0026gt;\u003c/code\u003e \u003c/li\u003e",
+			"description": "This symbol belongs to a parent symbol.",
+			"see": "http://usejsdoc.org/tags-memberof.html"
+		}, {
+			"name": "@mixes",
+			"syntax": "\u003ccode\u003e@mixes \u0026lt;OtherObjectPath\u0026gt;\u003c/code\u003e",
+			"description": "This object mixes in all the members from another object.",
+			"see": "http://usejsdoc.org/tags-mixes.html"
+		}, {
+			"name": "@mixin",
+			"syntax": "\u003ccode\u003e@mixin [\u0026lt;MixinName\u0026gt;]\u003c/code\u003e",
+			"description": "Document a mixin object.",
+			"see": "http://usejsdoc.org/tags-mixin.html"
+		}, {
+			"name": "@module",
+			"syntax": "\u003ccode\u003e@module [[{\u0026lt;type\u0026gt;}] \u0026lt;ModuleName\u0026gt;]\u003c/code\u003e\nNote: If you provide a type, you \u003cem\u003emust\u003c/em\u003e also provide a name.`",
+			"description": "Document a JavaScript module.",
+			"see": "http://usejsdoc.org/tags-module.html"
+		}, {
+			"name": "@name",
+			"syntax": "\u003ccode\u003e@name \u0026lt;namePath\u0026gt;\u003c/code\u003e",
+			"description": "Document the name of an object.",
+			"see": "http://usejsdoc.org/tags-name.html"
+		}, {
+			"name": "@namespace",
+			"syntax": "\u003ccode\u003e@namespace [{\u0026lt;type\u0026gt;}] \u0026lt;SomeName\u0026gt;]\u003c/code\u003e",
+			"description": "Document a namespace object.",
+			"see": "http://usejsdoc.org/tags-namespace.html"
+		}, {
+			"name": "@param",
+			"syntax": "@param",
+			"description": "Document the parameter to a function.",
+			"see": "http://usejsdoc.org/tags-param.html",
+			"synonyms": ["@arg", "@argument"]
+		}, {
+			"name": "@private",
+			"syntax": "@private",
+			"description": "This symbol is meant to be private.",
+			"see": "http://usejsdoc.org/tags-private.html"
+		}, {
+			"name": "@property",
+			"syntax": "@property",
+			"description": "Document a property of an object.",
+			"see": "http://usejsdoc.org/tags-property.html",
+			"synonyms": ["@prop"]
+		}, {
+			"name": "@protected",
+			"syntax": "@protected",
+			"description": "This member is meant to be protected.",
+			"see": "http://usejsdoc.org/tags-protected.html"
+		}, {
+			"name": "@public",
+			"syntax": "@public",
+			"description": "This symbol is meant to be public.",
+			"see": "http://usejsdoc.org/tags-public.html"
+		}, {
+			"name": "@readonly",
+			"syntax": "@readonly",
+			"description": "This symbol is meant to be read-only.",
+			"see": "http://usejsdoc.org/tags-readonly.html"
+		}, {
+			"name": "@requires",
+			"syntax": "\u003ccode\u003e@requires \u0026lt;someModuleName\u0026gt;\u003c/code\u003e",
+			"description": "This file requires a JavaScript module.",
+			"see": "http://usejsdoc.org/tags-requires.html"
+		}, {
+			"name": "@returns",
+			"syntax": "@returns",
+			"description": "Document the return value of a function.",
+			"see": "http://usejsdoc.org/tags-returns.html",
+			"synonyms": ["@return"]
+		}, {
+			"name": "@see",
+			"syntax": "\u003cli\u003e\u003ccode\u003e@see \u0026lt;namepath\u0026gt;\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e@see \u0026lt;text\u0026gt;\u003c/code\u003e \u003c/li\u003e",
+			"description": "Refer to some other documentation for more information.",
+			"see": "http://usejsdoc.org/tags-see.html"
+		}, {
+			"name": "@since",
+			"syntax": "\u003ccode\u003e@since \u0026lt;versionDescription\u0026gt;\u003c/code\u003e",
+			"description": "When was this feature added?",
+			"see": "http://usejsdoc.org/tags-since.html"
+		}, {
+			"name": "@static",
+			"syntax": "@static",
+			"description": "Document a static member.",
+			"see": "http://usejsdoc.org/tags-static.html"
+		}, {
+			"name": "@summary",
+			"syntax": "\u003ccode\u003e@summary Summary goes here.\u003c/code\u003e",
+			"description": "A shorter version of the full description.",
+			"see": "http://usejsdoc.org/tags-summary.html"
+		}, {
+			"name": "@this",
+			"syntax": "\u003ccode\u003e@this \u0026lt;namePath\u0026gt;\u003c/code\u003e",
+			"description": "What does the \u0027this\u0027 keyword refer to here?",
+			"see": "http://usejsdoc.org/tags-this.html"
+		}, {
+			"name": "@throws",
+			"syntax": "\u003cli\u003e\u003ccode\u003e@throws free-form description\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e@throws {\u0026lt;type\u0026gt;}\u003c/code\u003e \u003c/li\u003e \n\u003cli\u003e\u003ccode\u003e@throws {\u0026lt;type\u0026gt;} free-form description\u003c/code\u003e \u003c/li\u003e",
+			"description": "Describe what errors could be thrown.",
+			"see": "http://usejsdoc.org/tags-throws.html",
+			"synonyms": ["@exception"]
+		}, {
+			"name": "@todo",
+			"syntax": "\u003ccode\u003e@todo text describing thing to do.\u003c/code\u003e",
+			"description": "Document tasks to be completed.",
+			"see": "http://usejsdoc.org/tags-todo.html"
+		}, {
+			"name": "@tutorial",
+			"syntax": "As a block tag:\n\u003ccode\u003e@tutorial \u0026lt;tutorialID\u0026gt;\u003c/code\u003e\nAs an inline tag:\n\u003ccode\u003e{@tutorial \u0026lt;tutorialID\u0026gt;}\u003c/code\u003e",
+			"description": "Insert a link to an included tutorial file.",
+			"see": "http://usejsdoc.org/tags-tutorial.html"
+		}, {
+			"name": "@type",
+			"syntax": "\u003ccode\u003e@type {typeName}\u003c/code\u003e",
+			"description": "Document the type of an object.",
+			"see": "http://usejsdoc.org/tags-type.html"
+		}, {
+			"name": "@typedef",
+			"syntax": "\u003ccode\u003e@typedef [\u0026lt;type\u0026gt;] \u0026lt;namepath\u0026gt;\u003c/code\u003e",
+			"description": "Document a custom type.",
+			"see": "http://usejsdoc.org/tags-typedef.html"
+		}, {
+			"name": "@variation",
+			"syntax": "\u003ccode\u003e@variation \u0026lt;variationNumber\u0026gt;\u003c/code\u003e",
+			"description": "Distinguish different objects with the same name.",
+			"see": "http://usejsdoc.org/tags-variation.html"
+		}, {
+			"name": "@version",
+			"syntax": "@version",
+			"description": "Documents the version number of an item.",
+			"see": "http://usejsdoc.org/tags-version.html"
+		}
+	]
+}

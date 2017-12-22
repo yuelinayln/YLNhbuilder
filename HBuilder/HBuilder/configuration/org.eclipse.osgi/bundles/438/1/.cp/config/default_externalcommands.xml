@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<externalcommands>
+	<!-- externalcommand name="自定义" path="" args="" inFileContentTypeId="" outFileExtension="" 
+		/ -->
+	<externalcommand id="1" enable="true" path="compiler.jar"
+		args="--compilation_level SIMPLE_OPTIMIZATIONS --js %FileName% --js_output_file %FileBaseName%.min.js"
+		inFileExtension=".js" 
+		outFileName="%FileBaseName%.min.js"/>
+	<externalcommand id="2" enable="true" path="coffee.cmd"
+		args="--compile %FileName%" inFileExtension=".coffee" 
+		outFileName="%FileBaseName%.js"/>
+	<!-- externalcommand name="CoffeeScript Source Map" path="" args=" --><!--source-map -i " inFileContentTypeId="" outFileExtension=".js.map" / -->
+	<!--externalcommand name="compass sass" path="compass.bat" args="" inFileContentTypeId="" 
+		outFileExtension=".css" / -->
+	<!--externalcommand name="compass scss" path="compass.bat" args="" inFileContentTypeId="" 
+		outFileExtension=".css" / -->
+	<!-- externalcommand name="CSSO CSS Optimizer" path="csso.cmd" args="%FileName% 
+		%FileBaseName%" inFileContentTypeId="" outFileExtension=".min.css" 
+		/ -->
+	<!-- externalcommand name="Dart2JS" path="" args="" inFileContentTypeId="" 
+		outFileExtension=".js" / -->
+	<!--externalcommand name="dwc" path="" args="" inFileContentTypeId="" outFileExtension=".js.deps" 
+		/ -->
+	<externalcommand id="3" enable="true" path="haml.bat"
+		args="%FileName% %FileBaseName%.html" inFileExtension=".haml" 
+		outFileName="%FileBaseName%.html"/>
+	<!-- externalcommand name="Jade" path="jade.cmd" args="" inFileContentTypeId="" 
+		outFileExtension=".html" outFileExtensionEnable="false"/ -->
+	<externalcommand id="4" enable="true" path="lessc.cmd"
+		args="%FileName% %FileBaseName%.css" inFileExtension=".less" 
+		outFileName="%FileBaseName%.css"/>
+	<externalcommand id="5" enable="true" path="sass.bat"
+		args="--no-cache %FileName% %FileBaseName%.css"
+		inFileExtension=".sass,.scss" 
+		outFileName="%FileBaseName%.css"/>
+	<!-- externalcommand name="Stylus" path="stylus.cmd" args="" inFileContentTypeId="" 
+		outFileExtension=".css" outFileExtensionEnable="false"/ -->
+	<!-- externalcommand name="TypeScript" path="" args="" inFileContentTypeId="" 
+		outFileExtension=".js" / -->
+	<externalcommand id="6" enable="true" path="uglifyjs.cmd"
+		args="%FileName% -o %FileBaseName%.min.js"
+		inFileExtension=".js" 
+		outFileName="%FileBaseName%.min.js"/>
+	<externalcommand id="7" enable="true" path="yuicompressor.jar"
+		args="%FileName% > %FileBaseName%.min.css"
+		inFileExtension=".css" 
+		outFileName="%FileBaseName%.min.css"/>
+	<externalcommand id="8" enable="true" path="yuicompressor.jar"
+		args="%FileName% > %FileBaseName%.min.js" 
+		inFileExtension=".js" 
+		outFileName="%FileBaseName%.min.js"/>
+	<externalcommand id="9" enable="true" path="cleancss.cmd"
+		args="%FileName% -o %FileBaseName%.min.css"
+		inFileExtension=".css" 
+		outFileName="%FileBaseName%.min.css"/>
+</externalcommands>

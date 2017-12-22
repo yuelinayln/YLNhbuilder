@@ -1,0 +1,19 @@
+{
+    "scope": "source.asp",
+    "completions": [
+        "Lock",
+        "Unlock",
+        "SetAbort",
+        "SetComplete",
+        "BianryRead",
+        "AddHeader",
+        "AppendToLog",
+        "Clear",
+        "BinaryWrite",
+        "Flush",
+        "Write",
+        "Redirect",
+        "URLEncode",
+        "CreateObject"
+    ]
+}

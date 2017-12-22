@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.aptana.feature"
+      label="%featureName"
+      version="8.9.1.201712121728"
+      provider-name="%providerName"
+      plugin="com.aptana.branding">
+
+   <description url="http://www.aptana.com">
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <includes
+         id="com.aptana.ide.feature.libraries.subscription"
+         version="8.9.1.201712121728"/>
+
+   <includes
+         id="org.radrails.rails"
+         version="8.9.1.201712121728"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.jface.text" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.team.core"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.ui.ide" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.team.ui" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.externaltools"/>
+      <import plugin="org.eclipse.compare" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.browser" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.expressions" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.search" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.osgi" version="3.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.security" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jsch.core"/>
+      <import plugin="com.aptana.ide.libraries.subscription"/>
+   </requires>
+
+   <plugin
+         id="com.aptana.scripting"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201701182100"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.common"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201710171650"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.css"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201709261712"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.html"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201709281633"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.js"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201709291735"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.xml"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.filewatcher"
+         download-size="0"
+         install-size="0"
+         version="3.0.1.201702271732"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.findbar"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201701101717"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.parsing"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201612272115"/>
+
+   <plugin
+         id="com.aptana.scripting.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.1.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="org.jruby"
+         download-size="0"
+         install-size="0"
+         version="1.6.4.201407011549"/>
+
+   <plugin
+         id="com.aptana.editor.text"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201606242058"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.usage"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.libraries"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"/>
+
+   <plugin
+         id="com.aptana.ui"
+         download-size="0"
+         install-size="0"
+         version="3.1.4.201707080240"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.branding"
+         download-size="0"
+         install-size="0"
+         version="3.3.1.201509142143"/>
+
+   <plugin
+         id="com.aptana.core"
+         download-size="0"
+         install-size="0"
+         version="3.3.0.201706291552"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.core.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201612201454"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.core.io"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201705121719"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.ui.io"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201607061530"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.ui.io.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.ide.security.linux"
+         os="linux"
+         download-size="0"
+         install-size="0"
+         version="2.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.ui.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201711301544"/>
+
+   <plugin
+         id="com.aptana.index.core"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201701071832"
+         unpack="false"/>
+
+   <plugin
+         id="beaver"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201611301808"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.theme"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201601072142"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.index.core.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201605111735"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.projects"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201703142146"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.dtd"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.svg"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.json"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201709141522"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.css.formatter"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201612281457"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.html.formatter"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201612281450"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.js.formatter"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201703172025"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.formatter.epl"
+         download-size="0"
+         install-size="0"
+         version="3.2.0.201608241750"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.formatter.ui.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201606241822"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.workbench"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201604291531"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.webserver.core"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201705081817"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.webserver.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201705081817"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.portal.ui.eclipse36"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201511161552"
+         unpack="false"/>
+
+   <plugin
+         id="org.mozilla.rhino"
+         download-size="0"
+         install-size="0"
+         version="1.7.4.201408121727"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.debug.core"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.debug.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.js.debug.core"
+         download-size="0"
+         install-size="0"
+         version="3.0.3.201511251440"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.js.debug.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201511251440"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.xml.formatter"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="json.simple"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201307101900"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.buildpath.core"
+         download-size="0"
+         install-size="0"
+         version="3.1.0.201705241523"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.eclipse.fullscreen.ui"
+         os="macosx"
+         ws="cocoa"
+         download-size="0"
+         install-size="0"
+         version="1.0.4.201307101858"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.jetty.util.epl"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.build.ui"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201307101858"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.yaml"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.coffee"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201701071832"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.editor.markdown"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         unpack="false"/>
+
+</feature>

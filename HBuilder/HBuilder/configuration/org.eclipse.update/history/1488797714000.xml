@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config transient="false" date="1488797713638">
+	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="platform:/base/">
+		<feature id="com.pandora.rootfile.xp.feature" url="features/com.pandora.rootfile.xp.feature_1.0.0.201509142143/" version="1.0.0.201509142143">
+		</feature>
+		<feature id="com.pandora.nodejs.feature" url="features/com.pandora.nodejs.feature_1.0.0.201703061849/" version="1.0.0.201703061849">
+		</feature>
+		<feature id="com.aptana.feature.studio" plugin-identifier="com.aptana.branding" url="features/com.aptana.feature.studio_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="org.eclipse.babel.nls_eclipse_zh" url="features/org.eclipse.babel.nls_eclipse_zh_3.7.0.201703061842/" version="3.7.0.201703061842">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" url="features/org.eclipse.equinox.p2.rcp.feature_1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO/" version="1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO">
+		</feature>
+		<feature id="com.pandora.cef3.feature" url="features/com.pandora.cef3.feature_2.0.0.201703061849/" version="2.0.0.201703061849">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl/" version="2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl">
+		</feature>
+		<feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_1.3.0.v20110530-0844-7i7uFFmFFl8nvqbDpEqTvx/" version="1.3.0.v20110530-0844-7i7uFFmFFl8nvqbDpEqTvx">
+		</feature>
+		<feature id="com.pandora.rootfile.starter.win32.feature" url="features/com.pandora.rootfile.starter.win32.feature_1.0.0.201702282011/" version="1.0.0.201702282011">
+		</feature>
+		<feature id="com.pandora.rootfile.dll.feature" url="features/com.pandora.rootfile.dll.feature_1.0.0.201509142143/" version="1.0.0.201509142143">
+		</feature>
+		<feature id="org.eclipse.rcp" url="features/org.eclipse.rcp_3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272/" version="3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272">
+		</feature>
+		<feature id="com.pandora.rootfile.plugins.feature" url="features/com.pandora.rootfile.plugins.feature_1.0.0.201703011857/" version="1.0.0.201703011857">
+		</feature>
+		<feature id="org.eclipse.babel.nls_rt.equinox.p2_zh" url="features/org.eclipse.babel.nls_rt.equinox.p2_zh_3.7.0.201703061842/" version="3.7.0.201703061842">
+		</feature>
+		<feature id="com.pandora.rootfile.plugins2.feature" url="features/com.pandora.rootfile.plugins2.feature_1.0.0.201610102040/" version="1.0.0.201610102040">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.discovery.feature" url="features/org.eclipse.equinox.p2.discovery.feature_1.0.101.R37x_v20110909-4-8_9oB5885K5B28WKK/" version="1.0.101.R37x_v20110909-4-8_9oB5885K5B28WKK">
+		</feature>
+		<feature id="com.pandora.mobile.feature" url="features/com.pandora.mobile.feature_1.0.0.201703061849/" version="1.0.0.201703061849">
+		</feature>
+		<feature id="com.aptana.feature" plugin-identifier="com.aptana.branding" url="features/com.aptana.feature_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="com.pandora.mem.feature" url="features/com.pandora.mem.feature_1.0.0.201703061849/" version="1.0.0.201703061849">
+		</feature>
+		<feature id="org.radrails.rails" plugin-identifier="com.aptana.editor.ruby" url="features/org.radrails.rails_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="com.pandora.rootfile.jvm.feature" url="features/com.pandora.rootfile.jvm.feature_1.0.0.201501052240/" version="1.0.0.201501052240">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" url="features/org.eclipse.equinox.p2.extras.feature_1.0.1.v20110906-1605-7A4FD4DiVOMap8cHSc6vPuny4gqO/" version="1.0.1.v20110906-1605-7A4FD4DiVOMap8cHSc6vPuny4gqO">
+		</feature>
+		<feature id="com.pandora.rootfile.indexer.feature" url="features/com.pandora.rootfile.indexer.feature_1.0.0.201612201656/" version="1.0.0.201612201656">
+		</feature>
+		<feature id="org.eclipse.platform" url="features/org.eclipse.platform_3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q/" version="3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q">
+		</feature>
+		<feature id="com.pandora.feature" plugin-identifier="com.pandora.version" url="features/com.pandora.feature_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="com.aptana.ide.feature.libraries.subscription" url="features/com.aptana.ide.feature.libraries.subscription_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="com.pandora.inputmethod.feature" url="features/com.pandora.inputmethod.feature_1.0.0.201703061849/" version="1.0.0.201703061849">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" url="features/org.eclipse.equinox.p2.core.feature_1.0.1.v20110906-1605-8290FZ9FVKHVRKtmx3fpNuo02129/" version="1.0.1.v20110906-1605-8290FZ9FVKHVRKtmx3fpNuo02129">
+		</feature>
+		<feature id="org.eclipse.epp.mpc" plugin-identifier="org.eclipse.epp.mpc.ui" url="features/org.eclipse.epp.mpc_1.1.1.I20110907-0947/" version="1.1.1.I20110907-0947">
+		</feature>
+		<feature id="com.aptana.feature.rcp" plugin-identifier="com.aptana.branding" url="features/com.aptana.feature.rcp_8.0.2.201703061842/" version="8.0.2.201703061842">
+		</feature>
+		<feature id="io.emmet.eclipse" url="features/io.emmet.eclipse_1.0.0.201303162055/" version="1.0.0.201303162055">
+		</feature>
+		<feature id="com.pandora.rootfile.starter.feature" url="features/com.pandora.rootfile.starter.feature_1.0.0.201511061818/" version="1.0.0.201511061818">
+		</feature>
+	</site>
+</config>

@@ -1,0 +1,13 @@
+{
+  "name": "hb-node-service",
+  "version": "1.0.0",
+  "description": "HBuilder nodejs service",
+  "dependencies": {
+    "js-beautify": "^1.6.8",
+    "less": "^2.7.1",
+    "node-sass": "^3.7.0",
+    "prettydiff": "^2.1.15",
+    "acorn-jsx": "^3.0.1",
+    "thrift": "^0.9.3"
+  }
+}

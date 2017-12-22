@@ -1,0 +1,6 @@
+{
+    "scope": "source.jsp",
+    "completions": [
+        "break","case","catch","continue","abstract","boolean","byte","char","class","const","double","extends","final","float","implements","import","int","interface","long","native","goto","public","short","super","synchronized","package","private","protected","transient","static","throws","volatile","default","do","else","false","finally","for","if","instanceof","new","null","return","switch","this","throw","true","try","void","while"
+    ]
+}

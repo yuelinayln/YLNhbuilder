@@ -1,0 +1,30 @@
+{
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/guxm.css",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.min.js",
+			"js/guxm.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"detail.html": {
+		"resources": [
+			"js/jquery.min.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/guxm.css",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/guxm.js",
+			"js/echarts/echarts.min.js",
+			"js/echarts/echarts-all-3.js"
+		]
+	}
+}

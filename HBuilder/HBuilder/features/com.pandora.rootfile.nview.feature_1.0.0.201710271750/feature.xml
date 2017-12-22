@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.pandora.rootfile.nview.feature"
+      label="HBuilder NView Tools Feature"
+      version="1.0.0.201710271750"
+      provider-name="DCloud">
+
+</feature>

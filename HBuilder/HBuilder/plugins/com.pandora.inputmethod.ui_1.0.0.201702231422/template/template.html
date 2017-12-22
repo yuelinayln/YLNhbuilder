@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang=zh-cn>
+	<meta charset="UTF-8">
+	<head>
+		<title>show proposal</title>
+	</head>
+	<style type="text/css" media="screen">
+		body{background: #FFFCF4;padding: 0; margin:0;}
+		.info_div {
+			width: 85%;
+			float: left;
+			word-break: break-all;
+			overflow-x: hidden;
+			margin-left: 1.25em; 
+			margin-right: 1.25em; 
+			margin-top: 0.5em; 
+		}
+		.header {
+			margin-left: 1.25em; 
+			overflow: hidden; 
+			float: left; 
+			word-break: 
+			break-all;  
+			margin-top: 0.625em; 
+			font-size: 0.75em;
+		}
+		pre{white-space: pre-wrap; white-space:-moz-pre-wrap; white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word;word-break: break-word;}
+		a{display:none}
+		#title a{display:block!important}
+	</style>
+	<script type="text/javascript" charset="utf-8">
+	
+		// 禁止鼠标右键
+		if (window.Event && document.captureEvents) 
+		  document.captureEvents(Event.MOUSEUP); 
+		 
+		function nocontextmenu() 
+		{
+			try{
+			 	event.cancelBubble = true
+			 	event.returnValue = false;
+			 	return false;
+		 	}catch(ex){
+		 	}
+		}	 
+	
+		function norightclick(e) 
+		{
+			 if (window.Event) 
+			 {
+			  if (e.which == 2 || e.which == 3)
+				   return false;
+			 } else if (event.button == 2 || event.button == 3) {
+				   event.cancelBubble = true
+				   event.returnValue = false;
+			   	   return false;
+			  }
+		}
+		//屏蔽F5
+		function doKey(){  
+			if ( event.keyCode==116){  
+				event.keyCode = 0;  
+				event.cancelBubble = true;  
+				return false;  
+			}
+		}
+		//禁止后退键 作用于Firefox、Opera  
+		document.onkeypress=doKey;  
+		//禁止后退键  作用于IE、Chrome  
+		document.onkeydown=doKey;
+		 
+		document.oncontextmenu = nocontextmenu;  // for IE5+
+		document.onmousedown = norightclick;  // for all others
+	
+		var uri = "" ;
+		var codeBolck = "" ;
+		
+		function setTitle(titleInfo) {
+		  var doc = document.getElementById("title");
+		  if(titleInfo!=null&&titleInfo!=''){
+		  	doc.style.display = "" ;
+		 	doc.innerHTML=titleInfo ;
+		  }
+		}
+		
+		function cleanTitle() {
+			 var doc = document.getElementById("title");
+		  	 doc.style.display = "none" ;
+		 	 doc.innerHTML="" ;
+		}
+		
+		function setAdditionalProposalInfo (additionalProposalInfo) {
+		  var doc = document.getElementById("additionalProposalInfo");
+		  if(additionalProposalInfo!=null&&additionalProposalInfo!=''){
+		  	//alert(additionalProposalInfo);
+		  	doc.style.display = "" ;
+		 	doc.innerHTML=additionalProposalInfo ;
+		  }
+		}
+		
+		function cleanAdditionalProposalInfo () {
+			 var doc = document.getElementById("additionalProposalInfo");
+		  	 doc.style.display = "none" ;
+		 	 doc.innerHTML="" ;
+		}
+		
+		function setFileLocation (fileLocation) {
+		  var doc = document.getElementById("fileLocation");
+		  if(fileLocation!=null&&fileLocation!=''){
+		  	doc.style.display = "" ;
+		  	doc.innerHTML=fileLocation ;
+		  }
+		}
+		
+		function cleanFileLocation () {
+			 var doc = document.getElementById("fileLocation");
+			 doc.style.display = "none" ;
+			 doc.innerHTML="" ;
+		}
+		
+		function setShowImage (url,width,height) {
+			var doc = document.getElementById("showImage");
+			if(url!=null&&url!=''){
+				document.getElementById("showImageDiv").style.display = "" ;
+		  		doc.src=url;
+		  		doc.width=width;
+		  		doc.height=height;
+			}
+		}
+		
+		function cleanShowImage () {
+			var doc = document.getElementById("showImage");
+			document.getElementById("showImageDiv").style.display = "none" ;
+		  	doc.src="";
+		  	doc.width=0;
+		  	doc.height=0;
+		}
+		
+		function setShowUri (showUri, isCodeBlock) {
+			document.getElementById("showUridiv").style.display = "" ;
+			if("true"==isCodeBlock){
+				document.getElementById("showUri").src = "editor.png";
+				document.getElementById("showUri").title = "编辑代码块";
+			}else{
+				document.getElementById("showUri").src = "book.png";
+				document.getElementById("showUri").title = "搜索";
+			}
+			codeBolck = isCodeBlock;
+		 	uri = showUri ;
+		}
+		
+		function cleanShowUri(){
+			document.getElementById("showUridiv").style.display = "none" ;
+		}
+		
+		function openUri() {
+		  OPENURL(uri,codeBolck) ;
+		}
+		
+		function setFont(name,size) {
+			var doc = document.getElementById("additionalProposalInfo");
+			doc.style.fontFamily = name+", Microsoft Yahei" ;
+			doc.style.fontSize = '0.75em' ;
+			
+			var doc_ = document.getElementById("fileLocation");
+			doc_.style.fontFamily = name ;
+			doc_.style.fontSize = '0.7em' ;
+		}
+		
+		function createUserAgents (paths) {
+			/*if (paths!=null&&paths.length>0) {
+				var doc = document.getElementById("userAgents") ;
+				doc.style.display = "" ;
+				for(var i=0,j=paths.length; i<j; i++){
+				  var path = paths[i];
+				  if (path!=null&&path!='') {
+					var imgobj = document.createElement("img");
+					imgobj.src = path ;
+					doc.appendChild(imgobj) ;
+					var spanobj = document.createElement("span");
+					spanobj.innerHTML = "&nbsp;&nbsp;" ;
+					doc.appendChild(spanobj) ;
+				  };
+				};
+			};*/
+			
+			if (paths!=null&&paths.length>0) {
+				var doc = document.getElementById("userAgents") ;
+				doc.style.display = "" ;
+				for(var i=0,j=paths.length; i<j; i++){
+				  var path = paths[i];
+				  if (path!=null&&path!='') {
+				  	if(path.indexOf("|")>0){
+				  		var pv = path.split("|") ;
+				  		var p=pv[0];
+				  		var v=pv[1];
+				  		var divObj = document.createElement("div") ;
+				  		divObj.style.marginRight="0.269em";
+				  		divObj.style.styleFloat="left" ;
+				  		divObj.style.float="left" ;
+				  		divObj.style.width="1.615em" ;
+				  		var imgDiv = document.createElement("div") ;
+				  		imgDiv.style.textAlign="center";
+						var imgobj = document.createElement("img");
+						imgobj.src = p ;
+						imgobj.style.width="1em";
+						imgobj.style.height="1em";
+						imgDiv.appendChild(imgobj);
+						divObj.appendChild(imgDiv);
+						var divChild = document.createElement("div");
+						divChild.style.fontSize="0.7em" ;
+						divChild.style.textAlign="center";
+						divChild.style.marginTop="0.108em" ;
+						divChild.style.fontFamily = "Arial";
+						divChild.innerHTML = v ;
+						divObj.appendChild(divChild);
+						doc.appendChild(divObj);
+				  	}
+				  };
+				};
+			};
+		  
+		}
+		
+		function cleanUserAgents () {
+		  document.getElementById("userAgents").innerHTML="";
+		  
+		  setTimeout(function(){
+				if(!window.innerWidth)window.innerWidth = document.body.offsetWidth;
+			 	//if(!window.innerHeight)window.innerHeight = document.body.offsetHeight;
+			  }, 0);
+		}
+	
+	</script>
+	<body>
+		<div id="show" style="overflow-x: hidden;" >
+			<div id="title" class="header" style="display: none; font-family: Verdana; " >
+			</div>
+			<div id="fileLocation" class="info_div" style="display: none;">
+			</div>
+			<div id="userAgents" class="info_div" style="display: none;">
+			</div>
+			<div id="additionalProposalInfo" class="info_div" style="display: none; color:#474747">
+			</div>
+			<div id="showImageDiv" class="info_div" style="display: none; text-align:center;">
+				<img  id="showImage" src="" />
+			</div>
+			<div id="showUridiv" class="info_div" style="width: 100%;z-index: 100; position: fixed; bottom:0; right:0; text-align:right">
+				<img id="showUri" src="book.png" onclick="openUri();" style="width:1em;height:1em"/>
+			</div>
+		</div>
+	</body>
+</html>

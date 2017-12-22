@@ -1,0 +1,10 @@
+{
+    "scope": "source.jsp",
+    "completions": [
+        "getAttribute",
+        "getParameter",
+        "setAttribute",
+        "getSession",
+        "println"
+    ]
+}

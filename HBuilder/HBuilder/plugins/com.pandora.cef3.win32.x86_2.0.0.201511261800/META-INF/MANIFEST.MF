@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.osgi;bundle-version="3.7.2",org.eclipse.co
+ re.runtime;bundle-version="3.7.0"
+Export-Package: com.pandora.cef3
+Bundle-Vendor: %Bundle-Vendor
+Fragment-Host: com.pandora.cef3;bundle-version="2.0.0"
+Bundle-ClassPath: .,libs/gluegen-rt-natives-windows-i586.jar,libs/glue
+ gen-rt.jar,libs/jogl-all-natives-windows-i586.jar,libs/jogl-all.jar
+Bundle-Version: 2.0.0.201511261800
+Eclipse-PlatformFilter: (& (osgi.os=win32) (osgi.arch=x86))
+Bundle-Name: %Bundle-Name
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.pandora.cef3.win32.x86;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
+

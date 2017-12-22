@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: com.pandora.cef3,com.pandora.cef3.inspect,com.pandora.
+ cef3.listener
+Require-Bundle: org.eclipse.swt;bundle-version="3.5.0",org.eclipse.cor
+ e.runtime;bundle-version="3.7.0",org.eclipse.ui.workbench;bundle-vers
+ ion="3.7.1",org.eclipse.jface;bundle-version="3.7.0",com.pandora.libr
+ aries,com.pandora.browser.remote.debug,com.pandora.core.utils
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 2.0.0.201706211743
+Bundle-Name: %Bundle-Name
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.pandora.cef3;singleton:=true
+Eclipse-ExtensibleAPI: true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
+

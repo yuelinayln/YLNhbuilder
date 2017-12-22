@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.aptana.feature.rcp"
+      label="%featureName"
+      version="8.9.1.201712121728"
+      provider-name="%providerName"
+      plugin="com.aptana.branding">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <includes
+         id="org.eclipse.help"
+         version="1.3.0.v20110530-0844-7i7uFFmFFl8nvqbDpEqTvx"
+         search-location="both"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.user.ui"
+         version="2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0qUTX5I15GZWwbXkrl"
+         search-location="both"/>
+
+   <includes
+         id="com.aptana.feature.studio"
+         version="8.9.1.201712121728"
+         search-location="both"/>
+
+   <includes
+         id="org.eclipse.platform"
+         version="3.7.2.v20120207-1839-9gF7UHPDFxGjd-PqDr2jX_4yKaumkoHTz04_q-q"/>
+
+   <includes
+         id="org.eclipse.rcp"
+         version="3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.core.feature"
+         version="1.0.1.v20110906-1605-8290FZ9FVKHVRKtmx3fpNuo02129"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.extras.feature"
+         version="1.0.1.v20110906-1605-7A4FD4DiVOMap8cHSc6vPuny4gqO"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.rcp.feature"
+         version="1.0.1.v20110906-1605-782EqBqNKGVkiV-PUsgz-uny4gqO"/>
+
+   <includes
+         id="org.eclipse.epp.mpc"
+         version="1.1.1.I20110907-0947"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.discovery.feature"
+         version="1.0.101.R37x_v20110909-4-8_9oB5885K5B28WKK"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.browser"/>
+      <import plugin="org.eclipse.equinox.p2.ui.sdk.scheduler"/>
+      <import plugin="com.ibm.icu"/>
+      <import plugin="org.eclipse.core.net"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.apache.lucene"/>
+      <import plugin="org.apache.lucene.analysis"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.equinox.http.jetty"/>
+      <import plugin="org.eclipse.equinox.common"/>
+      <import plugin="org.eclipse.equinox.registry"/>
+      <import plugin="org.eclipse.core.jobs"/>
+      <import plugin="org.eclipse.osgi.services"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.eclipse.ecf.provider.filetransfer"/>
+   </requires>
+
+   <plugin
+         id="com.aptana.rcp"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201706211743"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.simpleconfigurator"
+         download-size="0"
+         install-size="0"
+         version="1.0.200.v20110815-1438"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.help.base"
+         download-size="0"
+         install-size="0"
+         version="3.6.2.v201202080800"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.lucene.analysis"
+         download-size="0"
+         install-size="0"
+         version="2.9.1.v201101211721"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.lucene"
+         download-size="0"
+         install-size="0"
+         version="2.9.1.v201101211721"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf"
+         download-size="0"
+         install-size="0"
+         version="3.1.300.v20110531-2218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.filetransfer"
+         download-size="0"
+         install-size="0"
+         version="5.0.0.v20110531-2218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.identity"
+         download-size="0"
+         install-size="0"
+         version="3.1.100.v20110531-2218"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.codec"
+         download-size="0"
+         install-size="0"
+         version="1.3.0.v201101211617"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.httpclient"
+         download-size="0"
+         install-size="0"
+         version="3.1.0.v201012070820"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.provider.filetransfer"
+         download-size="0"
+         install-size="0"
+         version="3.2.0.v20110531-2218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.provider.filetransfer.httpclient"
+         download-size="0"
+         install-size="0"
+         version="4.0.0.v20110531-2218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.provider.filetransfer.httpclient.ssl"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20110531-2218"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.provider.filetransfer.ssl"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20110531-2218"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ecf.ssl"
+         download-size="0"
+         install-size="0"
+         version="1.0.100.v20110531-2218"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.concurrent"
+         download-size="0"
+         install-size="0"
+         version="1.0.200.v20110502"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.rcp.studio"
+         os="aix,hpux,linux,macosx,qnx,solaris"
+         download-size="0"
+         install-size="0"
+         version="3.0.0.201509142143"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.aptana.ui.override"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201701181834"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.pandora.rcp.upgrade"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201712111612"/>
+
+   <plugin
+         id="com.pandora.starters"
+         os="win32"
+         ws="win32"
+         nl="en,en_US,zh,zh_CN"
+         arch="x86,x86_64"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201511132153"/>
+
+   <plugin
+         id="com.pandora.starters.macos"
+         os="macosx"
+         ws="cocoa"
+         nl="en,en_US,zh,zh_CN"
+         arch="x86,x86_64"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201509142143"/>
+
+   <plugin
+         id="org.eclipse.ui"
+         download-size="0"
+         install-size="0"
+         version="3.7.0.v20110928-1505"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.navigator"
+         download-size="0"
+         install-size="0"
+         version="3.5.101.v20120106-1355"
+         unpack="false"/>
+
+</feature>

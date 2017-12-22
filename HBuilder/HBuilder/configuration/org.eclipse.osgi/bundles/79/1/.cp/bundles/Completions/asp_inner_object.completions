@@ -1,0 +1,12 @@
+{
+    "scope": "source.asp",
+
+    "completions": [
+        "Application",
+        "ObjectContext",
+        "Request",
+        "Response",
+        "Server",
+        "Session"
+    ]
+}

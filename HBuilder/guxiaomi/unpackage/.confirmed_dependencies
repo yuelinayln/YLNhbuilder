@@ -1,0 +1,137 @@
+{
+	"information_detail.html": {
+		"href": "information_detail.html",
+		"resources": [
+			"js/Mui/css/mui.css",
+			"js/Mui/css/feedback.css",
+			"css/iconfont.css",
+			"css/financial_detail.css",
+			"js/Mui/css/mui.picker.css",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/css/mui.dtpicker.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/js/mui.dtpicker.js",
+			"js/financial_detail.js",
+			"fonts/iconfont.ttf",
+			"js/Mui/fonts/mui.ttf"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"information.html": {
+		"href": "information.html",
+		"resources": [
+			"js/Mui/fonts/mui.ttf",
+			"js/Mui/css/mui.css",
+			"js/Mui/css/mui.picker.css",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/css/mui.dtpicker.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/js/mui.dtpicker.js",
+			"img/banner1.jpg",
+			"img/list1.png",
+			"img/list2.png",
+			"img/list3.png"
+		],
+		"refer": [
+			"information_detail.html"
+		],
+		"priority": 0
+	},
+	"financial_detail.html": {
+		"href": "financial_detail.html",
+		"resources": [
+			"js/Mui/css/mui.css",
+			"js/Mui/css/feedback.css",
+			"css/iconfont.css",
+			"css/financial_detail.css",
+			"js/Mui/css/mui.picker.css",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/css/mui.dtpicker.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/js/mui.dtpicker.js",
+			"js/echarts/echarts.min.js",
+			"js/echarts/echarts-all-3.js",
+			"js/financial_detail.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"financial.html": {
+		"href": "financial.html",
+		"resources": [
+			"js/Mui/css/mui.css",
+			"js/Mui/css/feedback.css",
+			"css/iconfont.css",
+			"js/Mui/css/mui.picker.css",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/css/mui.dtpicker.css",
+			"css/financial.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/js/mui.dtpicker.js",
+			"js/echarts/echarts.min.js",
+			"js/echarts/echarts-all-3.js",
+			"js/financial.js",
+			"img/ticket1.png",
+			"fonts/iconfont.ttf",
+			"js/Mui/fonts/mui.ttf"
+		],
+		"refer": [
+			"information.html",
+			"financial_detail.html",
+			"information_detail.html",
+			"financial.html"
+		],
+		"priority": 0
+	},
+	"optionalStock.html": {
+		"resources": [
+			"js/Mui/js/mui.dtpicker.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/css/mui.dtpicker.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/css/mui.picker.css",
+			"css/optionalStock.css",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/css/mui.css",
+			"css/iconfont.css",
+			"js/financial_detail.js",
+			"js/Mui/css/feedback.css",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"optionalStock_search.html": {
+		"resources": [
+			"js/Mui/js/mui.dtpicker.js",
+			"js/Mui/js/mui.picker.js",
+			"js/Mui/css/mui.dtpicker.css",
+			"js/jquery-1.9.1.js",
+			"js/Mui/css/mui.picker.css",
+			"css/optionalStock.css",
+			"js/Mui/js/mui.poppicker.js",
+			"js/Mui/css/mui.css",
+			"css/iconfont.css",
+			"js/financial_detail.js",
+			"js/Mui/css/feedback.css",
+			"js/Mui/js/mui.min.js",
+			"js/Mui/css/mui.poppicker.css",
+			"js/Mui/fonts/mui.ttf",
+			"css/optionalStock_search.css"
+		]
+	}
+}

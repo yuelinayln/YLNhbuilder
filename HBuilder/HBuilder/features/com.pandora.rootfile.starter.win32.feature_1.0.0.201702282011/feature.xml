@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.pandora.rootfile.starter.win32.feature"
+      label="Root File Win32 Starter Feature"
+      version="1.0.0.201702282011"
+      provider-name="DCloud">
+
+</feature>

@@ -1,0 +1,32 @@
+.mui-content ul{
+	padding: 0;
+	margin:0 5%;
+}
+#browse{
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 2% 3%;
+}
+.browse_list{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 1% 3%;
+}
+.browse_list div p{
+	margin: 0;
+}
+.browse_list .browse_list_name{
+	font-size: 17px;
+	color: #000;
+	margin: 10% 0 0 0;
+}
+.browse_list .add{
+	margin-top: 4%;
+	padding: 0 1.5%;
+	background: rgba(216,76,41,1);
+	color: #fff; 
+	margin-right: 2%;
+}
+#clear{
+	text-align: center;
+	margin-top: 5%;
+}

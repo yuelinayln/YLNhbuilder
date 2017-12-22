@@ -1,0 +1,76 @@
+.bold{
+	font-weight: bold;
+}
+#back{
+	cursor: pointer;
+	font-size: 30px;
+}
+.mui-content>div h4,h3,p{
+	width: 75%;
+	margin: 5% auto;
+	margin-bottom: -5%;
+	text-align: center;
+	line-height: 3.5vh;
+	color: #000;
+}
+.mui-content>div p{
+	margin-bottom: 5%;
+}
+#content_first,#content_second,#content_foot{
+	width: 80%;
+	margin: 0 auto;
+	line-height: 25px;
+	font-size: 14px;
+}
+#content_second{
+	margin-top: 5%;
+}
+#content_foot{
+	margin: 10% 0 10% 26%; 
+	width: 80%;
+}
+#content_foot .iconfont{
+	width: 25%;
+	color: #000;
+	font-size: 20px; 
+}
+/*detail*/
+.mui-content>div h3{
+	margin: 2% auto;
+	font-size: 17px;
+}
+
+#development_1{
+	height: 180px;
+}
+#development_2{
+	margin-top: -5%;
+	height: 70px;
+}
+.mui-content ul{
+	margin-bottom: 2%;
+	overflow: hidden;
+}
+.mui-content ul li{
+	list-style: none;
+	float: left;
+	width: 45%;
+}
+.mui-content table {
+	width: 80%;
+	margin: 0 auto;
+}
+#btn{
+	width: 20%;
+	margin: 3% auto;
+}
+#btn button{
+	width: 100%; 
+}
+/*tab切换标签所在页面高度*/
+.mui-bar-tab
+{
+    top: 285px;
+  
+}
+

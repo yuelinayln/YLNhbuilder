@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Export-Package: com.aptana.editor.common.contentassist,com.aptana.edit
+ or.common.hover,com.aptana.editor.common.link,com.aptana.editor.commo
+ n.link.contentAssistant,com.aptana.editor.common.text.rules,com.aptan
+ a.ui.dialogs,com.aptana.ui.epl,com.aptana.ui.epl.scripting.snippets;x
+ -friends:="com.aptana.editor.common",com.aptana.ui.preferences,com.ap
+ tana.ui.properties,com.aptana.ui.util,com.aptana.ui.wizards
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: com.aptana.core;bundle-version="3.0.0",org.eclipse.jfa
+ ce.text,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.
+ eclipse.ui.forms,com.pandora.view.browser;bundle-version="3.0.0",com.
+ pandora.core,org.eclipse.ui.browser;bundle-version="3.3.101",org.ecli
+ pse.core.filesystem;bundle-version="1.3.100",com.pandora.core.utils;b
+ undle-version="1.0.0",com.pandora.inputmethod.ui;bundle-version="1.0.
+ 0",beaver;bundle-version="3.0.0"
+Bundle-Vendor: %providerName
+Bundle-Version: 3.0.0.201705251436
+Bundle-Activator: com.aptana.ui.epl.UIEplPlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.aptana.ui.epl;singleton:=true
+Eclipse-ExtensibleAPI: true
+
+

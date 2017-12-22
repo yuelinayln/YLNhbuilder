@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %providerName
+Bundle-Version: 3.3.1.201509142143
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.aptana.branding
+
+

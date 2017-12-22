@@ -1,0 +1,38 @@
+html{
+	font-size: 12px;
+	font-style: normal; 
+	font-weight: normal; 
+	overflow-x: hidden; 
+}
+body{
+	width: 275px; 
+	overflow-x: hidden; 
+	font-size: 12px;
+}
+div{
+	overflow-x: hidden;
+	font-size: 12px;
+}
+.info_div {
+	width: 275px;
+	float: left;
+	word-break: break-all;
+	overflow-x: hidden;
+	margin-left: 10px; 
+	margin-right: 10px; 
+	margin-top: 8px; 
+	font-size: 12px;
+}
+.header {
+	margin-left: 10px; 
+	overflow-x: hidden; 
+	float: left; 
+	word-break: break-all;
+	break-all; 
+	width: 275px; 
+	margin-top: 1px; 
+	font-size: 13px;
+	font-family: Verdana;
+}
+pre{white-space: pre-wrap; white-space:-moz-pre-wrap; white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word;word-break: break-word;}
+a{display:none}

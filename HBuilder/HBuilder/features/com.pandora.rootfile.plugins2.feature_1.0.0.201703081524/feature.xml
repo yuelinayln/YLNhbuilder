@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.pandora.rootfile.plugins2.feature"
+      label="Eclipse Plugins Upgrade 2"
+      version="1.0.0.201703081524"
+      provider-name="DCloud">
+</feature>

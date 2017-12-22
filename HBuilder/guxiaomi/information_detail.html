@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>股小蜜公众号</title>
+	    <link rel="stylesheet" href="js/Mui/css/mui.css"/>
+	    <link rel="stylesheet" href="js/Mui/css/feedback.css"/>
+	    <link rel="stylesheet" href="css/iconfont.css"/>
+	    <link rel="stylesheet" href="css/financial_detail.css" />
+	    <link rel="stylesheet" href="js/Mui/css/mui.picker.css"/> 
+	    <link rel="stylesheet" href="js/Mui/css/mui.poppicker.css"/> 
+	    <link rel="stylesheet" href="js/Mui/css/mui.dtpicker.css"/>
+	    <script src="js/jquery-1.9.1.js"></script>  
+	    <script src="js/Mui/js/mui.min.js"></script>  
+	    <script src="js/Mui/js/mui.picker.js"></script> 
+	    <script src="js/Mui/js/mui.poppicker.js"></script> 
+	    <script src="js/Mui/js/mui.dtpicker.js"></script> 
+<!--	    <script src="js/financial_detail.js" type="text/javascript" charset="utf-8"></script>-->
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav mui-bar-transparent" data-top='0' data-offset='150' data-duration='16' data-scrollby=".mui-scroll-wrapper" style="background: background: rgba(170,170,170,1);">
+		<a href="javascript:back()" class="mui-icon mui-icon-undo" id="back"></a>
+		<h3 class="mui-title">股小蜜</h3>
+	</header>
+	<div class="mui-content">
+		<div> 
+			<h4>前五个月传统经济业务惨淡  券商格局继续分化</h4>
+			<p>2017年6月22日 10:25 来源于 财新网</p>
+		</div>
+		<div id="content_first">
+			【财新网】 (实习记者  张立君) 受行业佣金率下降、交投市场低迷、两融余额规模缩水的持续影响，传统营收大头经济业务及近几年崛起的资本中介业务军受重挫。与本就业绩平平的2016年相比，今年券商经纪愈加惨淡。然而几家欢喜几家愁，大型综合性券商业务线全面业绩抗跌能力明显强于中小型区域券商；其中华泰证券受益于互联网战略，营收依然保持着较高增长。
+		</div>
+		<div id="content_second"> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据wind数据统计，截止到5月，26家可比上市券商累计营业收入约为608亿元，同比下降6%;累计净利润约为258亿元，同比下降1%。在56家主要券商中，仅有12家券商今年的累计营业额超过10亿元的有4家，分别为华泰证券(同比增长56%)，东方证券(同比增长84%)，兴业证券(同比增长12%)，海通证券(同比增长7%)。
+		</div>
+		<div id="content_foot">
+			<a href="#" class="mui-icon iconfont icon-dianzan"></a>
+			<a href="#" class="mui-icon iconfont icon-fill85"></a>
+			<a href="#" class="mui-icon iconfont icon-kuangcai"></a>  
+		</div>
+	</div>
+	<script type="text/javascript">	
+		$('#back').click(function(){
+					history.go(-1);
+				});
+		$('#content_foot .iconfont').css('color','#000')
+		$("#content_foot .icon-dianzan").on('click',function(){
+			if($("#content_foot .iconfont").css('color','#000')){
+				$(this).css('color','#39C612');
+			}else{
+				$(this).css('color','#000');
+			}
+		});
+		$("#content_foot .icon-kuangcai").on('click',function(){
+			if($("#content_foot .iconfont").css('color','#000')){
+				$(this).css('color','red');
+			}else{
+				$(this).css('color','#000');
+			}
+		});
+	</script>
+</body>
+</html>

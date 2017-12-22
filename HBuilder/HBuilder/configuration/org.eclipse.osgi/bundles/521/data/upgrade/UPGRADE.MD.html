@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet" href="./showdown.css"/>
+		<link rel="stylesheet" href="./styles/github.css">
+		<script type="text/javascript" src="./highlight.js"></script>
+		<script type="text/javascript" src="./showdown.js"></script>
+		<script type="text/javascript" src="./showdown-toc.js"></script>
+	</head>
+
+	<body>
+		<textarea id="text-input" style="display:none"><font  color=#F68736  face="微软雅黑">HBuilder - Release Notes</font>
+===
+###8.9.1.201712121728
+
+* 紧急修复Android真机联调失败的问题
+
+###8.9.0.201712111722
+
+####App
+>* 【重要】iOS平台新增适配iPhoneX设备
+* 新增保存图片到系统相册API（plus.gallery.save）支持网络图片地址
+* 新增NView控件中的编辑框支持获取、失去焦点事件（plus.nativeObj.InputStyles的onFocus|onBlur属性）
+* 新增原生图片轮播控件（plus.nativeObj.ImageSlider）支持自动播放属性（autoplay/interval）
+* 新增原生图片预览界面（plus.nativeUI.previewImage）
+* 新增Webview窗口加载HTML数据（loadData）时支持设置baseURL等参数（WebviewLoadDataOptions）
+
+####MUI
+>* hello mui新增原生图片预览示例，教程参考：[http://ask.dcloud.net.cn/article/12959](http://ask.dcloud.net.cn/article/12959)
+* 修复下拉刷新setStopped方法无效的问题
+* Hello MUI列表到详情最佳实践，支持上拉加载
+* 解决iOS平台Hello MUI聊天界面，输入框获取焦点时界面错乱的问题
+* 解决Hello MUI中顶部选项卡-可左右拖动（webview）示例，目标webview高度不正确的问题
+* 解决Hello MUI中云端数据库示例，字段内容过长时页面可左右滑动的问题
+
+####wap2app
+>* 发布hello wap2app项目模板，内置wap2app的各项配置示例
+
+###8.8.7.201711221929
+
+####App
+>* 紧急修复iOS的真机运行基座无法运行的问题
+
+###8.8.6.201711101409
+
+####App
+>* Android平台修复使用地图可能引起程序崩溃的问题 
+* Android平台修复圆圈样式下拉刷新（style="circle"）功能开启无法通过设置support为false关闭的问题 
+* Android平台修复切换系统语言后plus.os.language属性值未及时更新的问题 
+* Android平台修复XHR的getResponseHeader返回数据可能包含多余空格的问题
+
+###8.8.5.201711010242
+
+####IDE
+>* 优化Android真机运行文件同步卡死的问题和经常断线的问题
+* 修复某些情况打开文件造成编辑器卡死的问题
+
+####App
+>* Android平台修复在部分设备（小米、魅族）设置系统状态栏前景色无效的问题（plus.navigator.setStatusBarStyle）
+* Android平台修复在部分已安装微信的设备调用微信登录、分享时返回未安装微信错误的问题
+* Android平台修复关闭后台未显示的Webview窗口后可能导致窗口显示顺序不正确的问题
+* Android平台存在地图页面时可能引起二维码扫描页面显示不正常的问题
+* iOS平台修复在iOS11版本上调用gallery选择图片返回HEIC格式的问题
+* iOS平台修复NView绘制界面可能被子Webview窗口覆盖的问题
+* iOS平台修复NView控件绘制矩形区域超出控件未被裁剪的问题
+
+####MUI
+>* 优化subNView模式的底部选项卡实现
+* 修改登录模板退出后，无法再次登录的bug
+* 解决Hello MUI在Android平台打开广告模板时，窗口动画闪烁的问题
+
+####wap2app
+>* 支持打包成apk/ipa安装包
+* 增加sourcemap，支持控制台错误定位
+* 支持配置窗口动画类型
+* 首页退出时，toast提醒支持配置“反馈意见”的显示隐藏
+* 优化底部选项卡配置，教程参考：[http://ask.dcloud.net.cn/article/12878](http://ask.dcloud.net.cn/article/12878)
+
+###8.8.4.201709282021
+
+####IDE
+>* 解决Mac系统10.13中HBuilder菜单被禁用的问题
+
+####App
+>* Android平台修复plus.nativeUI.confirm方法不传入title参数导致无法显示确认框的问题
+
+####wap2app
+>* 解决wap2app下拉刷新配置项失效的bug
+* 解除在非流应用环境下跳转三方App的限制
+
+
+###8.8.3.201709262023
+
+####IDE
+>* 【重要】新增wap2app项目类型，将现有M站快速发布成App的增强方案。[详情>>>](http://ask.dcloud.net.cn/docs/#http://ask.dcloud.net.cn/article/1244)
+* 【重要】新增调试Android/iOS设备应用的功能（无需翻墙！！！运行时会自动切换右上角webview调试视图）
+* 【重要】真机运行添加自定义基座运行，使用方法同真机运行。教程参考：[https://ask.dcloud.net.cn/article/12723](https://ask.dcloud.net.cn/article/12723)
+* 优化设置默认编辑器的体验（可直接右键【打开方式】-【选择默认编辑器...】）
+* 修复创建web项目时在某些机器上输入项目名称会卡的问题
+* 修复html标签带“-”号时的高亮问题
+* 新建移动App时，增加原生tab选项卡项目模板，教程参考：[http://ask.dcloud.net.cn/article/12602](http://ask.dcloud.net.cn/article/12602)
+* 新建HTML页面时，支持选择单webview模式下拉刷新页面组模板
+* 新建HTML页面时，支持选择列表到详情最佳实践页面组模板
+
+####App
+>* 新增原生View控件绘制富文本内容（richtext）及文本编辑框（input） 
+* 新增Webview窗口的titleNView支持设置初始化绘制内容（WebviewTitleNViewStyles.tags） 
+* 新增Webview窗口支持控制是否可选择页面文本内容，即是否弹出系统复制粘贴菜单（WebviewStyles.userSelect） 
+* 新增确认对话框（plus.nativeUI.confirm）支持设置垂直方向对齐方式（ConfirmOptions.verticalAlign） 
+* 新增自动消失提示框（plus.nativeUI.toast）支持显示富文本内容（richtext） 
+* 新增图片保存到相册后返回路径，在图片选择时可设置为默认选择此图片 
+* Android平台更新第三方SDK：个推（2.10.3.5 ），新浪微博（4.1） 
+* Android平台新增预载网络页面代码但不渲染的功能（plus.webview.prefetchURL/plus.webview.prefetchURLs） 
+* Android平台修复横竖屏切换可能导致获取屏幕宽度（plus.screen.resolutionWidth）不对的问题 
+* Android平台修复Webview窗口快速拖拽（drag）操作可能导致页面显示白屏的问题 
+* Android平台修复图片轮播控件控件（ImageSlider）显示两张图时循环控制逻辑错误的问题 
+* Android平台修复操作图片选择控件后缓存到应用私有目录可能导致应用空间占用过大的问题 
+* Android平台修复在7.0上调用拍照或录像时可能出现异常的问题 
+* Android平台修复下载模块可能出现下载失败的问题 
+* iOS平台修复使用原生混淆可能会概率出现启动白屏的问题 
+* iOS平台修复调用plus.nativeUI.confirm后再调用plus.nativeUI.alert可能导致回调函数无法触发的问题 
+* iOS平台修复原生View控件以dock方式添加到Webview窗口隐藏后显示显示不正确的问题
+* 新增Map地图控件对象支持关闭（close）操作
+* Android平台修复压缩图片在部分设备上可能出现崩溃的问题
+* Android平台修复百度地图在部分设备上可能无法正常显示标点图片的问题
+* iOS平台修复应用中存在侧滑菜单通过wgt升级更新后重启应用侧滑菜单显示不正常的问题
+
+####MUI
+>* 修复picker选择器控件的潜在bug，[issues #348](https://github.com/dcloudio/mui/issues/348)
+* 修复Hello MUI在iOS平台无法跳转appstore进行评分的bug
+* 解决DIV模式的时间选择器，点击遮罩或取消按钮，反复关闭/显示，重复创建picker控件的bug
+* 优化subNView模式的底部选项卡实现
+
+####wap2app
+>* 【重要】wap2app产品发布，支持将现有M站快速发布成App,参考[教程](http://ask.dcloud.net.cn/docs/#http://ask.dcloud.net.cn/article/1244)
+* 开源plusShare，快速分享到微信消息、朋友圈及更多系统分享，[参考教程](http://ask.dcloud.net.cn/article/12765)
+
+
+###8.8.0.201706142254
+
+【重要】App引擎大幅升级体验，只比原生快，不比原生慢。参考[http://ask.dcloud.net.cn/article/12576](http://ask.dcloud.net.cn/article/12576)
+
+####IDE
+>* 【重要】支持vue.js框架语法提示
+* 【重要】windows下边改边看浏览器支持手机模拟效果，支持touch事件。移动App项目默认为touch模式，web项目可以在边改边看浏览器上方菜单进行选择。
+* 【重要】移动App打包时原生js混淆功能从alpha版升级到正式版，可以安全高效的保护代码和关键配置
+* 添加在编辑器上可以通过shift+鼠标滚轮调节横向滚动条的功能
+* 添加html中script的type=[text/ecmascript-6,text/ecmascript]时代码高亮
+* manifest可视化编辑器添加"Apple应用内支付"的配置项
+* 解决控制台中Ctrl+F快捷键不起作用的问题
+* 解决原生App打包有时弹出异常错误提示的问题
+* 解决原生App打包有时自动下载获取的文件名不正确的问题
+* 解决html中输入script按tab后没有生成script标签的问题
+* 解决有时还原环境后没有自动导入默认目录下所有已存在项目的问题
+* 解决向上移动行(Ctrl+向上)选中的内容首行为空时移动后可能会多复制一行的问题
+* 解决typescript文件某些情况下选中代码提示某项回车后，光标位置不正确的问题
+* 解决真机运行启动过程变慢的问题
+* 解决在css属性值后面换行时不会自动添加分号的问题
+
+####App
+>* 【重要】新增Webview窗口支持添加原生View控件（subNViews），原生控件渲染加速页面加载速度 
+* 【重要】调整navigationbar为titleNView，与subNView统一理念，并补充buttons配置，方便配置右侧按钮
+* 【重要】新增Webview窗口原生标题栏控件（titleNView）支持沉浸式题图显示效果，图片滚动后原生标题栏渐变出现
+* 新增Webview窗口支持设置原生处理返回键功能（backButtonAutoControl），提升页面关闭响应速度
+* 新增原生图片轮播控件（plus.nativeObj.ImageSlider），支持点击放大全屏浏览 
+* Android平台优化应用资源保存目录（由sdcard下目录调整到应用私有目录），防止被清理软件删除引起应用页面无法打开的问题 
+* Android平台修复在部分设备上从二级窗口返回可能出现白屏的问题 
+* Android平台修复在特定情况下窗口动画效果不正确的问题 
+* Android平台修复横竖屏切换后获取屏幕分辨率可能不正确的问题 
+* Android平台修复plus.webview.startAnimation方法不设置回调参数可能引起崩溃的问题 
+* Android平台修复二维码中字符串中包含换行符时扫描可能出错的问题 
+* Android平台修复在特定情况下崩溃日志可能提交不成功的问题 
+* Android平台修复设置屏幕亮度（plus.screen.setBrightness）可能不生效的问题 
+* Android平台修复友盟统计channel参数设置无效的问题 
+* iOS平台修复应用设置为全屏显示时系统状态栏可能不消失的问题 
+* iOS平台修复webview作为子窗口时调用isVisible()总是返回false的问题 
+* iOS平台修复Webview窗口设置softinputMode属性值为adjustResize时软键盘消失可能显示不正常的问题 
+* iOS平台修复wgt更新应用资源后重启应用可能导致系统状态栏样式显示不正确的问题 
+* iOS平台修复wgt/wgut更新时如果模块配置不一致可能导致失败的问题 
+* iOS平台修复启动第三方应用可能不触发pause/resume事件的问题
+
+####MUI
+>* 【重要】Hello MUI新增列表到详情最佳实践模板，演示窗口动画期实现详情页渲染，教程参考：[http://ask.dcloud.net.cn/article/12575](http://ask.dcloud.net.cn/article/12575)
+* Hello MUI新增原生版本图片轮播示例，教程参考：[http://ask.dcloud.net.cn/article/12557](http://ask.dcloud.net.cn/article/12557)
+* Hello MUI新增原生版本透明渐变导航示例，教程参考：[http://ask.dcloud.net.cn/article/12556](http://ask.dcloud.net.cn/article/12556)
+* 单webview下拉刷新支持在mui.init()方法中配置
+* Hello MUI中单webview下拉刷新示例，增加上拉加载功能演示
+* Hello MUI升级为沉浸式
+
+####流应用
+>* 金立手机流应用上线，rom级的支持，完美体验。参考[http://mp.weixin.qq.com/s/heWcuLhakJPx5wKoqY5ncQ](http://mp.weixin.qq.com/s/heWcuLhakJPx5wKoqY5ncQ)
+
+###8.1.3.201705121932
+
+####IDE
+>* 解决有时不能正常启动的问题
+* 解决夜间模式下的一些显示问题
+* 解决编辑器有时没有着色完全的问题
+* 解决有时浏览器运行后页面没有刷新的问题
+* 解决windows下一些快捷键有时不能使用的问题
+* 解决启动后有时不断弹出"保存工作空间失败"错误提示的问题
+* 解决启动后边改边看浏览器有时没有自动预览当前编辑文件的问题
+* 解决打开多个HBuilder窗口后有时切换视图会弹出错误提示的问题
+* 解决manifest.json中配置iPhone3启动图片后编辑器可能报错的问题
+* 解决从文件夹创建项目时因node_modules目录下文件过多导致卡顿崩溃的问题
+* 解决系统配置SASS_BINARY_PATH环境变量后可能导致格式化功能无法使用的问题
+* 升级emmet的snippets
+* 添加拖动编辑器tab到HBuilder窗口外时自动创建一个新的窗体的功能
+
+####App
+>* Android平台修复地图滑动卡顿的问题
+* Android平台修复地图POI搜索后不显示数据的问题
+
+####MUI
+>* 解决mui.openWindowWithTitle打开远端未使用mui的页面时，点击左上角返回按钮报错的问题
+* 解决透明导航栏和区域滚动一起使用时，透明渐变失效的问题
+* 解决Hello MUI中三级联动选择器，选择海外会显示undefined的问题
+* mui.fire(webview, event, data)方法，data参数支持数组类型
+
+###8.1.2.201704281714
+
+####IDE
+>* 优化启动速度
+* 解决html中某些情况下输入双引号后回车选中提示候选项后标签被误删除的问题
+* 解决某些情况下创建临时文件时自动补充上一个临时文件内容的问题
+* 解决预编译后生成的新文件没有及时在项目管理器中显示的问题
+* 解决mac下退出HBuilder时界面可能长时间无响应的问题
+* 解决流应用发布有时无法打开更新模式选择框的问题
+* 解决启动后无法自动打开上次编辑文件，显示未能实例化编辑器类的问题
+* 原生App打包添加开发者证书过期、mobileprovision文件缺失aps推送能力的校验
+* manifest.json编辑器添加图标、启动图等png文件合法性的校验
+
+####App
+>* Android平台修复图片压缩可能引起程序崩溃的问题
+* Android平台修复设置手动关闭Splash界面也可能会在首页加载完成后自动关闭的问题 
+* Android平台修复在小米手机上二维码中调用开启闪光灯可能失效的问题 
+* Android平台修复Webview子窗口隐藏(hide)后再添加到父窗口后第一次调用show方法可能无法显示的问题 
+* iOS平台修复父子Webview嵌套时软键盘在adjustResize模式弹出时显示不正确的问题 
+* iOS平台修复原生View控件添加到Webview窗口后未跟随窗口的关闭而销毁的问题 
+* iOS平台修复Webview窗口无法加载URL地址中包含中文的问题
+
+###8.1.0.201704101430
+
+####IDE
+>* 优化启动速度
+* 添加目录搜索功能(在项目管理器中选择一个目录点右键)
+* 添加上下移动行在部分情况下自动缩进的功能
+* js格式化时添加是否能正确格式化的校验,失败时不再修改文件并给出提示
+* 解决js格式化可能在<<后添加多余<的问题
+* 解决less格式化会在>、&后添加多余空格的问题
+* 解决因折叠引起的横向滚动条问题
+* 解决mac下登录界面显示时间太短的问题
+* 解决在某些Mac环境下启动会弹出报错提示的问题
+* 解决原生App打Android包时可能提示图片不存在导致打包失败的问题
+* 解决manifest.json中配置iPhone3，安卓mdpi、ldpi的启动图片后编辑器可能报错的问题
+* 还原manifest.json编辑器中iPhone4的启动图片配置
+
+####App
+>* 【重要】新增支持nativeobj.view的draw方法，可批量高效率绘制原生界面
+* 新增支持nativeobj.view设置透明区域、绘制gif图片、加载网络地址的图片等功能
+* 【重要】新增支持配置Webview的navigationbar的返回键、底部分割线，以及标题自动从HTML的title节点读取的功能
+* 【重要】新增调用系统分享API（plus.share.sendWithSystem），Android上可废除Native.js方案，iOS补充系统分享能力
+* 新增应用splash界面关闭事件（splashclosed）及查询splash界面是否存在API（plus.navigator.hasSplashscreen） 
+* 新增支持actionSheet选择框对象，可通过其close方法手动关闭选择框 
+* 新增支持设置actionSheet选择框上按钮的文字颜色 
+* 新增支持设置'circle'样式下拉控件的颜色 
+* 新增支持设置Webview窗口drag事件的回调频率 
+* Android平台新增支持设置Webview窗口截屏图片的位深 
+* Android平台更新个推推送SDK版本（2.10.2.0） 
+* Android平台修复应用全屏显示后弹出软键盘可能遮盖编辑框的问题 
+* Android平台修复动态设置'circle'样式下拉刷新控件参数可能不生效的问题 
+* Android平台修复原生View控件可能被其它同层级Webview窗口遮盖的问题
+* Android平台修复应用设置为沉浸式后，部分情况下软键盘弹出造成页面下移的问题
+* iOS平台修复plus.runtime.openFile不支持相对路径的问题 
+* iOS平台修复录音时返回到前一个页面可能出现应用卡死的问题 
+* iOS平台修复Webview窗口多层嵌套后可能引起drag操作不触发的问题 
+* iOS平台修复横竖屏切换可能导致界面显示错乱的问题
+
+###8.0.2.201703061842
+
+####IDE
+>* 支持HTML中script标签属性type="text/babel"时es6代码的高亮和提示
+* 完善ES6功能（大纲显示、constructor代码块提示）
+* 解决windows下窗口最大化后最小化再还原窗口时可能异常卡顿的问题
+* 解决html编辑器中选择一段注释代码后回车可能无法正确换行的问题
+* 解决真机运行控制台有时候乱码的问题
+* 解决代码提示设置ALT+数字选择不及时生效的问题
+* 解决首次启动时用户配置数据可能在下次启动时丢失的问题
+* 解决App打包时没有校验项目中文件名是否包含全角字符的问题
+* manifest编辑器添加应用描述、Android平台192大小图标的可视化配置
+* 流应用发布时更新模式选择界面添加对默认模式iOS平台不推荐的描述
+
+####MUI
+>* mui新增mui.openWindowWithTitle()方法，支持nativeObj绘制标题栏
+* mui.openWindow()方法支持通过options -> show ->event 参数配置新webview显示时机，默认为titleUpdate事件时显示
+* mui.openWindow()方法支持通过options -> show -> extras 参数配置新Webview窗口动画是否使用图片加速
+* 解决Hello MUI首页在非plus环境下点击无法跳转的bug
+
+###8.0.1.201702172043
+
+####IDE
+>* 解决css有时回车没有自动缩进的问题
+* 解决manifest.json编辑器中个推、小米推送可以同时选择的问题
+
+####App
+>* Android平台修复应用全屏后触发原生交互行为导致自动切换到非全屏状态的问题
+* Android平台修复Bitmap对象在应用资源不解压直接运行模式下load方法无法加载图片的问题
+
+####MUI
+>* 解决Hello MUI首页在非plus环境下点击无法跳转的bug
+* Hello MUI底部选项卡-div模式示例，禁用bounce回弹，避免上下滑动时，底部选项卡跟着webview一起滑动的bug
+
+###8.0.0.201702142318
+
+<font  color=#000  face="微软雅黑">**必读：2017，致开发者的一封信。内含HTML5+性能优化的重要策略更新[http://ask.dcloud.net.cn/article/1147](http://ask.dcloud.net.cn/article/1147)**</font>
+####IDE
+>* 【重要】新增对es6语法提示、语法校验、格式化的支持（可在新建项目界面和项目右键->"属性"->"语法&框架"界面中配置项目的javaScript版本）
+* 解决less编辑器没有折叠的问题
+* 解决css、js右键菜单压缩异常的问题
+* 解决编辑外部文件时不显示折叠的问题
+* 解决索引进度有时会卡在校验阶段的问题
+* 解决css语法校验错误提示的位置不正确的问题
+* 解决内置web服务器有时因为文件损坏无法启动的问题
+* 解决script、style起始标签后回车没有正确缩进的问题
+* 解决删除项目时可能导致项目内已打开文件无法关闭的问题
+* 解决打开新编辑器时搜索框内没有显示上次替换内容的问题
+* 解决less、scss格式化会将");和');格式化为"))和'))的问题
+* 解决有时打开manifest编辑器后没有提示已存在的语法错误的问题
+* 解决关闭HBuilder时触发边改边看浏览器中注册的onbeforeunload事件导致无法关闭的问题
+* 解决原生App打包时IOS开发者证书的AppID和 Google开发者证书的 App包名可以不填写的问题
+* js格式化添加同行花括号是否换行的选项
+* 废弃manifest编辑器中iPhone3、4，安卓mdpi、ldpi的启动图片配置
+* 预编译功能添加表示文件所在目录名称的变量FileDirName, 并修改界面上的变量说明文字为可选择复制
+
+####App
+>* 【重要】强化新增plus.nativeObj.View，支持区域重绘，即通过id更新绘制内容（drawBitmap/drawRect/drawText）、支持动态更新控件属性（setStyle） 
+* 【重要】新增Webview窗口支持原生导航栏控件（navigationBar），支持manifest中配置首页的navigationBar。navigationBar在js层也是nativeObj.View对象，可再次自由绘制定义。建议非必要不使用双webview模式的webview title，而改用原生title
+* 【重要】新增下拉刷新样式（type:'circle'），支持在单Webview中指定顶部偏移位置实现下拉刷新效果 
+* 【重要】新增Webview和nativeObj.view的原生拖拽（drag）功能，支持左右滑动切换Tab页面及跟手式webview拖动 
+* 【重要】新增双首页配置（manifest->plus->secondwebview），加速首页为双webview模式时的应用启动速度 
+* Android平台修复a链接中sms导致异常崩溃的问题 
+* Android平台修复plus.runtime.openFile打开不存在的文件未触发错误回调的问题 
+* Android平台调整actionSheet显示效果：调整文字颜色及按下背景色，去掉标题栏点击效果 
+* Android平台更新微信SDK版本（3.1.1） 
+* Android平台修复在5.0及以上版本input（type='file'）标签点击可能无效的问题 
+* Android平台修复应用退出时可能先显示空白界面的问题 
+* Android平台修复Webview窗口以dock方式添加子控件后旋转屏幕可能导致显示不正常的问题 
+* Android平台修复多次调用plus.zip.compress压缩图片可能出现失败的问题 
+* iOS平台调整默认关闭ATS功能，允许访问非https网络数据（Appstore审核策略已调整）
+* iOS平台修复WKWebview内核video标签不支持页面内播放（非全屏）的问题 
+* iOS平台修复使用native.js判断是否安装指定程序返回值不正确的问题
+* 修复Webview窗口setJsFile方法载入JS代码中的变量在页面JS无法直接访问的问题
+* Hello H5+ 新增原生控件（plus.nativeObj.View）动画演示示例
+* Hello H5+ 修复iOS平台plus提前生效（DOM构造前）导致Audio和Camera页面打开无法加载上次数据的问题
+
+####MUI
+>* 【重要】Hello MUI首页取消父子webview，变更为同屏单webview，通过navigationbar配置标题栏，并使用nativeObj绘制图标
+* 【重要】Hello MUI打开新窗口时，取消模板方案，改用单webview+nativeObj方案，节省资源开销，并解决滚动条通顶的问题
+* 【重要】Hello MUI在顶部选项卡+多webview模式下，支持左右拖动切换webview
+* 【重要】Hello MUI支持单webview下拉刷新示例
+* 【重要】Hello MUI新增nativeObj绘制标题栏示例
+* Hello MUI首页支持原生拖拽显示/隐藏侧滑菜单页
+* 解决Hello MUI中picker（选择器）页面，三级联动示例中，部分省市关系错乱的问题
+
+###7.6.5.201612301621
+
+####IDE
+>* 解决有时保存文件会弹出异常错误提示的问题
+* 解决less格式化有时会在变量左右添加双引号的问题
+* 解决Mac版真机运行不支持iPad Pro模拟器的问题
+* 解决某些Windows平台缺少依赖库导致无法删除文件的问题
+* 解决有时会弹出"定期工作空间保存遇到问题"错误提示的问题
+* 解决默认php编辑器不支持格式化却显示"整理代码格式"菜单,并且在执行格式化后会导致代码混乱的问题
+
+####App
+>* 【重要】更新高德地图、百度地图、微信等第三SDK，支持https连接
+* Android平台修复获取设备屏幕逻辑分辨率不准确的问题
+* Android平台修复Webview作为子窗口使用fade-in动画效果显示不正常的问题
+* Android平台修复调用微信登录可能无法触发回调的问题
+* iOS平台补齐讯飞语音支持设置识别语言、标点符号功能
+* iOS平台修复关闭子Webview窗口可能导致页面卡死的问题
+* iOS平台修复个推发送透传消息启动可能导致异常退出的问题
+
+###7.6.4.201612241943
+
+####IDE
+>* 解决less、scss编辑器代码提示无法显示的问题
+* 解决less、scss编辑器中px等单位着色不正确的问题
+* 解决px换rem功能启用后有时不生效的问题
+* 解决预编译器设置数据有时丢失的问题
+* less、scss编辑器添加px转rem的提示功能
+
+####App
+>* 【重要】修复android4.4以下版本输入框获得焦点时软键盘弹出又缩回的问题
+
+###7.6.3.201612161809
+
+####IDE
+>* 【重要】优化代码编辑性能,减少编辑卡顿
+* 代码助手提示改为异步计算,减少对编辑的阻塞
+* manifest.json编辑器添加小米登录、小米推送的可视化配置
+* 内置web服务器使用的内网地址变更后优先切换到新的内网地址而非回环地址
+* 解决索引时可能对同一文件多次索引的问题
+* 解决不关闭升级提示消息直接重启会卡住的问题
+* 解决边改边看浏览器无法显示过长URL的二维码的问题
+* 解决Mac版less等预编译执行命令失败的问题
+* 解决原生App打包当mobileprovision证书中applicationIdentifier包含*时校验不准确的问题
+* 解决json文件默认打开方式不正确的问题
+
+####App
+>* 新增小米推送和小米登录服务,提升miui上的消息推送成功率
+* 新增Webview窗口对象支持预加载css资源（setCssFile/setCssText） 
+* 新增Webview窗口对象支持区域截图（WebviewDrawOptions.clip） 
+* 新增Webview窗口对象支持在指定其它窗口后显示（showBehind） 
+* 新增plus.nativeObj.Bitmap对象支持回收图片方法（recycle），降低内存使用量 
+* Android平台优化视频全屏旋转效果，增加WebviewStyles.videoFullscreen控制 
+* Android平台新增新浪微博分享支持网络图片 
+* Android平台更新讯飞语音识别SDK(1.1102),支持设置识别语言、标点符号等 
+* Android平台更新个推推送服务SDK(2.9.3.0) 
+* Android平台修复新浪微博分享空文本时可能导致应用无响应的问题 
+* Android平台修复禁用应用录音权限时调用录音API可能导致无响应或崩溃的问题 
+* Android平台修复应用资源在不解压模式下Waiting等待框可能无法显示图标的问题 
+* Android平台修复wgt/wgtu升级时manifest.json文件中appid与当前应用appid不一致时未返回失败的问题 
+* iOS平台补齐Webview窗口对象支持拦截替换页面资源（overrideResourceRequest） 
+* iOS平台优化扩展API注入时机，支持在plusready事件之前调用5+ API 
+* iOS平台修复友盟统计eventTrig不支持设置空标签的问题 
+* iOS平台修复应用禁止访问相册权限后gallery API返回错误码不对的问题
+
+####MUI
+>* mui.toast()支持在plus环境下使用div模式，参考[http://dev.dcloud.net.cn/mui/ui/#toast](http://dev.dcloud.net.cn/mui/ui/#toast)
+* Hello MUI首页退出时使用双行toast提醒模式，用户可点击toast反馈使用问题
+
+###7.6.2.201611251335
+
+>* 【重要】大幅度优化构建性能
+* App打包时增加对Google开发者证书的App包名不能以大写字母开头的校验
+* 解决搜索框（Ctrl+H）在存在当前项目的情况下,有时却不能选择"当前项目"为搜索范围的问题
+* 解决边看边改浏览器内使用复制粘贴等快捷键时会触发编辑器内的相同快捷键的问题
+* 解决有时启动后没有获取焦点的问题
+* 解决manifest编辑器有时修改后不生效的问题
+* 解决Windows版有时无法创建桌面快捷方式的问题
+* 解决有时暂不登录后无法正常启动的问题
+
+###7.6.0.201611071800
+
+####IDE
+>* 【重要】**Mac版支持iOS10真机运行**,解决32位Windows系统下iOS真机运行无法识别手机的问题
+* 解决macOS Sierra系统下HBuilder某些情况下崩溃的问题
+* 添加px转rem的提示功能，可在**工具**>>**选项**或**右键项目**>>**属性**下的**代码助手设置**中配置。参阅[http://ask.dcloud.net.cn/article/982](http://ask.dcloud.net.cn/article/982)
+* 解决css中rem没有正确着色的问题
+* 使用转到定义功能（alt+鼠标左键）时，如果下划线内容是指向本地文件的链接(href、src、url等), 则显示文件的具体路径
+* 新增App打包时会检验iOS开发者证书的AppID是否包含特殊字符，并过滤两侧的空白字符
+* 解决没有配置splash的流应用非首次发布测试版会带上默认splash的问题
+* 解决外置服务器设置为**URL不包含项目名**时会导致边改边看浏览器无法自动刷新的问题
+* 优化Aptana PHP插件代码提示的性能
+
+####MUI
+>* 新增按钮点击后显示loading状态的功能，参考：[http://dev.dcloud.net.cn/mui/ui/#loading_btn](http://dev.dcloud.net.cn/mui/ui/#loading_btn)
+* H5模式的对话框，支持在回调函数中return false来阻止对话框关闭
+* 数字输入框支持通过setValue()方法动态设置新值，例如：mui(selector).numbox().setValue(5)
+* 修复百度广告模板显示异常的bug
+* 修复登录模板中注册成功后，无法登录的bug
+* 修复5+下拉刷新场景，子webview先关闭、再创建后，下拉刷新不生效的bug
+
+###7.5.1.201610112114
+
+>* Android平台修复nativeUI中actionSheet选择框样式不正确的问题
+* Android平台修复调试基座在Android4.2及以下设备可能无法正常调用5+ API的问题
+
+###7.5.0.201609282315
+
+####IDE
+>* 【重要】Windows版支持iOS10真机运行，Mac版可使用xcode iOS10模拟器真机运行，真实设备版仍在开发中。
+>>如更新后仍无法使用：
+* 请在工具-插件安装中，安装iOS链接插件，如已安装请卸载后重新安装，重启HBuilder并重试
+* 检查是否安装有老版本的iTools，如有安装，请升级到最新版，未安装则无需处理
+	
+> * 解决卸载iTools后iPhone无法识别的问题
+* 解决安装php插件的情况下，php文件的默认编辑器没有设置为插件中php编辑器的问题
+* 解决emmet在php中不起作用的问题
+* 解决安装插件再卸载后，再次安装插件时可能一直提示安装失败,需要重试的问题
+* 解决"查看App打包状态"界面下载完成后总显示"正在下载"并在重启后重新下载的问题
+* 解决编辑器启用自动换行后编辑时竖向滚动条可能重置位置的问题
+* 解决Windows版在边看边改浏览器中按alt键可能导致界面卡死的问题
+* 解决HBuilder进程端口被其他程序占用导致无法启动的问题
+* 解决编辑器搜索框全选快捷键无法使用的问题
+* 解决manifest.json编辑器在某些windows系统下内容无法显示的问题
+* 解决某些情况下js代码追踪导致栈溢出的问题
+
+####App
+>* 【重要】修复在Android6.0及以上可能导致应用卡死的问题 
+* 【重要】Android平台新增提前注入5+ API ，支持在plusready事件前调用，具体参考[http://ask.dcloud.net.cn/article/921](http://ask.dcloud.net.cn/article/921)
+* 更新新浪微博分享SDK至最新版本，支持编辑分享内容 
+* 修复Webview子窗口通过setStyle方法动态更新样式可能不生效的问题 
+* Android平台新增自动消失提示消息（toast）支持配置显示图标的对齐方式 
+* Android平台修复百度地图poi搜索可能导致程序崩溃的问题 
+* Android平台修复下载管理模块调用clear方法清除下载任务可能会删除已下载文件的问题 
+* Android平台修复Webview窗口动态设置vertical属性可能不生效的问题 
+* Android平台修复软键盘显示后再弹出confirm对话框时点击返回键导致软键盘消失的问题 
+* Android平台修复在部分设备上调用微信登录时（微信未登录）直接返回键取消可能导致程序崩溃的问题 
+* Android平台修复Webview窗口通过getUrl方法获取的地址可能不正确的问题 
+* Android平台修复plus.runtime.openFile方法传入空地址可能弹出应用选择列表的问题 
+* Android平台修复6.0及以上版本等待框设置拦截处理返回键（back:"none"）无效的问题 
+* iOS平台修复XHR请求在多次请求返回数据时可能引起406错误的问题 
+* iOS平台修复应用切换到后台事件（pause）未及时触发的问题 
+* iOS平台修复百度地图多次放大缩小操作后地图上标点可能出现视觉偏差的问题 
+* iOS平台修复设置应用后台定位可能无效的问题 
+* iOS平台修复8.x版本上调用Webview窗口的close方法后切换程序到后台可能导致程序异常的问题 
+
+###7.4.2.201609122322
+
+>* 新增简易php编辑器，在不安装aptana php插件时，对php文件着色及提供简单提示（如使用aptana的php编辑器卡顿，可卸载aptana php插件）
+* 解决windows下边改边看浏览器有时无法显示任何内容的问题
+
+###7.4.1.201608301459
+
+####IDE
+>* 解决Mac版浏览器运行有时无法启动Safari、Firefox的问题
+* 解决整理代码格式（格式化）时，如使用空格缩进，可能导致script或style标签内缩进异常的问题
+* 解决边改边看模式下启动后编辑器没有默认获取焦点的问题
+* 解决启动后编辑器垂直滚动条位置有时不正确的问题
+* 解决某些情况下热退出保存文档内容不正确的问题
+
+####MUI
+>* 修复使用login模板开发的登录注册会导致无法正常登录的问题
+
+###7.4.0.201608102229
+
+####IDE
+>* 【重要】增加热退出功能（未保存的文件，下次启动时会自动恢复）
+* 【重要】修改项目导入、构建策略，解决导入大项目会导致HBuilder卡死的问题
+* 增加react框架提示支持（感谢热心网友“半亩农田”的分享，详见[http://ask.dcloud.net.cn/article/54](http://ask.dcloud.net.cn/article/54)）
+* 控制台增加重启按钮,添加清理控制台日志的快捷键
+* less、scss文件打开时编辑区域右键增加编译菜单（可在工具->选项->常规->快捷键中搜索“清除日志文件”自主配置），js、css文件文件打开时编辑区域右键增加压缩菜单（可在工具->选项->常规->快捷键中自主配置）
+* 解决findbar（搜索条）搜过内容过长时导致替换输入框过窄的问题，优化findbar（搜索条）点击、切换的显示效率
+* 解决新建Hbuilder窗体，再关闭后，操作原先的窗体出现错误的问题
+* 解决真机联调时，某些情况下，控制台显示不正确的问题（如跳转到边改边看的控制台）
+* 解决某些情况下，html的class属性通过alt+点击无法正确跳转的问题
+* 解决真机联调控制台处于激活状态时，无法通过ctrl+r关闭、启动真机联调的问题
+* 解决某些界面在高分屏下显示错位的问题
+* 解决Android真机运行有时候会卡死的问题
+
+####App
+>* 更新友盟统计SDK至最新版本，自定义事件数值支持键值对数据 
+* Android平台新增创建本地推送消息被点击后支持启动指定appid的5+应用或流应用
+* Android平台修复微信登录可能导致程序崩溃的问题 
+* Android平台修复通过推送消息启动时通过plus.runtime.arguments获取参数不正确的问题 
+* Android平台修复获取文件夹信息（getMetadata）时返回数据不正确的问题 
+* Android平台修复百度地图调用POI搜索失败时没有触发错误回调的问题 
+* Android平台修复调用原生窗口动画（plus.nativeObj.View.startAnimation）时横竖屏切换导致程序异常崩溃的问题 
+* Android平台修复Webview窗口通过setStyle方法更新backgrund属性无法生效的问题
+* Android平台修复Webview窗口下拉刷新雪花图标和文字在部分设备上没有水平居中的问题
+* iOS平台补充支持原生窗口动画及原生窗口控件（plus.nativeObj.View） 
+* iOS平台完善IAP支付的货币类型数据
+
+####MUI
+>* Hello mui新增一批常用扩展图标,参阅[http://dev.dcloud.net.cn/mui/mui-icon-extra/index.html](http://dev.dcloud.net.cn/mui/mui-icon-extra/index.html)
+* 优化mui.ajax对applicaiton/json请求格式的支持
+* 解决Hello mui图文表格下的左右滑动分页，在iOS平台无法点击分页按钮的bug
+* 解决login模板自动登录时，特定场景下显示用户名失败的bug
+* 解决下拉刷新的auto属性在Android平台失效的bug 
+
+###7.3.2.201607212211
+
+> 修复首次发布流应用为正式时，没有提示用户向360发申请邮件的问题
+
+###7.3.1.201607202016
+
+> Android平台修复应用首页无法强制开启硬件加速的问题
+
+###7.3.0.201607100920
+
+####IDE
+>* 【重要】 DCloud喜迎B轮融资，7月11日至15日举行抽奖回馈开发者，活动入口见最新版HBuilder菜单-帮助-活动
+* 支持临时文件，在编辑器标题栏空白处双击可新建一个临时文件，可在右下角切换编辑器用于代码高亮提示
+* 添加js、html、css代码格式化自定义配置功能（工具-选项-HBuilder-整理代码格式配置）
+* 项目下的node_modules目录将作为项目外部组件加载，解决因此目录过大造成刷新缓慢或卡死的问题
+* css语法架构支持css方法参数提示，如可提示rgb()、calc()括号内的参数类型
+* 优化正式发布流应用界面流程
+* 云端打包使用苹果证书制作iOS原生安装包时，支持无密码的证书
+* 解决jquery等复杂js无法正确显示大纲的问题
+* 解决由于node服务响应超时导致有时html、js、css格式化不生效的问题
+* 解决Laravel框架的某些php文件索引卡死的问题
+* 解决某些版本的XCode iOS模拟器无法识别的问题 
+* 解决将资源管理器里的文件以HBuilder.exe打开会导致已打开的HBuilder重启的问题
+
+####App
+>* 原生View控件（plus.nativeObj.View）新增支持添加到Webview窗口 
+* 等待框（Waiting）新增支持配置loading图标大小 
+* 二维码扫描（Barcode）新增支持配置扫描成功后是否震动和播放提示音
+* Android平台Webview新增支持设置缓存模式（cachemode）功能 
+* Android平台原生view控件（plus.nativeObj.View）新增动画效果及事件监听 
+* Android平台修复应用首页可能拦截href跳转的问题 
+* Android平台修复文件上传（Uploader）未按照调用addData/addFile调用顺序提交数据的问题 
+* Android平台修复等待框不显示图片时文字未垂直居中显示的问题 
+* Android平台修复安装wgtu文件格式错误时提示信息不准确的问题 
+* Android平台修复页面中存在iframe时可能导致返回键监听失效的问题 
+* Android平台修复Webview窗口动画可能导致显示不正确的问题 
+* Android平台修复Webview窗口设置窗口大小后可能计算不正确的问题 
+* iOS平台更新支付宝、个推、友盟等SDK支持IPv6-only 
+* iOS平台修复微信登录返回可能提示SyntaxError: Unexpected identifier错误的问题 
+* iOS平台修复百度地图标点不设置图标setIcon无法显示及图标不支持相对路径的问题 
+* iOS平台修复应用切换到后台执行plus.storate.setItem引起脚本异常的问题 
+* iOS平台修复应用切换到后台在无网情况下可能出现异常崩溃的问题 
+* iOS平台修复在iPhone6(s) Plus上可能无法识别部分条码（plus.barcode.CODABAR）的问题
+* iOS平台修复Webview窗口添加子窗口默认不是绝对定位（absolute）的问题
+
+####MUI
+>* 提前mui.openWindow显示webview的时机，默认在titleUpdate事件触发即开始显示webview，如页面复杂造成白屏可适当延时
+* 新增cardview（卡片视图）控件，参阅：[http://dev.dcloud.net.cn/mui/ui/#cardview](http://dev.dcloud.net.cn/mui/ui/#cardview)
+* 修正广告模板中广告显示失败的bug，集成教程参阅：[http://ask.dcloud.net.cn/article/712](http://ask.dcloud.net.cn/article/712)
+* 修正问题反馈模板基座版本号上报错误的bug
+* 优化页面顶部进度条默认显示在标题栏下方，参阅：[http://dev.dcloud.net.cn/mui/ui/#progressbar_tips_01](http://dev.dcloud.net.cn/mui/ui/#progressbar_tips_01)
+
+###7.2.2.201606152019
+
+>* 紧急修复iOS真机联调无法安装基座包的问题
+* 修复分享仅设置QQ时，打包后失效的问题
+
+###7.2.1.201606142028
+
+####IDE
+>* 修复使用7.2.0版本开发App过程中，某些api不提示的问题 
+* 解决某些情况下，因node服务未成功启动导致的无法格式化（整理代码格式）的问题
+* 解决json文件中，包含"\\"结尾的字符时，校验不正确的问题
+
+#####App
+>* Android平台修复Webview窗口中无法通过location.href操作页面跳转的问题 
+* iOS平台修复调用定位API可能引起Maximum call stack size exceeded错误的问题 
+* iOS平台更新到最新版本百度地图SDK（V3.0.0），支持ipv6-only
+
+####MUI
+>* mui.back支持App首页退出逻辑，默认实现：首次按下back键弹出toast提醒，2秒内再次按下back键则退出应用，开发者可通过重写mui.back方法自定义退出逻辑
+
+###7.2.0.201606042418
+
+####IDE
+>* 【重要】强化node插件体系，补充js/css压缩插件、less/sass编译插件。插件安装界面区分了eclipse插件和node插件
+* 新增快捷键调起node等cmd命令功能，参阅[http://ask.dcloud.net.cn/article/655](http://ask.dcloud.net.cn/article/655)
+* 新增HTML文件模板组功能，新建文件时可以将一组html/js/css统一作为一个模板创建。参阅[http://ask.dcloud.net.cn/article/654](http://ask.dcloud.net.cn/article/654)
+* 增加CSS @rule提示
+* 编辑器标签添加"关闭左/右侧"的功能 
+* 优化html文件中js代码的格式化
+* 优化构建，默认忽略项目下node_module目录及其子目录的构建
+* 解决某些情况下已经折叠的代码在编辑时会自动展开的问题
+* 解决有时真机联调控制台与边看边改控制台冲突导致显示错误的问题
+* 解决某些情况下将目录拖入HBuilder后，HBuilder自动创建的项目不正确的问题
+* 解决某些情况下HBuilder启动失败的问题
+* 解决编辑器中有时快捷键失效的问题
+* 解决某些情况下编写代码时出现卡顿的问题
+* 解决emmet的tab功能在html中不适当的地方生效的问题
+* 解决quickoutline(在编辑器中使用ctrl+o激活的大纲)内容高度固定无法拉伸的问题
+* 解决云打包使用IEP证书制作原生App时，正确的AppID与profile文件有时会被误校验为错误的问题
+* 云打包制作ipa包时,增加项目下是否有".app"结尾目录的校验（这样的ipa包会被appstroe拒收）
+* 解决某些情况下流应用无法被正确提交的问题
+* 解决MAC系统下流应用快码无法以一个新文件保存到本地的问题
+
+####App
+>* 新增XmlHttpRequest对象overrideMimeType方法，可重写服务器返回数据MIME类型 
+* 修复Uploader上传文件不支持https协议的问题 
+* Android平台新增原生view控件，可写字、贴图、做动画（plus.nativeObj.View） 。
+* Android平台更新个推最新SDK版本（2.7.0.0） 
+* Android平台修复在特定情况下Webview窗口不触发loaded事件的问题 
+* Android平台修复在特定情况下Webview窗口动画闪烁的问题 
+* Android平台修复在6.0系统可能出现Webview窗口大小计算不准确的问题 
+* Android平台修复地图控件与二维码扫描控件同时存在时可能出现显示冲突的问题 
+* Android平台修复在特定情况下无法获取定位数据的问题 
+* Android平台修复Gallery在达到最大选择数目时无法取消图片选中状态的问题 
+* iOS平台新增查询应用的系统权限功能（plus.navigator.checkPermission） 
+* iOS平台修复等待框的loading图标不支持相对路径的问题 
+* iOS平台修复Uploader上传进度回调中无法更新界面的问题
+
+####MUI
+>* mui新增透明渐变nav bar导航栏，动感酷炫，且可用于解决单webview滚动条通顶而双webview耗费内存的问题
+
+####云服务
+>* 问题反馈，三方问题反馈不支持收集底层日志，DCloud官方推出问题反馈，具体参考：[http://ask.dcloud.net.cn/article/653](http://ask.dcloud.net.cn/article/653)
+* 启动时间统计分析，在dev.dcloud.net.cn可以查看app在不同终端上的启动时间，包括超时和失败情况。
+
+###7.1.2.201605102311
+
+>* 紧急修复使用iOS云端打包时，使用正确的证书，仍然报证书校验失败的问题
+* 修复html区域中，选中内容开头为空行的代码使用ctrl+/快速注释时，注释结果不正确的问题
+
+###7.1.1.201605062345
+
+####IDE
+>* 修复处于边改边看模式下，新建含mui资源的工程，mui相关代码不提示的问题
+* 修复某些情况下压缩后的css内容无法提示，也无法转到class定义处的问题
+* 解决某些情况下在HTML区域编写代码时，中文符号被误转为英文符号的问题
+
+####App
+>* Android平台修复Webview窗口动画可能显示不正常的问题 
+* Android平台修复下载模块可能会导致异常的问题 
+* Android平台修复等待框的loading图标设置为大图片可能导致显示不正常的问题 
+* Android平台修复在特定情况下plus.nativeUI提示框可能无法显示的问题 
+* iOS平台修复在iPhone SE设备上启动图片显示不正常的问题 
+* iOS平台修复等待框的loading图标无法支持2x/3x倍图片的问题
+
+###7.1.0.201604281942
+
+####IDE
+>* 【重要】你会把;敲成；吗？HBuilder新增中文符号免干扰功能，自动替换中文符号！请参阅[http://ask.dcloud.net.cn/article/621](http://ask.dcloud.net.cn/article/621)
+* 【重要】html模板内，即{{}}里，增加单词提示的功能，提示曾经在{{}}里输入过的单词,参阅[http://ask.dcloud.net.cn/article/623](http://ask.dcloud.net.cn/article/623)
+* 添加向下滚动到代码底部后仍可继续滚动的功能
+* 解决html中template标签格式化异常的问题
+* 解决jsp文件格式化结果不正确的问题
+* 解决系统设置代理后可能导致内置web服务器启动缓慢的问题
+* 解决系统设置代理后可能导致边改变看浏览器显示无法找到文件的问题
+* 解决某些机器上启动后界面会卡死无响应的问题
+* 解决重新生成索引时,没有清除之前的数据造成语法助手提示结果为空的问题
+* 解决代码中包含/**/空注释时，语法助手内容为空的问题
+* 解决ios模拟器某些版本无法识别的问题
+* 解决真机运行过程中console.log内容过长时报java.io.EOFException异常的问题
+* 解决android6上真机运行日志异常的问题
+* 内置web服务器修改地址或端口后不用再重启HBuilder即可直接生效
+* web服务器设置界面（工具-选项-HBuilder-Web服务器）增加JSP类、ASP类文件的web服务器选择的设置,参阅[http://ask.dcloud.net.cn/article/624](http://ask.dcloud.net.cn/article/624)
+* 语法库：新增Edge浏览器语法数据,注：如需在代码助手中查看Edge语法数据，请参阅[http://ask.dcloud.net.cn/article/614](http://ask.dcloud.net.cn/article/614)配置
+* 语法库：补充iOS9+系统下的Safari语法数据
+
+####App
+>* 新增App崩溃时提交错误日志功能。访问dev.dcloud.net.cn可查看
+* 新增相册选择支持按选择顺序返回数据、选择数量限制、历史勾选记录等功能 
+* 新增应用Splash界面6秒超时自动关闭功能 
+* 新增地图支持随Webview窗口滚动及重新计算大小功能 
+* 新增Webview窗口拦截url链接跳转请求功能 
+* 新增二维码扫描控件支持关闭、暂停及自定义界面颜色功能 
+* Android平台优化Webview窗口的默认硬件加速开关策略、新增isHardwareAccelerated方法查询硬件加速是否开启 
+* Android平台修复在部分机器上选择照片返回“User Canceled”的问题 
+* Android平台修复监听定位可能只返回一次数据的问题 
+* Android平台修复百度地图打开定位功能后关闭可能导致崩溃的问题 
+* Android平台修复下载保存的文件存在时重命名文件名称不正确的问题 
+* Android平台修复原生提示框在android6.0设备上显示界面变窄的问题 
+* Android平台修复微信分享图片设置_doc开头路径时可能失败的问题 
+* Android平台修复更新应用资源重启后可能导致显示白屏的问题 
+* iOS平台新增Webview窗口上下滑动速度调节功能（通过WebviewStyles的decelerationRate属性设置） 
+* iOS平台修复点击锚点链接后可能导致打开新Webview窗口加载页面错误的问题 
+* iOS平台修复从阿里云长链接地址下载文件时返回403错误的问题
+
+####MUI
+>* mui新增progressbar(进度条)控件，请参阅[http://dev.dcloud.net.cn/mui/ui/#progressbar](http://dev.dcloud.net.cn/mui/ui/#progressbar)
+* H5版本的dialog控件支持换行（\n）显示
+* 下拉刷新控件新增scrollToBottom()方法
+* Hello MUI 新增左侧选项卡滚动切换示例
+* 修复H5版本的dialog控件显示时，可以滚动底下BODY的bug
+* 完善mui代码块，完整代码块清单。请参阅[http://dev.dcloud.net.cn/mui/snippet/](http://dev.dcloud.net.cn/mui/snippet/)
+* 修复subpages包含空对象时，报错JS异常的bug
+* 修复iOS平台下内容不满一屏时，上拉无法触发上拉加载的bug
+* H5版本的时间日期控件增加beginDate/endDate配置
+* 修复选项卡嵌套导致control-item切换错乱的bug
+
+###7.0.0.201603152331
+
+####IDE
+>* 【重要】强化框架语法提示，补充AngularJS、Bootstrap、jQuery Mobile、jQuery UI、Require.js、Underscore等框架语法提示，参阅[http://ask.dcloud.net.cn/article/570](http://ask.dcloud.net.cn/article/570)
+* 【重要】引入nodejs插件，格式化引擎更换为nodejs插件
+* 增加less、scss文件格式化
+* 提交流应用添加更新模式的选择,参阅[http://ask.dcloud.net.cn/article/550](http://ask.dcloud.net.cn/article/550)
+* 优化部分4k屏下显示异常的界面
+* 解决因应用appid过长导致无法正确显示流应用二维码及其快码的问题
+* 优化流应用发布界面打开速度
+* 解决边改边看会因为地址中参数包含默写特殊字符导致访问失败的问题
+
+####App
+>* 【重要】补充webview的titleUpdate事件，该事件早于loaded，可用于加快窗体显示速度。参阅[http://ask.dcloud.net.cn/article/571](http://ask.dcloud.net.cn/article/571)
+* Android平台更新个推SDK到最新版本（2.7.0）
+* 新增单独设置Webview窗口的错误页面（或不显示错误页面）功能 
+* 新增App启动来源判断plus.runtime.launcher，可判断App被什么启动，包括桌面启动、urlscheme启动、流应用专用的push和扫码启动
+* plus.speech解除科大讯飞日使用数量限制
+* Android平台修复FileEntry/DirectoryEntry对象的copyTo方法在某些情况下可能失败的问题 
+* Android平台修复应用appid中包含字符"."时可能导致程序异常崩溃的问题 
+* Android平台修复百度地图中添加Circle对象时可能导致程序异常崩溃 
+* iOS平台修复微信登录/支付等第三方SDK时可能不触发回调的问题 
+* iOS平台修复Webview对象的getURL方法返回地址未进行urlencode的问题 
+* iOS平台修复Webview对象的侧滑返回事件（popGesture）可能不触发的问题 
+* iOS平台修复文件上传（Uploader）不支持相对路径的问题
+* Hello H5+ 优化点击速度，处理onclick延迟300毫秒的问题
+* Hello H5+ 优化流应用下的表现，完善检查更新、关于界面
+
+####MUI
+>* 修复主动触发下拉刷新时调用两次回调的bug
+* mui(selector)支持返回数组结果集，如支持 mui('li').each()的调用方式
+* Hello MUI 集成银联在线支付示例
+* Hello MUI 优化流应用下的表现，完善检查更新、关于界面
+* 登录模板：完善各种环境判断，节省大量开发者时间。自动判断第三方登录是否配置，自动判断手机有没有微信等三方登陆软件。在HBuilder里新建移动App选登陆模板可体验
+* 建立plusto开源项目，提供HTML5定位自动升级plus定位的方法，参考[https://github.com/dcloudio/plusto](https://github.com/dcloudio/plusto)
+
+####云服务
+>* 上线dev.dcloud.net.cn，第一期仅提供流应用统计运营报表。已上线流应用的开发者可用其提交流应用的账户登陆。
+
+<font  color=#F68736  face="微软雅黑">**DCloud祝大家猴年大吉！**</font>
+###6.9.3.201602062214
+
+####IDE
+>* 优化4k屏显示效果，处理显示异常的界面
+* 优化App页面引用关系，更方便筛选废弃文件
+* 解决某些情况下项目中包含node.js代码时，编辑器卡顿的问题
+* 真机联调基座的默认定位从百度调整为高德
+* 解决Mac版真机联调有时无法识别beta版XCode模拟器的问题
+* 解决设置外置Web服务器时，"URL包含项目名称"选项修改为不包含时，重启会被还原的问题
+* 解决发布快码时使用默认logo不起作用的问题
+* 优化流应用发布流程，将测试平台与正式平台分离
+
+####App
+>* Android平台修复部分机器上无法正确获取电信2G/3G网络状态的问题
+* Android平台修复无法获取地图上折线和多边形覆盖顶点坐标的问题
+* Android平台修复Native.js导入父类而未导入子类时，子类对象无法通过.操作符调用父类分法的问题
+* iOS平台完善支持Webview窗口背景透明功能（plus.webview.WebviewStyle的background属性值设置为transparent
+* iOS平台修复Webview窗口可能导致程序异常崩溃的问题
+* iOS平台修复Webview窗口指定隐藏/关闭动画为"pop-out"无效的问题
+* iOS平台修复后台播放音乐功能失效的问题
+* iOS平台修复plus.maps.openSysMap未正确使用经纬度坐标的问题
+* iOS平台修复二维码扫描在iPad上可能异常崩溃的问题
+
+####HelloH5
+>* 定位演示页面（plus/geolocation.html）补充获取坐标类型数据
+* 地图演示页面（plus/maps_map.html）适配为高德地图数据
+
+###6.9.2.201601052351
+
+>* 解决某些情况下发行为原生安装包/发行为流应用界面无法打开的问题
+* 解决输入中文字体后，Ctrl+Z撤销结果不正确的问题 
+* 解决某些情况下发布快码失败且无错误提示的问题
+
+###6.9.1.201601042307
+ 
+>* 解决HBuilder6.9.0通过菜单"发行"-"制作移动App资源升级包"生成的wgt文件不正确的问题
+* 解决某些情况下HBuilder一直检查升级的问题<br>
+<font  color=#969696  face="微软雅黑" size=2>_已经出现此问题的用户,请强制关闭HBuilder,重新启动后,待HBuilder升级提示弹出后,点击立即更新、查看详情、暂不更新均可,请不要点x关闭这个提示框,也不要等待这个提示框消失<br>
+参阅[http://ask.dcloud.net.cn/article/501](http://ask.dcloud.net.cn/article/501)_</font>
+* 解决配置unpackage文件清单界面某些情况下无法打开的问题
+* 发行为原生安装包时，增加微信、QQ、新浪相关appid(appkey)的一致性校验
+* 发行为原生安装包时，如果有用到支付宝插件，不再需要填写scheme，云端自动生成
+* 优化页面引用关系
+
+<font  color=#F68736  face="微软雅黑">**DCloud祝大家元旦快乐！**</font>
+###6.9.0.201512312340
+
+#### IDE
+>* 新增包体积优化，检测未使用的文件并提示过滤。参考[发行包体积优化指南](http://ask.dcloud.net.cn/article/491)(http://ask.dcloud.net.cn/article/491)
+* 打包策略调整：相同的包不能重复打
+* 新建html文件时，meta里的charset以HBuilder设置中的字符为默认值
+* 优化JSON代码格式化功能，解决json验证单引号兼容问题
+* 增加发布快码功能，参考[快码制作指南](http://ask.dcloud.net.cn/article/492)(http://ask.dcloud.net.cn/article/492)
+* 代码助手提示时增加5+、mui的语法Api地址链接
+* 优化页面引用关系
+* 解决在manifest.json界面ctrl+R无法调起真机运行的问题
+* 解决真机运行时，没有过滤manifest.json中unpackage节点下文件的问题
+* 解决HTML中某些地方js方法不提示的问题
+
+#### App
+>* 修复plus.storage.setItem保存内容为json格式字符串时可能无法正常读取的问题
+* Android平台修复部分机器使用plus.uploader上传文件时可能不触发onStatusChange事件的问题
+* Android平台修复appid中包含‘.’字符可能导致无法运行的问题
+* Android平台修复actionsheet提示框中小写英文字符自动转换大写的问题
+* Android平台Native.js完善支持多维数组参数
+* Android平台Native.js完善支持原生API执行异常自动转换为js异常
+* iOS平台二维码完善支持CODE39、CODE93、CODE128、ITF、CODABAR、RSS14、DATAMATRIX等类型二维码扫描
+* iOS平台修复子Webview窗口可能引起程序异常崩溃的问题
+* iOS平台修复通过通知消息启动应用可能不触发click事件的问题
+
+#### mui
+>* 新增H5版的自绘dialog样式，在plus环境下调用原生对话框，非plus环境下调用div自绘的对话框
+* Hello MUI增加BeeCloud支付集成示例，无服务端也可完成支付全流程
+* 修复openWindow的autoShow:false情况下，连续两次调用页面被显示出来的bug
+* 优化slider控件的滑动性能
+* 新增开源项目[plusto](https://github.com/dcloudio/plusto)(https://github.com/dcloudio/plusto)，plus的扩展能力应用到普通浏览器或与微信等扩展互相转化都通过此开源项目进行
+* Hello MUI增加BeeCloud支付集成示例，无服务端也可完成支付全流程。[教程参考](http://ask.dcloud.net.cn/article/499)(http://ask.dcloud.net.cn/article/499)
+
+###6.8.2.201512111923
+
+>* 解决使用6.8.0及6.8.1版本真机运行卡顿的问题
+* 优化manifest.json文件的“页面引用关系”可视化界面
+* 增加json格式校验，特别的manifest.json文件json格式不正确时，禁用可视化界面
+* 发行为原生安装包、生成本地打包App资源、发行为流应用等发行功能，支持自定义不打包的文件夹/文件。<br>
+操作方式:<br>
+1.打开manifest代码视图<br>
+2.根节点下增加"unpackage"节点，该节点的值为一个数组，开发者可自主在该数组中添加打包时要排除的文件<br>
+例：
+`
+"unpackage":[
+		"js",
+		"forder/test.html"
+]
+`
+项目下相对根目录的js目录和forder目录下的test.html在打包时将会被过滤
+
+###6.8.1.201512032138
+
+>* 紧急修复iOS真机调试基座包无法安装的问题(仅6.8.0存在此问题)
+* Android平台修复Webview窗口关闭后仍然可能通过plus.webview.getWebviewById获取(仅6.8.0存在此问题)
+
+###6.8.0.201512030418
+
+####IDE
+>* 边改边看浏览器支持预览Markdown文件
+* 解决Ctrl+点击选择相同词失效的问题
+* 新增工程文件引用关系管理（原流应用配置文件appstream.json废弃，内容自动合并至manifest的dependencies节点下，请在manifest.json可视化界面操作，维护好工程文件关系就可发布流应用）
+* 浏览器运行支持win10的edge浏览器
+* 解决manifest编辑器若干bug
+* 添加在外部服务器配置是否在url中包含项目名称的功能(工具-选项-HBuilder-web浏览器-外置web服务器中新建或编辑时设置)
+
+####App
+>* iOS平台新增应用内支付功能 
+* iOS平台修复某些情况下plus.webview.getWebviewById方法获取Webview窗口对象失败的问题
+* 修复plus.storage.setItem保存内容中包含某些特殊字符后无法正常读取的问题
+* Android平台修复横竖屏切换后可能导致某些Webview窗口显示不正常的问题
+* Android平台修复Webview加载页面地址中包含特殊字符（如#、?等）可能失败的问题
+* Android平台修复manifest.json文件中包含特殊字符可能导致plus.runtime.getProperty方法失效的问题
+* Android平台修复调整系统字体大小后影响Webview窗口加载页面字体的问题
+* Android平台修复plus.downloader无法使用https协议下载的问题 
+* Android平台修复个推推送透传通知数据中包含特殊字符（如'等）导致无法正常接收的问题
+* Android平台修复Native.js无法获取数组对象的问题
+
+####mui
+>* **【重要】Hello mui推出普通手机浏览器版**，使用手机浏览器访问：[http://www.dcloud.io/hellomui](http://www.dcloud.io/hellomui/)，或扫描下方二维码体验<br>
+![扫码体验](http://dcloud.io/hellomui/images/code.png =120x120)
+* 优化div模式的侧滑菜单滑动体验
+* 修复链接边缘点击触发页面刷新的问题
+* switch控件的toggle方法增加animate参数，当为false时，无动画切换，默认为有动画
+* 轮播类控件支持拖拽切换阀值(snapX)，默认为0.5，即拖拽大于一半时松手则切换，否则不切换
+* popover插件的show|hide参数不再执行toggle参数逻辑，示例：若popover已显示，则再次调用.popover(“show”)后不执行任何逻辑
+* Ajax方法支持 dataType参数的大小写兼容
+* 兼容Android平台4.2.x/4.3.x版本下，input控件无type属性时无法输入的问题
+* Hello mui中input（输入框）页面，增加显示/隐藏密码示例
+
+--------------------------------------
+
+### 6.7.1.201511102201
+
+####IDE
+>* 解决某些Mac系统下，HBuilder真机运行时，控制台报缺少java运行环境的问题
+
+####App
+>* 修复debug模式下整包(apk/ipa)覆盖安装可能导致资源不升级的问题 
+* Android平台新增支持Webview窗口对象显式触发自定义下拉刷新事件(dragBounce) 
+* Android平台修复在部分设备上弹出软键盘可能引起程序崩溃的问题 
+* Android平台修复在部分设备上点击通知栏消息可能无法启动程序的问题 
+* iOS平台修复弹出toast提示框后导致系统状态自动转换为白底黑字样式的问题 
+* iOS平台修复百度地图设置覆盖物图形颜色无效的问题
+
+--------------------------------------
+
+### 6.7.0.201511062238
+
+####IDE
+>* 解决Mac用户设置为仅允许从AppStroe或被认可的开发者下载的应用程序后，由于无法认证开发者身份，导致HBuilder启动失败的问题
+* 添加js注释设置,用户可选择js注释是否从行首开始（工具-选项-HBuilder-编辑器-JavaScript）
+* 解决emmet的wrap with abreviation功能无法将结果插入编辑器的问题
+* 解决项目名称有特殊字符时真机运行没有反应的问题
+* 解决文档包含特殊字符\\u00A0（此字符为特殊空白字符）会导致css和html格式化失败的问题
+* 添加第三方Android模拟器（如夜神模拟器、海马玩模拟器等）端口设置（工具-选项-HBuilder）
+
+####App
+>* Android平台修复不解压应用资源模式下使用wgtu更新失败的问题
+* Android平台修复5+ API网络请求可能无法访问非受信https资源的问题
+* Android平台修复在部分三星设备上获取状态栏高度不正确的问题
+* iOS平台修复在部分iPad设备上选择时间日期控件显示不正常的问题
+* iOS平台修复Webview无法加载urlencode编码后的页面地址的问题
+    iOS平台新增支持设置调用第三方程序urlscheme白名单：http://ask.dcloud.net.cn/article/434
+    iOS平台修复打包后设置系统状态栏样式无效的问题
+
+####mui
+>*支持数字输入框input内容变化时，触发控件顶层容器的change事件
+* 修复在没有绑定事件的情况下，直接调用off取消绑定，JS报错的bug
+* 修复“选项卡+下拉刷新”示例中，某个选项卡滚动到底时，会触发所有选项卡上拉加载事件的bug
+* 修复mui.ajax()请求本地文件，文件不存在时依然触发success回调的bug
+* 修复Android4.4.4版本部分手机上，软键盘弹出时影响图片轮播组件，导致自动轮播停止的bug；
+* 修复picker（选择器）控件在iPod上滚动错位的bug
+* 开源酒店预定工程模板，参考：http://ask.dcloud.net.cn/article/414
+
+--------------------------------------
+
+### 6.6.1.201510291706
+
+####IDE
+>* 解决某些系统下manifest编辑器无法自动生成替换图标的问题（也可参阅http://ask.dcloud.net.cn/article/423自行解决）
+* 项目管理器右键菜单增加Web项目转为App项目
+* json文件大纲查看更清晰，manifest.json、appstream.json也可使用大纲
+* 解决插件安装中途取消或者退出HBuilder，可能导致插件部分安装引发的问题
+* 添加双击Ctrl激活一键搜索的开关选项（工具-选项-HBuilder）
+* 解决less等代码提示按回车或者数字选择无效的问题
+* 提高HBuilder启动时的稳定性, 防止有时三方破坏HBuilder文件导致的无法启动问题
+
+####App
+>* 新增支持沉浸式状态栏模式(iOS7.0、Android4.4以上系统支持) 
+* 新增获取系统状态栏高度功能 
+* 新增Webview窗口加载页面的标题更新事件
+* iOS平台适配9.X系统 
+* iOS平台新增支持3D Touch桌面图标快捷菜单功能 
+* Android平台新增控制Webview窗口滚动到头时是否出现自动回弹效果 
+* Android平台新增控制Webview窗口是否加载非受信https页面 
+* Android平台优化创建桌面快捷方式功能并返回是否操作成功 
+* Android平台优化图片选择控件的性能及内存占用情况 
+* Android平台修复百度定位在部分手机上仅第一次定位返回结果的问题 
+* Android平台修复apk覆盖安装可能导致应用资源不更新的问题 
+* Android平台修复重复下载文件时返回数据中未包含文件名称的问题 
+
+####HelloH5
+>* 新增支持沉浸式状态栏模式 
+* 在iphone6s(plus)上新增支持3D Touch桌面图标快捷菜单
+
+####云打包环境
+>* 更新至XCode7.1编译环境，全面兼容iPhone6s(plus)设备 
+
+####mui
+>* 解决在没有绑定事件的情况下，直接调用off取消绑定时，js报错的bug
+
+--------------------------------------
+
+### 6.6.0.201510212441
+
+####活动
+>* 庆贺大众点评外卖流应用在360手机助手上线,DCloud举行红包回馈活动。通过菜单帮助-活动打开活动界面
+
+####IDE
+>* 新增流应用发行。通过菜单发行－发行为流应用
+* 优化了HBuilder的菜单
+* 增加vue文件默认使用HTML编辑器打开的功能
+* 为边改边看浏览器的刷新、前进、后退等功能增加快捷键（开发者请在工具-选项-快捷键搜索边改边看，设置相应快捷键）
+* 解决HBuilder正在升级时退出，会多次提示正在升级的确认框的问题
+* 优化一键搜索，优化误激活一键搜索的bug
+* 解决多次复位透视图后工具栏会错位的的问题
+
+####App
+>* 新增流应用，具体见dcloud.io官网介绍
+
+####mui
+>* 新增Android 2.x系统对Function.prototype.bind()方法的支持
+* 修复numbox控件无法点击的bug
+* 修复pullRefresh插件的scrollTo方法在Android平台报错的bug
+* 修复Android平台上拉加载endPullupToRefresh(true)方法失效的bug
+* 修复手动关闭预加载页面，再次打开该页面时不显示waiting框的bug
+* 解决可拖动选项卡和图片轮播组件混合使用时，手势操作冲突的bug
+
+--------------------------------------
+
+### 6.5.0.201509241629
+
+####IDE
+>* 【重要】新增一键搜索，快捷键为双击ctrl(MacOSX下为双击control)，支持输入@、/、!、:、?为前缀而搜索变量、文件、功能、行号和问答社区
+* 优化升级策略，版本分为抢鲜版和正式版，抢鲜版仅提醒但不自动升级
+* 改进不建项目直接从外部打开的js文件的变量提示
+* 添加边改边看浏览器自定义宽高配置功能，优化mac版样式，修复视图刷新bug
+* 解决有时代码缩进对齐线超出文档边界的问题
+* 解决打包时正确的manifest应用信息界面会出现红叉的问题
+
+####App
+>* 新增支持自定义等待框waiting的功能
+* 补充上传、下载管理支持设置失败重试的间隔时间
+* Android平台修复二维码扫描界面设置不规则区域可能显示异常的问题
+* Android平台修复下载管理中重复下载文件时不触发回调的问题
+* Android平台修复Webview窗口重新加载后可能无法显示子窗口的问题
+* Android平台修复百度定位第一次获取定位数据不准确的问题
+* Android平台修复百度地图从后台切换到前台后无法显示当前用户位置的问题
+* Android平台修复百度地图创建多个地图后可能显示不正常的问题
+* Android平台修复某些设备上软键盘弹出后可能自动关闭的问题
+* iOS平台新增支持Webview页面内通过video标签非全屏播放视频
+* iOS平台修复地图状态改变事件返回的地理区域数据不正确的问题
+
+####HelloH5+
+>* 添加自定义等待框演示页面
+
+####mui
+>* 修复textarea获取焦点弹出键盘时，导致顶部标题栏显示位置异常的bug
+* 修复iOS平台下拉刷新页面不支持popGesture右滑关闭的bug
+* 修复轮播组件和原生滚动冲突的bug
+* 修复轮播组件内包产超长文字时不会自动换行的bug
+* 修复部分Android手机上拉加载不触发的bug
+* 修复列表控件不显示上边框的bug
+* 修复选项卡切换+下拉刷新示例在部分场景下拉刷新失效的bug
+* 修复picker控件在iPad上显示错位的bug
+* 修复用户手动关闭预加载页面后，重新打开时不显示waiting框的bug
+
+--------------------------------------
+
+### 6.4.1.201509021952
+
+####IDE
+>* 由于在某些win系统上，升级svn1.10.x后会导致HBuilder无法启动。暂时还原svn插件的升级，对大家造成的不便我们深表歉意
+* 修复svn同步js文件时，无法打开同步界面的问题
+* 修复在某些版本的win系统下，HBuilder.exe崩溃的问题
+
+--------------------------------------
+
+### 6.4.0.201509012222
+
+####IDE
+>* 边改边看视图增加锁定当前网址功能 
+* 插件管理界面添加插件直接卸载的功能 
+* 升级SVN插件到1.10.x，如使用1.6.x/1.8.x版本的SVN迁出的项目，需要升级svn配置文件，具体操作为右键该项目→版本管理→Upgrade (注：此操作不可逆,即升级为1.10.x的配置文件后无法降级为1.6.x的配置文件)
+* 修复插件安装界面插件列表不全(如less4j插件不可见)的问题
+* 解决Mac下手动点击帮助→检查新版本升级HBuilder后，无法启动的问题(通过HBuilder升级提示重启不存在此问题)
+* 解决win10下项目管理器中图片文件默认打开方式是文本编辑器的问题
+* 解决边看边改或真机运行在控制台中显示的链接信息中包含某些特殊字符时链接失效的问题
+* 解决打开文件编辑器的情况下使用菜单"发行"->"打开App存放目录"报错的问题
+* 优化TypeScript编辑器语法提示 
+* 解决视图→新建HBuilder窗体会导致程序关闭的问题
+
+####App
+>* 优化文件上传（Uploader）逻辑，去掉断点续传查询请求，补充操作HTTP请求头数据功能 
+* 补充文件下载（Downloader）支持POST请求提交数据、操作HTTP请求头数据功能 
+* Android平台新增控制Webview窗口的硬件加速开关功能 
+* Android平台修复在部分设备上可能出现闪屏、白屏不渲染的问题 
+* Android平台修复Webview窗口pop-out动画时可能出现黑屏的问题 
+* Android平台修复在4.3以下版本Webview窗口对象的setStyle可能失效的问题 
+* Android平台新增创建桌面快捷功能 
+* iOS平台修复百度定位可能不触发回调的问题 
+* iOS平台修复wgt升级可能出现版本判断不正确的问题 
+* iOS平台修复5+ SDK集成时可能出现打开页面后无法显示的问题
+* Android平台修复地图中移除覆盖物操作可能引起程序崩溃的问题
+* Android平台修复在2.3版本上未正确配置模块可能引起程序崩溃的问题
+* Android平台修复高德地图页面隐藏后再次显示可能引起花屏的问题
+* Android平台修复百度地图定位失败后可能导致再次启动一直停留到启动界面的问题
+
+####mui
+>* 优化picker(选择器)滚动体验
+* Hello MUI增加纵向选项卡示例，适用于点餐等多类型选择场景
+* 调整Hello MUI主列表，将segment（分段选择）移到tab bar二级目录下
+* 优化9宫格的边线显示
+* 修复Android 4.1.x/4.2.x系统圆角列表四角不圆的问题
+* 修复picker(选择器)的滚动透传
+* 修复侧滑菜单嵌入视频在部分浏览器版中无法点击播放
+* 修复选项卡+下拉刷新示例在系统浏览器中经常触发页面拖拽的问题
+* 修复选项卡+下拉刷新页面嵌入input输入框，无法正常输入的问题
+
+--------------------------------------
+
+### 6.3.1.201508150242
+
+####IDE
+>* 修复自定义error页面error事件不执行的问题
+* 修复部分Android机型模拟器异常退出的问题
+
+####mui
+>* 修复div模式侧滑菜单（主界面不动、菜单移动模式）来回滑动时，菜单可能不滑动的bug
+
+--------------------------------------
+
+### 6.3.0.201508142412
+
+####IDE
+>* 增加暂不登录选项，初次无网络也可以使用HBuilder
+* 优化jsp、aspx编辑器，优化部分着色，解决某些情况下不提示的问题 
+* 优化less、sass编辑器的着色
+* 插件安装增加nodeclipse插件（.js文件默认使用HBuilder自带的js编辑器，如需编辑node.js文件，请右键文件以nodeclipse的编辑器打开）
+
+####App
+>* 新增支付（Payment）成功回调参数的rawdata属性保存支付平台返回的数据 
+* 修复部分Android5.0手机上Webview返回时无法正确渲染的问题（Android5的渲染问题未全部解决，在motorola的Android5.0rom上临时关闭了硬件加速） 
+* 修复Android平台Webview为子窗口时隐藏后仍然监听返回键事件的问题 
+* 修复Android平台地图模块中地理编码及反编码、路径搜索等功能可能失效的问题 
+* 优化Android平台扫描条形码的识别效率 
+* 修复iOS平台调用console.log时可能弹出“打包时未添加Console模块...”的问题 
+* 修复iOS平台调用微信分享可能不触发回调的问题
+* 修复Android平台geolocation模块在执行plus.runtime.restart之后定位数据错误问题
+* 修复Android平台plus.naitveObj.Bitmap.save成功之后没有回调的问题
+
+####mui
+>* hello mui新增云端数据库模板示例，可js直接操作野狗云数据库，实现无后端编程。视频教程:http://dcloud.apk00.com
+* 修复可左右滑动的9宫格启用循环功能后，页面显示错误的bug
+* mui新增.off(event)、off()两种模式取消事件绑定
+* 优化二级列表及折叠面板的底线显示
+* 修复iOS上拉加载后，文字闪一下的bug
+* 修复mui.openWindow方法参数覆盖的bug，#issues#101
+* 图片预览兼容支持动态图片更换的情况
+* 修复Android 4.1手机上单击svg图片报错的bug
+* chart模板增加饼状图示例
+
+####鸣谢
+>* 感谢0Hicn录制的免费视频教程:http://dcloud.apk00.com
+
+--------------------------------------
+
+### 6.2.0.201508040254
+
+####IDE
+>* 编辑器增加代码缩进对齐线
+* 新建移动App时如果无网络也允许新建，Appid暂时为空，在有网络时需要手动从manifest可视化界面申请id
+* 删除项目或文件时，默认将文件移至回收站，而不是直接删除
+* 解决生成wgt、wgtu等升级包时ui模块添加错误导致无法升级的问题
+* 解决代码提示的触发字符太长显示不全的问题
+* 项目管理器和大纲界面支持全行选择（之前只能点击文字和图标才能选中）
+* 解决大纲界面双击不能展开的问题
+* 插件安装里增加Aptana pydev插件，支持python语法的提示和开发
+* 修改iOS模拟器有时会同步资源失败的问题
+* 解决在某些MacOSX64位系统上浏览文件会导致程序崩溃的问题
+* 解决未安装java的MacOSX系统上真机运行控制台提示缺少java运行环境的问题
+
+####App
+>* 完善错误提示，方便调试定位问题，包括SDK校验配置、API错误回调、打包模块缺少、404页面等
+* 新增原生图片（plus.nativeObj.Bitmap）对象加载文件和数据、保存到文件系统等功能 
+* 新增地图模块支持地理编码及反编码、坐标转换、计算坐标距离及区域面积等功能 
+* 新增地图模块中气泡（plus.maps.Bubble）对象通过加载图片自定义显示样式的功能 
+* 补充创建本地消息（plus.push.createMessage）时可配置是否播放系统通知铃声的功能 
+* 补充系统提示框（plus.nativeUI.alert）的回调函数中包含关闭方式等信息 
+* Android平台补充拨打电话（plus.device.dial）的confirm参数控制是否直接拨号的功能 
+* Android平台修复图片压缩（plus.zip.compressImage）对输出宽高计算不正确的问题 
+* iOS平台调整系统时间日期选择控件的标题栏背景色为白色 
+* 修复iOS平台越狱包在8.x设备上可能运行时直接闪退的问题
+
+####mui
+>* mui.fire方法中事件参数支持字符串和json对象
+* 修复range的tooltips位置显示错误的bug
+* 修复点击列表中的radio/checkbox，不触发change事件的bug
+* 修复选项卡+下拉刷新示例在多webview上不触发释放的bug(ios8+)
+* 修复二级bar(mui-bar-header-secondary)包含segmented-control时，位置错误的bug
+* 修复手势事件在部分情况下direction获取错误的bug
+* 解决hello mui提示升级但点击无反应的bug
+* hello mui 增加EChart统计图表集成示例
+* hello mui div模式的侧滑菜单增加移动缩放效果，类似QQ的侧滑效果
+
+--------------------------------------
+
+### 6.1.3.201507202206
+
+####App
+>* iOS平台修复应用不允许访问位置信息时调用Geolocation API可能导致程序异常的问题 
+* iOS平台修复自动消失提示框（plus.nativeUI.toast）的icon参数不支持设置相对路径的问题 
+* Android平台修复在4.0以下版本播放音频文件可能导致程序异常的问题
+
+--------------------------------------
+
+### 6.1.2.201507182143
+
+####App
+>* 修复Android平台获取定位（Geolocation）数据可能异常的问题
+* 修复Android平台6.1.1版本中Webview窗口设置属性或隐藏操作可能不生效的问题
+
+--------------------------------------
+
+### 6.1.1.201507180349
+
+####IDE
+>* 解决先启动HBuilder后启动Android模拟器，真机运行无法识别模拟器的问题
+
+####App
+>* 新增原生图片（plus.nativeObj.Bitmap）对象及Webview窗口截图功能
+* Android平台新增pop-in/pop-out窗口动画时使用指定原生图片对象，开发者可根据业务优化窗体切换体验
+
+--------------------------------------
+
+### 6.1.0.201507162142
+
+####IDE
+>* 【重要】Mac版HBuilder发布64位版本，32位Mac版HBuilder从本版开始不再升级，请在www.DCloud.io下载最新64位版HBuilder
+* manifest可视化视图提升自动生成App图标的质量，减少锯齿
+* manifest可视化视图的图标配置界面增加鼠标悬浮在图标上时可预览该图标原始尺寸效果功能
+* manifest.json文件中路径增加支持本项目下的相对路径
+* manifest可视化界面解决图标配置、启动图片配置面有时分辨率校验不正确的问题
+* App打包界面修改保存策略，会在本机保存除密码外的证书配置信息
+* App项目下添加unpackage目录用来存储打包时不需要包含的资源（老项目可以手动新建unpackage目录）
+* 完善less、sass、scss编辑器，优化语法高亮效果
+* erb文件中增加类似sublime的单词提示功能
+* html、js、css格式化时支持空格替代tab（工具-选项-常规-编辑器中配置）
+* 解决html格式化有时在<a>标签前后会多出空行的问题
+* 加快HBuilder检测手机的速度，提升真机运行操作体验
+
+####App
+>* 新增地图拖动、缩放事件及获取地图可视地理区域功能 
+* 新增定位时获取地址信息功能，如XX市XX区XX路XX号XX大厦
+* 打包时可细化UI模块为Webview（窗口管理）、nativeUI（原生UI控件）、navigator（浏览器信息） 
+* Android平台新增Native.js中js层数组到native层自动转换功能 
+* Android平台修复应用资源wgt升级（差量wgtu升级）可能存在“IO错误”导致升级失败的问题 
+* Android平台修复调用第三方程序时可能显示系统桌面的问题 
+* Android平台修复部分设备无法调用多选图片控件的问题 
+* Android平台修复IO（文件系统）模块中目标文件存在时仍然会拷贝或移动成功的问题 
+* Android平台修复Downloader（下载管理）模块未同步更新Cookie的问题 
+* Android平台修复微信分享图片设置缩略图可能导致失败的问题 
+* Android平台修复子Webview调用show方法后仍然被其它相同zindex窗口遮盖的问题 
+* Android平台修复多个非全屏Webview窗口显示时可能存在区域位置计算错误的问题 
+* Android平台修复弹出软键盘后切换Tab界面中的子Webview窗口显示异常的问题 
+* Android平台修复百度地图已知的Bug：如无法获取当前显示区域中心点位置、气泡图标不显示等问题 
+* Android平台修复高德地图已知的Bug：如覆盖物click事件可能不触发、圆圈覆盖物对象不显示等问题 
+* iOS平台修复Webview窗口加载页面中无法识别带#的url路径问题 
+* iOS平台修复支付宝完成之后可能不触发回调的问题
+
+####mui
+>* mui支持双指旋转、放大、缩小等手势事件
+* hello mui图片预览支持双指放大缩小，同时支持双击放大缩小
+* hello mui增加广告模板
+* hello mui新增问题反馈示例（基于环信JS SDK）
+* mui.preload方法支持createNew参数
+* 解决超长内容页面滚动后，H5模式的actionsheet显示位置不正确的bug
+* listPicker回调函数支持“阻止关闭选择框”功能，用于校验选择数据是否合法
+* 解决欢迎页在小屏幕手机上的显示错乱问题
+* 解决设置模板在部分Android手机上标题不居中的问题
+
+--------------------------------------
+
+### 6.0.1.201506292124
+
+####IDE
+>* 修复App项目manifest文件某些字段数据校验不正确的问题
+* 修复JSP、ASP编辑器中Emmet不生效的问题
+
+####App
+>* 修复设置应用为全屏时真机运行可能不生效的问题 
+* Android平台修复压缩大图片时可能导致程序异常的问题
+
+--------------------------------------
+
+### 6.0.0.201506290132
+
+####IDE
+>* 推出新版manifest可视化界面，提升操作效率和增强易用性
+* 推出JSP、ASP编辑器。JSP、ASP编辑器有类似sublime的单词提示功能
+* 优化CoffeeScript、Ruby、Sass编辑器，增加类似sublime的单词提示功能
+* 优化JS提示引擎，增加对Object.create方式创建对象时参数的解析
+* 优化android真机调试兼容性
+* windows版增加内存清理开关。由于windows系统平台差异，在某些windows版本下自动GC会导致HBuilder变卡顿，此时请在工具-选项-HBuilder中关闭内存清理
+
+####App
+>* 新增图片压缩和裁剪功能：plus.zip.compressImage 
+* 新增子Webview窗口对象支持fade-in/fade-out动画 ，适用于选项卡动画过渡
+* Android平台补充QQ分享功能 
+* Android平台修复pop-in窗口动画在显示多层页面可能失效的问题
+* Android平台修复联系人查找/保存联系人可能会失败的问题 
+* Android平台修复微信支付在未安装微信客户端时可能出现逻辑错误的问题 
+* Android平台修复图片选择不支持小米云相册的问题 
+* Android平台修复图片选择在某些机器上可能不触发回调的问题 
+* Android平台修复播放网络音频未处理超时的问题  
+* Android平台修复Native.JS调用某些API无法正确返回数据的问题 
+* Android平台修复在三星Android5等系统上返回时闪屏的问题
+* Android平台修复地图获取中心点可能出现异常的问题
+* Android平台修复微信分享网络图片可能失败的问题
+* iOS平台新增支持amr格式音频文件的播放
+* iOS平台新增支持通过id、displayName查找联系人
+* iOS平台修复腾讯微博分享在iOS7上可能无法弹出授权页面的问题 
+* iOS平台修复新浪微博分享在未安装客户端的情况下可能出现异常的问题
+
+####mui
+>* hello mui新增indexed list模板，适用于通讯录、城市选择等场景
+* hello mui新增App首次启动欢迎页
+* hello mui设置模板新增“头像设置”功能
+* hello mui设置模板新增“检查升级”示例
+* hello mui中webview模式选项卡第一次切换时使用fade-in动画
+* 修正列表中checkbox无法点击的bug
+* chat聊天模板新增录音时长过短提示功能
+* 选择列表增加省、市、县三级联动示例
+* 优化iOS平台下拉刷新列表的滚动效果
+
+--------------------------------------
+
+### 5.9.0.201506110323
+
+####IDE
+>* less、sass编辑器增加类似sublime的单词提示功能
+* mac版HBuilder快捷键command+上/下还原为跳转至页首/页尾，上/下移行功能快捷键修改为command+control+上/下
+* mac版App打包界面中修复无法同时打Android和iOS包的问题
+* mac版上查看打包状态界面中使用触摸板无法打开下载目录的问题* 
+* 优化大字体下界面变形的问题
+* 解决Win7下有时会无法新建项目的问题
+* 新建移动App增加带登录和设置的MUI模板
+* 增加360轻应用插件
+
+####App
+>* 新增支持高德地图功能 
+* 新增支持XMLHttpRequest状态事件onloastart、onprogress、onabort、onerror、onload、ontimeout、onloadend 
+* 新增获取应用首页加载时间：plus.runtime.launchLoadedTime(可用于判断手机性能)
+* 新增联系人对象的id属性，可用于跨Webview传递联系人 
+* Android平台支持设置应用系统主题：http://ask.dcloud.net.cn/article/238 
+* Android平台Native.js支持调用其它Activity后获取返回结果：http://ask.dcloud.net.cn/question/5783 
+* Android平台优化zoom-fade-out打开窗口动画的性能 
+* Android平台优化pop-out关闭窗口动画的性能 
+* Android平台修复时间日期选择框在5.0系统上取消后回调不正确的问题 
+* Android平台修复在部分设备上切换到移动3G网络后获取网络状态不正确的问题 
+* Android平台修复横竖屏切换后导致获取的屏幕分辨率不正确的问题 
+* Android平台修复Webview的mask遮罩在2.3.*系统可能显示错误的问题 
+* Android平台修复pop-in窗口动画在2.3.*系统可能发生闪屏的问题 
+* iOS平台修复时间日期选择框取消后错误回调中未包含message信息的问题 
+* iOS平台修复plus.io.resolveLocalFileSystemURL可能不触发回调的问题 
+* iOS平台修复应用重启后可能导致推送的clientID信息无法获取的问题 
+* iOS平台修复在摄像头窗口无法显示toast的问题 
+* iOS平台修复创建本地消息传入非法参数导致程序异常的问题
+* iOS平台新增支持弹出软键盘后自适应调整Webview窗口大小（WebviewStyle的softinputMode属性） 
+
+####mui
+>* hello mui新增图片放大预览示例
+* hello mui新增日期时间选择示例
+* hello mui新增“选项卡切换+下拉刷新”示例，类似新闻类App，左右滑动切换栏目，同时支持下拉刷新
+* hello mui新增chat聊天模板
+* 优化numbox、listpicker组件，避免重复初始化
+* 优化input的clear显示逻辑，仅在获得焦点时显示clear图标
+* 登录模板支持微博、微信、QQ第三方登录
+* 城市模板增加完整数据
+* 解决checkbox点击时，触发两次change事件的bug
+* input控件支持通过setPlaceholder()方法动态设置placeholder
+* 修复listPicker在Android 5.1系统上无法滚动的bug
+* 解决mui.on事件导致href="tel:"失效的bug
+* 解决二级列表组件中，一级列表内若包含输入框，则输入框无法获得焦点的bug
+* 修复下拉刷新插件中，refresh(true)方法不刷新pullup提示语的bug
+* 修复iOS平台下active状态的switch控件，在区域滚动时消失的bug
+* 修复快速点击可拖动式选项卡标题时，选项卡内容切换异常的bug
+
+--------------------------------------
+
+### 5.8.2.201505252356
+
+####App
+>* 修复隐藏Webview窗口可能无效的问题
+* 统一新浪微博授权登录的id值为"sinaweibo"
+* 解决某些Android4.1.2的rom上偶发touch失效的问题
+
+--------------------------------------
+
+### 5.8.1.201505250314
+
+####App
+>* App:修复魅族smartbar和pop-in动画的兼容性问题
+* App:修复webview隐藏时偶发闪烁的问题
+
+####mui
+>* mui:hello mui改为slider-in-right方式转场动画
+
+--------------------------------------
+
+### 5.8.0.201505230552
+
+####App
+>* 【重要】Android平台Webview新增窗体联动挤压(pop-in)转场动画效果(配合预载效果可匹敌原生窗体切换) 
+
+####IDE
+>* 代码助手的plus语法提示，点击API名称超链接可跳转至该API的文档处
+* 优化真机联调，解决小米手机与360手机助手冲突的问题
+* Mac版修改定制透视图无法打开的问题
+* 解决打开定制透视图后会导致Toolbar上的真机联调的下拉菜单无法使用的问题
+* 解决使用大纲视图时，偶然报空指针错的问题
+* Win版“边改边看”浏览器的日志输出信息可显示在控制台
+* Win版解决高分屏大字体下，新建项目界面、查看打包状态界面、视觉主题设置界面、透视图切换下拉菜单显示异常的问题
+* 设定能打开的最大编辑器数默认值为20,如果需要打开的文件数较多，请点击菜单工具-选项-常规-编辑器修改配置
+
+####App
+>* plus.oauth新增支持新浪微博登录功能 
+* Android平台补齐QQ登录功能 
+* 修复Android平台调用plus.push.setAutoNotification设置系统消息中心是否显示推送通知可能不生效的问题 
+* 修复Android平台二维码扫描时开启闪光灯可能出现频繁闪烁的问题 
+* 修复iOS平台提交AppStore审核可能出现不符合iOS Data Storage规范的问题 
+* 修复iOS平台引入第三方SDK时可能出现命名冲突的问题
+* Android平台plus.audio新增支持播放网络音频文件
+
+#####Hello H5+
+>* 改进窗体动画流畅度
+
+####mui
+>* 【重要】mui中sass源码、模块js源码、grunt配置完整开源
+* 【重要】修改mui.openWindow执行逻辑，避免同一页面创建多个webview的问题；
+* 【重要】改进mui.ajax，自动判断仅在需要跨域时调用plus.net
+* 新建开源App示例汇总：https://github.com/dcloudio/casecode，欢迎踊跃提交开源项目
+* 修复触摸hash指向类控件(如popove)导致无法滚动页面的bug
+* 修复语音输入控件不触发inputange事件的bug
+* 事件委托on方法增加返回值，支持链式操作
+* slider类控件自动切换动画效果优化(第一张与最后一张轮换动画效果与手动切换保持一致)
+* 重构事件委托机制(on).支持stopPropagation,return false机制，支持off方法
+* 修复scrollTo的滚动误差bug
+* 修复h5版本下拉刷新在手动pulldownLoading时，文字显示不正确的bug
+* 修复二级列表展开时边线位置不正确的bug;
+* 修复特殊情况下子窗口预加载失效的bug
+* hello mui改进窗体动画流畅度
+* hello mui中setting模板增加“分享推荐”示例
+* hello mui懒加载模板支持下拉刷新功能
+* hello mui新增联动选择示例
+
+--------------------------------------
+
+### 5.7.0.201505060254
+
+####IDE
+>* 减少安装包体积并进一步优化内存占用
+* 控制台显示的console信息中添加跳转到对应代码功能
+* 边改边看浏览器console也可以在控制台显示了
+* 推出windows64位系统及iTunes12.1环境下的iOS真机运行兼容补丁插件
+* 优化Mac下iOS模拟器真机运行
+* 优化js框架语法有时无法提示的问题
+* 解决边改边看使用外部服务器时有时会报错溢出的问题
+* 解决windows上安装新版本Chrome后在 选项->Web浏览器 中没有显示的问题
+* App打包中显示上传文件的具体进度及上传速度
+* 解决代码提示按数字选择后有时候会出现替换混乱的问题
+
+####App
+>* 新增应用资源差量升级功能：http://ask.dcloud.net.cn/article/199 
+* 优化Webview窗口动画的变换效果默认为先加速再减速 
+* 优化Webview窗口的从小到大并透明变化（zoom-fade-out）动画效果 ,类似Android版微信
+* 修复相册选择图片取消时触发回调函数的参数数据错误的问题 
+* 修复Android平台多次点击Webview窗口切换可能引起程序崩溃的问题 
+* 修复Android平台关闭GPS后无法获取定位信息的问题 
+* 修复Android平台首页加载完成后再关闭Splash页面仍可能出现闪屏的问题 
+* 修复iOS平台在iPad设备上调用摄像头拍照预览时图片可能会旋转显示的问题
+
+####mui
+>* hello mui新增SPA单页窗体切换示例setting，iOS可模拟原生渐变切换
+* hello mui新增div模式的下拉导航菜单示例
+* hello mui新增图片懒加载示例
+* mui新增列表式单选框样式(见Hello mui的radio示例)
+* 带滑动菜单的列表控件，支持点击高亮显示
+* 解决div模式的侧滑菜单主界面包含图片轮播组件时，图片轮播高度不正确的bug
+* 解决搜索输入框有默认值时仍显示placeholder的bug
+* 解决列表控件在部分Android手机上渲染失败的bug
+* 解决带滑动菜单的列表控件右侧带箭头时，箭头显示错位的bug
+
+--------------------------------------
+
+### 5.6.2.201504192107
+
+####IDE
+>* 解决真机运行有时会启动多个adb.exe进程导致HBuilder崩溃的问题
+
+--------------------------------------
+
+### 5.6.1.201504162226
+
+####IDE
+>* 解决Mac版真机运行不兼容XCode Beta版的问题
+
+####App
+>* 修复Android平台XMLHttpRequest请求获取的中文可能解析成乱码的问题
+* 修复Android平台Uploader、Download等Http请求默认超时时间不正确及无法自定义超时时间的问题
+
+--------------------------------------
+
+### 5.6.0.201504140239
+
+####IDE
+>* 【重要】Win版增加内存清理，降低使用内存
+* 【重要】Win版边改边看视图下，编辑器右键菜单增加"高亮浏览器内对应元素"功能，使用后可使浏览器内显示的该元素高亮
+* 【重要】Win版边改边看视图下，浏览器右键菜单增加“查找文档中对应元素”，使用后可使编辑器中对应的代码高亮
+* 解决代码提示后，有时候上下方向键失效的问题
+* 解决真机联调某些情况下iOS调试基座无法安装的问题
+* 真机运行增加对海马玩模拟器的支持
+* 真机运行手机列表修改为使用已连接手机的型号
+* 解决状态栏有时候一直显示正在检查手机的问题
+* 解决Mac版如果没装Xcode，HBuilder启动时提示安装Xcode的问题
+* manifest可视化界面增加"分享到QQ好友"、"微信支付"、"QQ登录"、"微信登录"的配置
+* 解决部分情况导致的新建移动App或打包时，提示密码过期请重新登录的问题
+
+####App
+>* 修复OAuth授权登录服务未登录时仍然保留上次authResult、userInfo信息的问题 
+* 修复微信支付使用微信商户平台后台服务生成的订单无法正常支付的问题 
+* iOS平台新增支持设置Webview窗口的回弹区域背景功能 
+* 修复iOS平台xhr请求地址中包含中文时会导致失败的问题
+* 修复iOS平台Webview调用show方法后没有切换到顶层显示的问题
+* 修复android平台设置top或left属性后可能导致计算默认Webview窗口宽高不正确的问题
+* 修复Android平台xhr请求使用非受信证书服务器时可能导致失败的问题 
+* 修复Android平台设置系统消息中心不显示推送消息在程序退出后失效的问题
+* 修复Android平台设置地图标点图标可能不生效的问题
+* 修复Android平台设置Webview窗口background属性后可能导致无法正确获取窗口属性值的问题
+
+####mui
+>* 修复popovers控件自定义style被覆盖的bug
+* 修复iOS平台下input控件disabled/readonly状态下仍触发focusin的bug
+* 修复图片轮播控件在Android平台的下拉刷新里非第一张图片不显示的问题。
+* 修复button类控件在disabled时，active样式仍被激活的bug
+* 修复fire事件当参数含单引号时拼写字符串错误的bug
+* hello mui新增数字输入控件
+* hello mui新增手势解锁控件
+* 发布登录模板Example，源码地址：https://github.com/dcloudio/mui/tree/master/examples/login
+* hello mui新增SPA模式的设置页面（仅iOS平台支持，Android平台下个版本发布）
+
+--------------------------------------
+
+### 5.5.1.201503312024
+
+####IDE
+>* 紧急修复5.5.0边改边看视图多出白色边框、设置内某些描述不正确等的问题
+
+####App
+>* 修复Android平台Webview窗口中嵌套iFrame中存在input框获取焦点后可能导致程序崩溃的问题
+* 修复Android平台调用地图的poiSearchNearBy搜索返回失败时可能导致程序崩溃的问题
+
+--------------------------------------
+
+### 5.5.0.201503301314
+
+####IDE
+>* 解决某些情况下，win8及以上的系统HBuilder.exe莫名崩溃的问题
+* 解决有时按照浏览器运行弹出的浏览器配置提示配置浏览器后,下次运行仍然提示配置浏览器的问题
+* 解决MAC下边改边看web浏览器在IDE启动时默认打开的情况下,二维码有时不可用的问题
+* 解决有时启动后浏览器运行图标显示不可用的问题
+* 解决有时已安装的插件在插件安装界面仍显示未安装的问题
+
+####App
+>* 修复Webview窗口对象作为子窗口时无法获取扩展参数的问题
+* iOS平台新增支持QQ分享功能
+* iOS平台新增支持QQ登录功能
+* 修复iOS平台通过native.js创建剪切板可能导致程序异常的问题
+* Android平台新增支持微信支付功能 
+* Android平台新增支持微信登录功能
+* 修复Android平台查询联系人时设置过滤参数可能无效的问题 
+* 修复Android平台Webview窗口显示后可能不触发显示动画完成回调函数的问题
+* 修复Android平台调用DirectoryEntry对象的getDirectory方法后返回目录路径不正确的问题
+
+####mui
+>* 修复九宫格控件右上角多出一小段边框bug
+* 修复含一级header，二级header时，下拉刷新提示文字位置不正确的bug
+* 优化mui构造函数部分代码
+* 精简requestAnimationFrame的polyfill代码
+
+--------------------------------------
+
+### 5.4.1.201503192218
+
+####App
+>* 紧急修复iOS真机联调基座包不支持微信登录、微信支付的问题
+
+--------------------------------------
+
+### 5.4.0.201503172201
+
+####IDE
+>* 增加sublime快捷键方案
+* 优化切换快捷键方案的速度
+* 边改边看支持外部web服务器
+* 完善web服务器配置，支持多种web服务器
+* 添加生成更新资源包和生成本地打包资源包的功能
+* 添加生成流应用配置文件的功能
+* 解决mac有时找不到open命令导致启动失败的问题
+* 添加清除打包记录的功能
+* 解决参数类型是DOM类型时有时无法提示语法的问题
+* 解决项目下其他目录存在manifest.json文件时图标显示不对的问题
+* 优化单双引号配对和自动补全的问题
+* class类名中编写模板代码时，避免在提示类名时把模板语法直接提示出来
+* 解决iPhone真机运行拔插手机后，CTRL+R报手机连接失败的异常
+
+####App
+>* HTML5Plus新增plus.oauth登录认证规范，iOS平台新增微信登录功能（Android将在下个版本发布）
+* iOS平台新增微信支付方式（Android将在下个版本发布）
+* 修复iOS平台actionSheet在未设置标题时仍然显示标题区域的问题
+* 修复iOS平台上传任务的statechanged事件触发状态不正确的问题
+* 修复iOS平台调用摄像头后可能导致其它页面再次调用失败的问题
+* 修复iOS平台调用相册选择图片在5.x版本设备上可能导致崩溃的问题
+* 修复Android平台二维码扫描返回类型可能不正确的问题
+* 优化Andorid平台在4.4及以上版本设备上使用系统多图选择程序
+* Android平台新增Webview窗口render参数，可自定渲染模式
+* 修复Android平台微信分享无法支持网络图片路径的问题 
+* 修复Android平台创建Webview窗口时设置空url地址在某些设备上可能导致崩溃的问题 
+* 修复Android平台设置Webview窗口属性可能无法立即生效的问题
+
+####mui
+>* ajax增加beforeSend回调函数
+* createMask的callback调整为close时触发
+* 修复header中包含语音输入时，搜索框图标位置错位
+* 修复ajax在5+环境中type必须大写的bug
+* 修复offcanvas两个侧滑菜单并存时通过链接触发显示/隐藏异常的bug
+* 修复代码中部分变量全局污染
+* 修复isWindow函数未正确处理undefined的bug
+* 修复android4.0.x版本上，input/textarea输入异常的bug
+
+--------------------------------------
+
+### 5.3.0.201503121827
+
+####IDE
+>【重要】App云打包时错误原因可以查看了
+* 优化转到定义，css中的#id和js中的class引用也可以跳转了，修复了某些情况跳转样式失败的bug
+* 解决在iOS真机联调时，批量拷贝资源到项目中报同步异常内存错误的问题
+* 解决emmet插件快捷键设置不生效的问题
+* 解决有时出现"内容辅助未完成"、“Index out of bounds”等异常问题
+* 解决拖入HBuilder的外部文件有时不提示的问题
+* Mac版HBuilder取消按住 command+双指移动触摸板会放大缩小字体的功能
+* Mac版HBuilder修正在某些输入法下command+shift+=无法放大字体和 command+shift+-无法首字母大写的问题
+* 代码助手提示文字颜色时可以直接显示颜色色块
+* 解决manifest.json可视化界面中，某些情况下修改图标、启动界面后不生效的问题
+* 解决manifest.json可视化界面中，iPad启动图片不全的问题
+* 解决html格式化后没有删除多个连续空行的问题
+* 解决启用php语法验证器后没有生效的问题
+
+####App
+>* 新增多图片选择，plus.gallery.pick方法补充了相应参数
+* 新增plus.webview.getLaunchWebview方法，获取首页WebviewObject窗口对象，不必再通过getWebviewById获取
+* 新建WebviewObject对象默认使用url作为id值
+* 修复通过parent方法获取的WebviewObject对象id属性值总是为空的问题
+* 更新Android平台的支付宝插件，可调用本机已经安装的支付宝钱包
+* 修复Android平台在某些机器上无法获取联系人信息的问题
+* 修复Android平台在某些情况下提示“Uncaught SyntaxError: Unexpected identifier at list.html:1”错误的问题
+* 修复iOS平台在真机运行时无法正确安装wgt文件的问题，可用于单独更新html资源
+
+#####HelloH5+
+>* 新增多图片选择示例
+
+####mui
+>* 修复offcanvas偶发性出现菜单不能自动关闭的问题
+* 修复offcanvas中输入类控件无法focus的问题
+* 修复可拖动式选项卡点击切换偶尔出现丢失选项卡标题的问题
+* 修复Android 5.0版本下，hello-mui首页滚动时，经常触发显示"cancel a touch move"的日志信息
+* 修复iOS平台下当list数据过多，swipeout菜单引起crash的bug
+* 修复Android 4.4以下版本，input type=number控件宽度不是100%的问题
+* hello mui支持“双击顶部、列表滚到顶部”功能
+* 恭祝大家新春快乐，喜气羊羊过大年！添加微信DCloud_IO领红包！
+
+--------------------------------------
+
+### 5.2.6.201502022444
+
+####App
+>* 修复Android平台actionSheet上设置2个按钮时无法正常显示的问题
+* 修复Android平台多次调用WebviewObject窗口对象的setBounce方法可能导致显示不正常的问题
+* 修复iOS平台从屏幕左边侧滑返回时页面可能上下滚动的问题，详情参考http://ask.dcloud.net.cn/article/158
+* 修复Android平台pickDate选择2月份时返回月份值错误的问题
+* 修复Android平台打开二维码扫描页面长时间后可能会导致程序异常的问题
+
+####mui
+>* 【重要】解决Android4.4版本以下，resume后顶部标题延迟渲染造成白屏的问题
+* mui.init中增加beforeback配置，参考：http://dcloudio.github.io/mui/javascript/#closewindow
+* hello mui首页侧滑菜单示例改为更加体现性能优势的控件演示
+* 增加按住（hold）、释放（release）事件支持，参考：http://dcloudio.github.io/mui/javascript/#gesture
+* 解决slider动态生成之前提前初始化导致js错误的问题
+* 优化上下左右滚动时的单向锁定功能
+* 解决.mui-ellipsis-2类中英文混搭无省略号的问题
+
+--------------------------------------
+
+### 5.2.0.201501260111
+
+####IDE
+>* 【重要】实现js跨文件转到定义
+* 优化js提示速度，项目过大时，模糊提示部分只提示有明确引用关系的js
+* js提示时显示该变量所在的js文件（需要重建索引才能生效）
+* 修复大文档下查找和高亮相同字符变卡的bug
+* 优化HBuilder启动速度，减少低配电脑启动过慢的问题  
+* 增强升级的稳定性
+* 优化代码块提示逻辑，mui和微信代码块只在项目挂载了对应的框架语法库才提示
+* 【重要】iOS设备的console log可以输出到控制台（plus ready前的日志有可能无法及时显示）
+* 【重要】MAC电脑上支持调用iOS模拟器，更加方便调试iOS
+* 【重要】MAC电脑上支持通过safari控制台调试iOS模拟器
+* 修复若干小bug："在浏览器运行"按钮在多窗口下异常的问题、找回密码后连接打开的邮箱地址错误的问题、windows系统修改"显示->更改所有项目大小"设置后界面显示异常的问题、在js方法前使用/**生成的JSDoc某些情况下不正确的问题* 
+
+####App
+>* Native.js新增获取Webview的原生实例对象API
+* Native.js修复Android平台可能无法调用实例对象方法的问题
+* Android新增系统原生ActionSheet确认框（plus.nativeUI.actionSheet）
+* Android修复AddressBook的find方法查找联系可能返回空内容的问题
+* Android修复Webview通过setStyle方法修改属性触发的窗口动画可能无效的问题
+* iOS新增系统原生提示消息（plus.nativeUI.toast）
+* iOS录音方式新增amr格式。amr是iOS和Android共同支持的录音格式
+
+####mui
+>* 解决div模式的actionsheet包含switch控件时，switch切换状态异常的bug
+* 解决radio/checkbox在disabled状态下仍可点击切换状态的bug
+* 解决Chrome Emulation环境下，div模式的选项卡中，点击非text的input控件导致底部选项卡位置错乱的bug（http://ask.dcloud.net.cn/question/2475）
+* 解决上拉加载在iOS 8.x系统下拖动较大距离时，无法自动回弹的bug
+* 解决mui-select右侧图标丢失的问题
+* 解决Android平台下拉刷新的webview窗口Id包含“/”时，js异常导致下拉刷新失败的bug
+* webview模式侧滑导航增加“主界面不动、菜单移动”的动画效果
+* 解决ajax请求本地文件失效的bug
+* iOS平台增加原生的toast控件
+* 增加原生模式的Actionsheet控件
+
+--------------------------------------
+
+### 5.1.0.201501120110
+
+####IDE
+>* 支持新建微信Web应用，可提示微信JS SDK。新建Web项目可选择微信模板
+* MAC版边改边看增加二维码支持
+* 优化索引速度
+* 优化大项目下js提示速度
+* 代码块支持添加描述
+* 解决菜单"视图"->"打开透视图"切换透视图时可能报错的问题
+* 解决css多个元素selector连写(如: html,body,a{})时在大纲视图中显示不正确的问题
+* 解决有时由于网络或本地缓存导致不能及时升级的问题
+
+####App
+>* 修复Android平台Webview窗口在隐藏时通过setStyle设置属性无法生效的问题
+* 修复Android平台Native.js中无法正确获取对象属性值的问题
+* 修复Android平台在360安全扫描提示的https校验建议问题。注意该安全提示并非安全漏洞，也不影响应用上架。此外还存在第三方SDK（如百度地图）的https校验提示，需要第三方SDK修复
+
+--------------------------------------
+
+### 5.0.0.201501040824
+
+####IDE
+>* 推出JSDoc+，通过扩展的JSDoc规范，实现更强大的语法提示，参考http://ask.dcloud.net.cn/article/129
+* 优化HBuilder内存占用及回收效率
+* 修复在构造函数处不提示方法参数的问题
+* 修复在with里面定义的变量在外部无法提示的问题
+* 修复JS中某些情况下无法追踪到定义处的问题
+* 修复JS跨文件引用对象时无法识别类型继承的问题
+* 优化this类型的提示
+* 解决有时点击真机调试菜单出现卡顿的问题
+* 优化Android设备默认存储位置为外置sdcard目录时可能导致真机调试运行后不能显示正确界面的问题
+* 修改HBuilder升级机制，三天内的新版本不再强制升级，三天后仍将静默升级。同时在官网提供历史版本下载
+* 增加活动栏目（菜单帮助下），举办2015迎新抽奖活动
+
+####App
+>* 大幅优化Android性能，低端机开启硬件加速后也可避免花屏
+* 自动释放人眼不可见的webview资源，开发者不必再依靠手动hide webview来降低内存占用
+* 新增Android5.0 UI支持，nativeUI的控件在Android5上使用OS新样式（不影响Android5以下的UI）
+* 新增Webview窗口的遮罩层功能，参考http://ask.dcloud.net.cn/article/130
+* 修复Android平台地图隐藏后无法再次正常显示的问题
+* 修复Android平台地图在子Webview窗口中定位错误的问题
+* 修复Android平台删除plus.storage数据后重启应用后再次出现的问题
+* 修复Android平台File调用seek方法不生效的问题
+* 修复Android平台在部分设备上嵌套Webview导致软键盘遮住输入框的问题
+* 修复Android平台浮动Webview窗口可能不触发标准DOM事件的问题
+* 修复Android平台浮动Webview窗口横竖屏切换可能导致显示不正常的问题
+* iOS平台新增系统原生弹出菜单ActionSheet控件。参见plus.nativeUI
+* 修复iOS平台等待框WaitingOption部分属性不生效的问题
+
+#####HelloH5+
+>* Webview页面添加窗口遮罩示例
+* NativeUI页面添加actionSheet示例（iOS）
+
+#####App打包
+>* 修复Android平台没有生成个推默认消息图标的问题。
+
+####mui
+>* Android平台支持可拖动式DIV侧滑菜单
+* Div模式侧滑导航支持“主界面不动、菜单移动”的侧滑菜单动画
+* hello mui首页侧滑后使用原生遮罩，避免多webview遮罩不同步
+* 多个子页面同时支持下拉刷新
+* 修复区域滚动导致Actionsheet跟着一起滚动的bug
+* 修复popover中radioeck点击导致popover关闭的bug
+* 支持slide类控件通过.mui-active样式设定默认显示项
+* 解决Android 4.4.2系统，滑动触发侧滑菜单不灵敏的问题
+
+####新年快乐
+>*祝大家2015快乐！2015来了，HTML5来了，HBuilder5来了！
+
+--------------------------------------
+
+### 4.8.1.201412182433
+
+####IDE
+>* 解决使用JQuery后，$()有时不提示选择器的问题
+
+####App
+>* Android平台修复在部分手机上出现软键盘弹出后自动关闭的问题
+* Android平台修复非全屏Webview窗口显示动画效果不对的问题
+* Android平台修复Webview设置background属性可能导致程序崩溃的问题
+* Android平台修复在部分Android2.3版本机器上预创建Webview窗口会自动显示的问题
+* Android平台统一Android平台各版本等待框显示样式
+
+--------------------------------------
+
+### 4.8.0.201412152314
+
+####IDE
+>* 优化android真机调试流程
+* 解决图片达到一定数量时，在js和css中无法提示文件及目录列表的问题
+* 解决代码提示输入数字时，如果输入-也应该用alt+数字选择提示
+* 解决某些操作会导致项目构建停止的问题
+* 解决Mac版HBuilder启动后会在Dock出现两个图标的问题，以及保留在Dock栏状态不正确的问题
+* Mac10.10(Yosemite)版首次启动HBuilder时提示用户下载正确版本的jdk
+* 升级css语法验证器, 解决css语法验证会出现大量误报的问题
+* 解决新建HBuilder窗体无法使用emmet的问题
+* 解决连续移动App打包可能出现文件被占用导致打包失败的问题
+
+####mui
+>* 优化hello mui中滑动触发列表项体验
+* 优化Actionsheet控件UI样式
+* 解决图片轮播在拖动距离小于1/2屏幕宽度时，依然触发切换下一张图片的bug
+* 完善hello mui选项卡示例，增加div模式、webview模式适用场景说明
+* 解决内容区列表滚动后，popover不显示、仅显示遮罩的bug
+* hello mui中选项卡增加数字角标示例
+* 解决屏幕内容区触发Actionsheet，Actionsheet没固定在底部的bug
+
+####App
+>* Android平台优化Webview窗口管理机制，降低内存使用峰值，提升在低端机上的窗口动画效率
+* 修复Android平台plus.runtime.install安装文件失败后可能导致异常的问题
+* 修复Android平台plus.io.resolveLocalFileSystemURL方法无法解析本地URL路径（file:开头）的问题
+* 修复Android平台多次创建AudioPlayer对象播放音频文件后可能导致播放失败的问题
+* 修复Android平台在某些情况下需要按两次返回键才触发backbutton事件的问题
+* iOS平台新增支持页面通顶显示（系统状态栏）功能,参见http://ask.dcloud.net.cn/article/118
+* 修复iOS平台相同zindex值的Webview窗口在隐藏后再显示可能导致相互覆盖混乱的问题
+
+#####App打包
+>* iOS平台支持64bit架构，兼容2015年2月1日起Appstore强制要求应用支持64bit架构
+* 修复iOS平台越狱包在iOS8.*设备上启动闪退的问题。
+
+####
+语法库
+>* 新增Android5.0的语法数据
+
+--------------------------------------
+
+### 4.7.2.201412090134
+
+####IDE
+>* 紧急修复4.7.1版有可能因与手机助手等其他Android辅助工具冲突，造成的HBuilder无法连接Android手机的问题
+
+--------------------------------------
+
+### 4.7.1.201412042203]---
+
+####IDE
+>* 优化了JS的转到定义 
+* 解决某些情况下JS文件的大纲不正确的问题 
+* 解决项目管理器中的图片文件预览遇到不能解析的图片时会报"no more handles"的问题 
+* 解决css格式化中=前后有空格时可能格式化失败的问题 
+* 优化iOS设备真机运行的兼容性 
+* 优化Android真机运行的兼容性，解决和部分手机助手冲突的问题 
+* 解决真机调试时控制台有时日志无法正确输出的问题 
+* 解决某些情况下启动失败的问题 
+* 添加生成JSDoc的快捷键Alt+Shift+J 
+* 解决某些情况下，工具-常规web浏览器设置列表会多出重复的浏览器设置的问题 
+* 解决mac上设置浏览器路径时，如果设置.app的路径时报不合法路径的问题 
+* 语法库: 新增部分html、css数据及js的浏览器兼容性数据 
+
+####App
+>* 新增微信支持分享独立链接功能 
+* Android平台新增Webview窗口支持背景透明功能
+* 修复Android平台上传文件没有同步更新提交session的问题 
+* 修复Android平台按键事件传递逻辑混乱的问题 
+* 修复Android平台部分设备软键盘弹出后自动收回的问题
+* iOS平台新增动态修改系统状态栏样式API:plus.navigator.getStatusBarStyle
+* iOS平台新增侧滑返回（popGesture）事件
+* iOS平台更新支付宝插件SDK，修复在iPad设备上可能支付失败的问题
+* 修复iOS平台plus.nativeUI.prompt在iPhone6上显示输入框无法弹出软键盘的问题 
+* 修复iOS平台Webview窗口hide后再close可能导致屏幕闪动的问题 
+* 修复iOS平台在部分设备上第一次启动可能一直停留在Splash页面的问题 
+* 修复iOS平台从相册中选择图片后显示可能会旋转90°的问题 
+* 修复iOS平台发送短信可能会导致程序异常的问题 
+* 修复iOS平台Webview窗口在动画过程中关闭可能导致程序异常的问题 
+
+####mui
+>* 完善侧滑菜单，增加遮罩蒙版、menu按键监听、back按键监听 
+* 完善back按键监听逻辑，优先关闭popover、侧滑菜单，之后再关闭当前窗口 
+* 增加card样式（圆角列表） 
+* 解决Android 4.4版本手机在语音搜索框中无法弹出键盘的问题； 
+* 增加创建遮罩蒙版API,参见http://dcloudio.github.io/mui/javascript/#mask
+* 优化Android平台上拉加载体验 
+* 增加左上角、右下角位置的popover弹出菜单 
+* 修复选项卡和分段选择嵌套，导致显示区域错乱的bug
+
+####HelloH5+
+>* Share页面添加微信分享独立链接消息示例
+* Map页面添加显示背景透明Webview窗口示例（Android）
+* Navigator页面添加修改系统状态栏样式的示例（iOS）
+
+--------------------------------------
+
+### 4.6.1.201411240154
+
+####App
+>* 修复Android平台某些情况下Append webview无法捕获back按键事件的bug。关于多webview按键响应逻辑请参考http://ask.dcloud.net.cn/article/105 
+
+####mui
+>* 解决hello mui首页连按两次back键无法退出App的问题
+* 解决hello mui输入框示例中个别手机输入法无法弹出的问题
+* hello mui首页增加侧滑导航示例
+* 解决侧滑菜单在iOS平台不显示右侧导航箭头的问题
+* 解决特定场景下拉刷新出现JS错误问题
+* 支持iOS平台从屏幕左边缘推出关闭窗体，加强单手操作大屏iPhone的体验
+* 解决Android 4.2.x版本，开关控件在滑动过程中圆角变方角的问题
+* 解决Ajax传递中文参数乱码问题
+
+--------------------------------------
+
+### 4.6.0.201411180101
+
+####IDE
+>* 双击选词，自动高亮相同字符（选多个相同词的快捷键仍是Ctrl+Shift+D） 
+* 优化js解析引擎,增强对复杂闭包参数传递等写法的兼容性 
+* js选择器中的ID也可以按ALT转到定义跳到HTML中ID的定义位置 
+* js的switch代码体中，在default或case前敲回车，自动生成一个新的case段 
+* JQuery、Zepto等框架js使用网络CDN引用时，也可以探测并自动挂载对应语法提示库 
+* 解决bootstrap3.3.1的css无法提示的问题
+* 优化当前行的复制粘贴（不选内容直接Ctrl+C、V） 
+* 修改CSS代码提示排序，-开头的前缀语法统一排在后面 
+* 边改边看的浏览器工具栏添加"显示网址二维码"和"打开控制台"功能 
+* 解决网络不稳定时安装、更新PHP插件无法启动或重启后不生效的问题 
+* 项目管理器右键菜单的"进入"点击后，可以只看当前的项目 
+* Ctrl+R快捷键在移动App中设为手机运行(web项目仍为打开浏览器) 
+* 大幅优化真机运行的兼容性，并提供真机运行常见故障排查指南 
+* 解决"打开目录"导入项目界面修改项目名称不起作用的问题 
+* 解决Ctrl+鼠标滚轮有时不能放大缩小字体的问题 
+* 解决安装"Ftp Sync"插件后"项目管理器"中"连接"的排序不在最后的问题 
+* 解决manifest界面配置iphone6的启动界面后打包不生效的问题 
+* 解决manifest界面配置支付宝等插件保存报错的问题 
+* 解决App打包上传过程中不能取消打包的问题 
+
+####App
+>* 去掉真机运行基座的开发模式水印图片 
+* iOS平台新增从屏幕左边侧滑可关闭Webview窗口功能（http://ask.dcloud.net.cn/article/102） 
+* iOS平台新增右侧推入动画（pop-in）效果 
+* 修复iOS平台在某些情况下bounce属性失效的问题 
+* 修复iOS平台在获取系统状态栏颜色值格式不对的问题 
+* 修复百度定位模块没有获取方向、速度信息的问题 
+* 修复Android平台父窗口hide后，子窗口再hide不触发事件的问题 
+* 修复Android平台在setTimeout中监听下拉刷新事件无效的问题 
+* 修复Android平台通过返回键关闭等待框后可能导致plus.nativeUI.closeWaiting方法无效的问题 
+* 修复Android平台Webview的clear方法输出错误日志的问题 
+* 修复Android平台Webview处理zindex属性可能导致窗口相互覆盖混乱的问题 
+* 修复Android平台在IDE中真机运行时保存页面后可能无法同步刷新的问题 
+* 支持Android打包自定义隐私权限Permissions（http://ask.dcloud.net.cn/article/101） 
+* HelloH5+：页面打开动画调整为推入动画（pop-in），iOS上支持侧滑返回效果 
+
+####mui
+>* 优化窗体切换效果，动画更为流畅，通过复用webview降低了内存占用 
+* iOS上支持左侧屏幕边缘侧滑关闭窗体 
+
+####语法库
+>* 增加chrome38的语法支持，如Symbol、BatteryManager等 
+* 补充了一批语法数据及浏览器兼容性
+
+--------------------------------------
+
+### 4.5.0.201411031924
+
+####IDE
+>* App配置文件mainfest.json新增iphone6（Plus）设置的配置选项
+* App配置文件mainfest.json的可视化视图新增分享、地图、支付等配置信息
+* 解决manifest.json代码视图中某些新增配置在真机运行时无效的问题
+* 解决用户手动安装了java8后，真机联调异常的问题
+* 解决项目中不包含中文名文件但真机运行时控制台误报有中文名字错误的问题
+* 解决Android真机联调基座有时候无法安装的问题
+* 解决真机联调时删除资源未同步至手机同时控制台报错的问题
+* 解决了未保存manifest文件直接打包可能导致图标不正确的问题
+* 调整项目管理器项目排序，已关闭项目排在末尾
+* 解决html文档中head、script、link等标签的id不提示的问题
+* 解决css格式化时会把伪类、伪元素前的空格去除导致css失效的问题
+* 解决有时格式化html中的css代码会多出空行的问题
+* 解决在css行尾输入敲空格激活代码助手后，执行结果与预期不符的问题
+* 解决有时在边改边看模式下切换html编辑器后，边改边看浏览器没有显示新页面的问题
+* 解决项目或文件名中包含多个连续特殊字符时，边改边看浏览器不能正确显示的问题
+* 优化重复插入行或选区功能（ctrl+shift+r）,智能处理换行
+* 解决js代码中有时强制Alt+/时插入代码位置不对的问题 
+* 解决在html的onclick等方法属性中写js时，光标有时会跑到html文档开头的问题
+* 颜色候选提示，新增了red、blue等英文候选
+
+####PHP
+>* 解决卸载php插件后重新启动或使用全新的HBuilder启动,已打开的php文件报错的问题
+* 解决php编辑器debug时的断点颜色看不清的问题* 
+
+####App
+>* 修复html页面存在id为plus节点时导致所有plus API无法使用的问题
+* 修复Android平台plus.runtime.launchApplication调用第三方无法传递extra参数的问题
+* 修复Android平台通过第三方应用启动时未更新plus.runtime.argments的问题
+* 修复Android平台XHR对象的setRequestHeader方法设置content-type值无效的问题
+* 修复Android平台在拍照界面连续点击返回键直接退出程序的问题
+* 修复Android平台隐藏Webview页面后依然显示软键盘的问题
+* 修复iOS平台在iPhone6（Plus）设备上的兼容性问题
+* 修复iOS平台未安装快捷支付应用时取消支付可能导致应用崩溃的问题
+* 修复iOS平台获取子Webview标题不正确的问题
+* 修复iOS平台弹出日期、时间选择框会出现黑屏背景色的问题
+* 修复iOS平台设置日期选择设置默认显示日期无效的问题
+* 修复iOS平台调用发送邮件API无效的问题
+* 更新iOS云端App平台打包支持iPhone6（Plus）设备
+
+####HelloH5+
+>* 修复在iOS8上div区域滚动的兼容性问题；
+* HelloH5+：优化分享页面，改进用户操作体验。
+
+####mui
+>* 实现ajax功能封装，并提供示例；
+* 修复android 4.2.1版本，switch控件圆角变方角的问题
+* 修复android 4.4版本以下，左滑导航移动后顶部导航位置错乱的问题
+* 解决iOS平台下拉刷新箭头切换卡顿的问题
+* 优化popover关闭体验
+
+**庆贺HTML5标准定稿！**
+
+--------------------------------------
+
+### 4.4.0.201410192226
+
+####IDE
+>* 解决HTML中的js方法不提示参数的问题，alt+shift+/为参数提示。 
+* 解决在不同作用域下给同一变量赋值，导致变量类型判断不准确的问题 
+* 优化js索引，解决部分卡顿的问题 
+* 移动App的manifest可视化视图中，修复友盟插件配置不正确的问题 
+* php插件：优化php提示，解决某些情况下含有namespace时不提示自定义方法的问题 
+* php插件：修改指定项目的php版本不生效的问题 
+
+####mui
+>* 重构图片轮播插件实现，并将slideshowDelay参数简化为interval 
+* 重构上拉、下载插件实现，支持上拉加载时没有更多数据的提示 
+* 解决android4.4版本侧滑导航界面闪屏问题 
+* 修复下拉刷新列表增加tap事件后，下拉过程中触发tap事件的bug 
+* 解决hello mui中，快速点击下拉刷新界面，导致下拉区域无法关闭的bug 
+* 使用subpage方式构建webview模式的选项卡界面 
+* 增加preload方法实现预加载页面 
+* 解决iOS平台输入法弹出后导致fixed定位元素位置错乱问题 
+* 重构mui.init和mui.back方法 
+* 优化清除按钮和语音按钮的点击体验 
+* 修复popover遮罩的事件透传问题 
+* 增加语音输入完成事件 
+* hello mui增加二级折叠面板样式 
+
+####App
+>* 更新个推SDK支持iOS8 
+* 新增实现支付宝快捷支付功能 
+* 新增Webview窗口动画支持透明度变化缩放效果 
+* 新增定义Webview窗口加载url错误页面 
+* 修复通过scheme调用应用时plus.runtime.arguments无法获取完整字符串的问题 
+* 修复Android平台二维码界面隐藏后无法再正常显示的问题 
+* 修复Android平台地图页面可能在某些情况下显示不正常的问题 
+* App云端打包修复iOS越狱包无法显示百度地图的问题 
+* App云端打包修复iPad(iOS7)设备启动界面可能抖动的问题 
+* HelloH5+模板新增支付功能演示页面
+
+--------------------------------------
+
+### 4.3.0.201410020207
+
+####IDE
+>* 新增手动语法验证功能，在工具菜单和右键菜单中点验证本文档语法
+* 优化语法验证器设置，合并同类型的验证器，新增php语法验证器设置
+* 优化越用越卡的问题，处理某些js闭包写法造成的索引卡顿
+
+####App
+>* 新增删除应用Cookie接口
+* 修复Android平台地图搜索API无法返回数据的问题
+* 修复Android平台启动界面无法自定义关闭显示雪花的问题
+* 修复Android平台在某些机器上无法从图库中选择图片的问题
+* 修复Android平台动态修改窗口大小后导致显示不正常的问题
+* 修复Android平台Webview作为子窗口时下拉刷新功能显示不正常的问题
+* 修复iOS平台在某些平台可能导致等待框无法关闭的问题
+* App云端打包新增支持应用自定义URL Scheme
+
+####mui
+>* openWindow方法支持extras参数
+* 支持跳转到图片轮播中的第index张图片
+* 重构图片轮播插件实现，并将slideshowDelay参数简化为interval
+* 重构上拉、下载插件实现，支持上拉加载时没有更多数据的提示
+* 修复下拉刷新列表增加tap事件后，下拉过程中触发列表项tap事件的bug
+* 增加preload方法实现预加载页面
+####语法库
+>* 补充andriod4.4上的语法兼容性数据
+
+**祝大家国庆快乐**
+
+--------------------------------------
+
+### 4.2.1.201409152016
+
+####App
+>* 修复Android平台调用Geolocation API可能引起程序崩溃的问题
+
+####HelloH5
+>* 修复iOS平台从系统相册选择图片无法正常显示的问题
+* 改进Android平台后台发送短信可自定义内容和选择收件人
+
+--------------------------------------
+
+### 4.2.0.201409132324
+
+####IDE
+>* 解决边看边改模式下编辑没有被html引用的css文件会报错的问题 
+* 解决边看边改模式下编辑外部的html文件会报错的问题 
+* 解决边看边改修改页面引用的less或js没有刷新页面的问题
+* 【Mac】解决command+鼠标左键多光标编辑不能用的问题
+* 【Mac】解决command+鼠标滚轮放大缩小字体不能用的问题
+
+####App
+>* 新增XMLHttpRequest对象对responseType属性的支持
+* 新增Geolocation通过百度地图模块进行定位
+* 新增Android平台对键按下、松开、长按事件的监听
+* 修复动态改变应用userAgent可能导致Plus API无法调用的问题
+* 修复Android平台退出应用后仍然保存Session数据的问题
+* 修复Android平台创建Webview窗口时设置zindex属性不生效的问题
+* 修复iOS平台查找联系人时multiple参数处理逻辑错误的问题
+* 修复iOS平台跨域请求时Cookie数据未保存的问题
+* 修复App云端打包可能导致百度地图后无法正常显示的问题
+* 修复App云端打包iOS越狱包覆盖安装更新后资源可能不更新的问题
+
+####mui
+>* 增加新的图标文件
+* 打开新窗口时，支持通过参数控制是否自动显示新页面
+* 打开新窗口时，支持通过参数控制是否自动显示等待框
+
+####语法库
+>* 新增类DOMRectReadOnly等；移除openDialog的浏览器支持数据；新增Array属性及浏览器兼容数据；position新增新值域
+
+--------------------------------------
+
+### 4.1.0.201409052402
+
+####IDE
+>* win: 修复dock到任务栏后无法启动的问题
+* win: 修复拖文件到HBuilder图标或关联文件后无法打开文件的问题
+* Mac: 完善启动器
+* Mac: 修改关于界面
+* Mac: 解决某些osx版本下无法打开文件选择框、无法选择字体的问题
+* 修改属性某些情况下无法使用转到定义功能的问题
+* 解决less文件中无法使用emmet的问题
+* 解决html中引用多个css时，边看边改css不会刷新浏览器内的问题
+* 解决项目或文件夹、文件名中包含#号时，使用边改边看或ctrl+r运行浏
+* 解决css格式化后会把"或'前的空格删除掉的问题
+* 解决某些情况下HBuilder闪退的问题
+* 解决欢迎向导界面快捷键失效的问题
+* 解决拖拽文件或文件夹到欢迎向导界面无效的问题
+* 重启HBuilder后保存配置状态，包括项目管理器文件同步、显示工具栏、显示行号、 高亮相同字符、自动换行
+* 解决内置Web服务器有时修改端口重启后还原的问题
+* 解决边看边改模式下，Ctrl+s后url后的参数丢失的问题
+* 语法库: 新增chrome37对dialog标签的支持、js新增HTMLDialogElement类、新增css属性all
+
+####App
+>* 新增Webview对象的show和hide相关事件通知
+* 新增获取设备唯一标识接口plus.device.uuid
+* 修复联系人查找接口对过滤参数匹配不正确的问题
+* 修复Android平台toast默认不垂直居底对齐的问题
+* 修复Android平台二维码扫描设置过滤参数无效的问题
+* 新增iOS平台获取状态栏背景颜色的接口plus.navigator.getStatusBarBackground()
+* 修复iOS平台在iPad设备上弹出窗口默认不居中的问题
+* 打包机支持Android平台自定义是否开启硬件加速功能
+
+####mui
+>* 优化侧滑导航效果
+* 精简hello mui工程代码
+* mui框架不再监听App首页的Back按键，由App根据具体业务处理
+* 发布文档，地址是：http://dcloudio.github.io/mui/
+* Hello mui增加webview版选项卡示例
+* 解决openWindow方法中页面切换动画参数对预加载页面无效的问题
+* 页面关闭时，自动关闭该页面创建的所有页面
+
+####MUI
+>* 解决initGlobal方法设置页面切换动画无效的问题
+* 解决手动关闭预加载页面后，预加载页面无法再次打开的问题
+
+**祝大家中秋快乐**
+
+--------------------------------------
+
+### 4.0.0.201408241833
+
+####IDE
+>* Mac版: 解决高分屏机器下，升级后界面显示错误的问题
+* Win版: 解决用户信息处点击退出无反应的问题
+
+####mui
+>* 增加preload事件，优化预加载时机
+* 优化侧滑导航动画及滑动速度
+* 优化开关毛边
+* 增加消息框（dialog）示例
+* 调整主界面控件列表顺序
+
+####App
+>* 更新真机联调的iOS证书，已过期证书无法再安装到手机上
+* 修复通过parent方法获取的Webview对象无法访问扩展参数的问题
+* 修复Android平台使用video标签全屏播放视频可能导致背景显示错误或无法正常返回的问题
+* 修复Android平台在部分存在虚拟按键的机器上横竖屏切换显示不正常的问题
+* 修复Android平台通过XHR获取respnoseText中包含特殊字符（如单引号）处理不正确的问题
+* 修复Android平台访问某些https内容时可能无法正确显示的问题
+* 修复Android平台pickTime设置默认显示时间不生效的问题
+* 修复Android平台在某些手机上可能提示“打不开网页”的问题
+* 修复Android平台在某些手机上无法访问资源的问题
+* 修复iOS平台在7.x设备上启动时可能导致闪退的问题
+* 修复iOS平台在打开或关闭Webview对象可能会导致应用假死的问题
+
+--------------------------------------
+
+### 3.9.3.201408210214
+
+####IDE
+>* 解决某些情况下Mac和Windows版本升级互干扰问题
+
+--------------------------------------
+
+### 3.9.2.201408192201
+
+####IDE
+>* Win版 ：解决因jcef插件加载失败，导致HBuilder启动报错的问题
+* 解决PHP页面格式化混乱的问题
+* 解决新建项目时，偶尔报错的问题
+* 【已知问题】win版下，jcef.dll与谷歌输入法冲突，在某些情况下退出会报错
+
+--------------------------------------
+
+### 3.9.1.201408190131
+
+####mui
+>* 解决Hello MUI在iPhone5上打开新窗口的卡顿问题
+* 解决Hello MUI中滑块（range）样式丢失问题；
+* 优化iOS平台窗口动画切换效果；
+
+####IDE
+>* Mac版：解决Mac版仅打开一个页面时，文档没有被正确载入的问题
+* Mac版：登录器开放注册
+
+--------------------------------------
+
+### 3.9.0.201408172207
+
+* 【重要】开放本地打包。点菜单发行可见
+* 【重要】集成mui框架
+* 【重要】开放问答系统。点工具栏右上角的问答按钮，互动交流。
+* 【重要】改善格式化，集成jsbeauty插件
+* 【重要】升级边改边看的chromium版本，支持最新语法，支持右键打开内嵌浏览器控制台
+* 修复Android平台Webview窗口在横竖屏切换后可能导致无法显示的问题
+* 修复Android平台地图控件在横竖屏切换后可能导致显示不全的问题
+* 【重要】优化Android平台Webview窗体切换效果
+* 修复iOS平台在某些情况下会自动关闭启动界面的问题
+* 修复iOS平台使用个推推送消息可能导致重复接收的问题
+* 【重要】优化HelloH5+、CSDN应用的性能
+* 语法库新增Path2D、WeakSet对象，修正float等css值域范围
+
+
+--------------------------------------
+
+### 3.8.0.201408092124
+
+>* 解决php编辑器下使用ctrl+r没有弹出设置外部服务器提示的问题
+* 修复Android平台在某些设备上使用select可能导致应用异常的问题；
+* 修复App云端打包生成appstore包提交后的缺少图片资源错误；
+* 修复App云端打包Android平台提交签名证书不生效的问题；
+* 新增webview对象支持自定义扩展参数功能；
+* 新增关闭所有等待窗口功能接口：plus.nativeUI.closeWaiting；
+* 新增管理应用cookie功能接口：plus.navigator.setCookie、plus.navigator.getCookie；
+* 新增管理应用userAgent功能接口：plus.navigator.setUserAgent、plus.navigator.getUserAgent；
+* Android平台新增阻塞网络图片加载控制接口：setBlockNetworkImage；
+* iOS平台新增应用切换到后台支持音乐播放功能。
+* 新增一批Math对象、Array对象、Number对象、Object对象的方法如：Math.clz32、Math.fround、Math.cosh;Array.fill;Number.MAX_SAFE_INTEGER、Number.MIN_SAFE_INTEGER;Object.setPrototypeOf等及其浏览器支持数据
+* 更换了一批视图的图标如边看边改的Web浏览器视图、快捷键视图等
+
+--------------------------------------
+
+### 3.7.1.201408052251
+
+* 修改打开编辑器自动打开快捷键视图的问题
+* 修改点击帮助菜单中的“快捷键大全”为打开快捷键视图
+* 修改新建移动App的Hello H5+模板打包参数错误的问题
+* 在编辑器右键菜单中增加版本管理
+
+--------------------------------------
+
+### 3.7.0.201408032050
+
+* 增加快捷键视图，使用ctrl+shift+L可以打开该视图
+* 修改真机调试启动、停止方式，点击真机调试手机列表中的选项即可启动，再次点击关闭真机调试。
+* 修复Webview窗口对象获取id属性可能不正确的问题
+* 新增Webview窗口对象隐藏（hide）及隐藏后再显示（show）支持动画效果
+* 新增Webview窗口对象动画显示完成的回调通知
+* 修复Android平台Webview窗口isVisible可能返回值不正确的问题
+* 修复Android平台新浪微博分享提示“No peer certificate”的问题
+* 修复iOS平台调用分享API可能导致应用异常的问题
+* 修复iOS平台多次调用地图后可能导致应用异常的问题
+* 修复iOS平台App云端生成的越狱包全屏显示的问题
+* 语法库补充a标签增加downlaod属性及浏览器支持数据
+* 在帮助菜单下增加吐槽和用户信息子菜单
+* 修改了FTP插件的汉化翻译
+
+--------------------------------------
+
+### 3.6.1.201407282132
+
+* 紧急修复Android的plus.runtime.openURL、plus.maps.openSysMap、Native.js创建桌面快捷方式的Bug
+* 修复font-family提示异常的问题
+
+--------------------------------------
+
+### 3.6.0.201407271554
+
+* 解决ctrl+shift+r选择文本包含某些特殊字符时会复制混乱的问题
+* 解决代码块视图查看详情对话框, 失去焦点后没有关闭的问题
+* 修改Ctrl+L快捷键为选中光标当前行，连续按下Ctrl+L会继续向下选中行。如需使用"转到行"功能，请使用Ctrl+G快捷键
+* 解决App打包状态查询不正确的问题
+* 修复plus.storage API无法正确读取带特殊字符（如'\'）的问题
+* 修复Android平台Webview无法移除dock样式子窗口的问题
+* 优化Android平台启动界面处理逻辑，避免启动时黑屏和窗口切换可能显示桌面的问题
+* 优化Android平台Webview窗口动画显示时可能导致闪屏的问题
+* 修复iOS云端打包的iPhone应用安装在iPad设备上显示默认启动界面的问题
+* 新增iOS平台控制状态栏样式及设置背景颜色功能
+* 新增iOS云端打包支持应用全屏显示模式功能
+
+--------------------------------------
+
+### 3.5.0.201407202225
+
+* 去除在</li>、</tr>等结束标签后输入回车自动生成li、tr标签的功能
+* 修改新建web项目界面，新增自定义web项目模板功能
+* 新增联网API请求与标准网络请求的Cookie数据同步功能
+* 修复Android平台地图中标点添加气泡无法显示的问题
+* 修复Android平台地图在某些情况下设置中心点坐标不生效的问题
+* 修复Android平台Waiting等待框的雪花图标可能不居中显示的问题
+* 修复Android平台横竖屏切换可能导致窗口位置和大小计算不正确的问题
+* 修复iOS平台在某些情况下会引起窗口滚动偏移量重置的问题
+* 修复iOS平台上传文件到某些服务器可能引起411错误的问题
+* HelloH5应用新增文件上传(Uploader)演示页面
+
+--------------------------------------
+
+### 3.4.1.201407131915
+
+* 紧急修复XmlHttpRequest请求总是返回失败的问题
+
+--------------------------------------
+
+### 3.4.0.201407121951
+
+* 防止升级包下载不全，增加MD5校验。下载不全可重新升级
+* manifest可视化界面补充了一批iOS的不同分辨率的图标
+* 工程下若有过多图片、视频、js、css文件，为提升加载速度，代码助手提示时会处理成分目录载入
+* 真机调试时修改css、js文件也会刷新手机上对应的页面，包括修改less、coffee等文件 
+* 修复首次使用HBuilder字体设置后不生效的问题
+* 修复Webview对象的id属性值总是为undefined的问题
+* 修复Webview对象的canForward方法回调函数的参数不正确的问题
+* 修复Webview对象的isVisible方法返回值为null的问题
+* 整理Android平台云端打包默认使用权限过多的问题
+* 修复Android平台在某些手机上从相册选择图片不能上传的问题
+* 修复Android平台plus.nativeUI.prompt弹出输入框中输入多行内容导致异常的问题
+* 修复Android平台分享图片不成功的问题
+* 修复Android平台接收个推透传消息逻辑处理中存在的问题
+* 修复Android平台横竖屏切换导致窗口位置计算错误的问题
+* 修复iOS平台从相册选择图片返回路径错误的问题
+
+--------------------------------------
+
+### 3.3.1.201407062235
+
+* 解决manifest.json代码模式下添加了iOS的图标或启动图片后，打包不生效的问题
+* 解决有些情况下视觉主题设置保存字体大小不生效的问题
+* 新建文件添加模板，开发者也可以自定义自己的模板
+* 去除新建移动App项目的Ratchet模板
+* css属性、属性值使用代码助手补全后回车光标智能移动到分号(;)后
+* HBuilder关闭adb.exe无法关闭的问题
+* 解决某些情况下Android真机调试模式console日志输出有误的问题
+* 修改新建移动App项目模板展现样式
+* 解决Webview对象的hide方法未定义的问题
+* 解决Android平台在某些情况下无法正常写入文件数据及拷贝文件无效的问题
+* 解决Android平台上传任务未及时更新uploadedSize和totalSize值的问题
+* 解决Android平台在某些情况下提示"Uncaught ReferenceError: SYNC_HANDLER is not defined"的问题
+* 解决Android平台通过video标签播放视频无法全屏显示的问题
+* 解决iOS平台Webview相互嵌套后窗口大小计算不准确的问题
+* 解决iOS平台Webview无法独立开启垂直和水平方向的回弹效果
+* 解决iOS平台Webview没有设置id值后导致部分API返回值不对的问题
+* 解决iOS平台App打包可自定义设置应用内置版本号(CFBundleVersion)
+* 修复iOS平台App打包修改部分配置后无法生成Appstore专用包的问题
+
+--------------------------------------
+
+### 3.2.2.201407020145
+
+* 解决新建App后使用真机调试会白屏的问题。
+
+--------------------------------------
+
+### 3.2.1.201406302101
+
+* 解决HBuilder升级后项目的JS框架语法提示有时不正常的问题，如JQurey的css方法变成大写
+* 解决真机调试时iOS基座包无法正确升级的问题，避免先手动删手机上的老包再调试的问题
+* 解决边看边改模式下多窗体多窗格不能正确识别当前文件，以至于保持时不会自动刷新的问题
+* 解决安装了PHP插件后，在某些情况下PHP文件仍然以Html编辑器打开的问题
+* 解决某些情况下打开搜索列表中的文件时，HBuilder崩溃的问题
+* 禁止svn插件弹出是否上报信息的提示框
+* 优化注释选中内容(Ctrl+Shift+/)
+* 拷贝JQuery、zepto文件时，自动挂载对应框架语法
+* 修复android某些情况下日志打印不全的问题。
+* 新增plus.webview对象，实现js操作原生webview，方便开发高性能HTML5应用
+* 调整窗口加载HTML页面机制为默认不可缩放，若设置可缩放可在API中通过参数赋值进行
+* 解决Android平台推送消息可能导致程序异常崩溃的问题
+* 解决Android平台分享API无法添加图片的问题
+* 解决Android平台调用第三方程序无法返回程序没有安装的错误信息
+* 解决Android选择时间对话框默认非24小时制的问题
+* 解决iOS在调用UI接口可能导致程序异常崩溃的问题
+* 语法库中补充了Firefox30的新增语法（升级语法库会触发重新构建JS索引）
+
+--------------------------------------
+
+### 3.1.0.201406222004
+
+* 菜单工具-插件安装界面，增加插件卸载链接
+* 优化真机联调控制台提示日志
+* 优化Ctrl+/注释及Ctrl+Shift+/多行注释
+* 解决复制或剪切折叠代码时，必须多复制一个换行符才可以正确复制或剪切折叠内容的问题
+* 解决Android平台调用pickTime返回的时间不正确的问题
+* 解决Android平台使用监听close事件的API后退出应用，会导致黑屏的问题
+* 解决Android平台从相册中选择图片后无法直接预览的问题
+* 解决Android2.3及以下设备上无法正常显示地图的问题
+* 解决Android平台分享总是提示失败及无法解除授权绑定的问题 
+* 解决Android平台创建过多下载任务后不能正常下载的问题
+* 解决Android平台在某些设备上横竖屏切换会导致程序崩溃的问题
+* 解决iOS平台调用API拷贝文件可能导致应用崩溃的问题
+* 解决iPad上弹出拍照界面没有默认居中的问题
+* 解决iOS平台在某些情况下不能触发close事件的问题
+
+--------------------------------------
+
+### 3.0.0.201406141908
+
+* 优化了构建索引时对CPU的占用，减少卡顿
+* 修复使用Ctrl+Shift+R复制当前行或选区时，如包含中文时会出现乱码的问题
+* 修复编辑css时，输入/*后排版错位的问题
+* 修复显示行号状态不正确的问题
+* 解决App中manifest.json图形配置界面中修改Android图标配置后切换到源码界面会还原的问题
+* 解决App中manifest.json手动添加的自定义属性提交打包时不生效的问题
+* 搜索条移至编辑器底部，并完善Ctrl+F策略:
+        - 光标在代码区时，按Ctrl+F为显示/隐藏搜索条，若搜索条未显示，则显示，若搜索条已存在，则隐藏
+        - 光标在代码区时，选中代码按Ctrl+F，把选中的文字自动放入搜索框，并将光标置焦到搜索条
+        - 焦点在搜索条时，按Ctrl+F，查找定位到下一个匹配字符
+        - 焦点在搜索条时，按Esc，隐藏搜索条
+* 查看App打包状态界面添加手动下载安装包的功能
+* App打包完成后，增加气泡提醒，点击气泡中的”安装包路径“链接，打开下载目录 
+* 新建移动App和新建Web项目时，增加默认新建项目的地址，如更换该地址，则下次新建默认地址更换为新的地址。
+* 美化了部分界面图标
+
+--------------------------------------
+
+### 2.9.1.201406082012
+
+* 紧急修复模糊提示有时不能正确补全代码的问题
+
+--------------------------------------
+
+### 2.9.0.201406071523
+
+* 真机联调增加"如何使用Chrome控制台调试Android应用"菜单
+* 修复联调时iPhone手机dll冲突导致无法连接的问题
+    * 优化App的manifest.json编辑器，使其代码视图可以添加自定义json节点
+    * 解决Android平台无法在多个窗口创建地图的问题
+    * 解决Android平台播放音乐后导致应用退出时黑屏的问题
+    * 解决Android平台下载API因无法识别文件名导致下载失败的问题
+    * 优化iOS平台对一维码解码识别率
+    * 修复打包App无法锁定屏幕方向的问题
+* 
+* 
+--------------------------------------
+
+### 2.8.0.201406021625
+
+* 优化打开文档时的速度
+* .cshtml格式的文件默认使用html编辑器打开，.ts格式的文件默认使用js编辑器打开
+* css中输入属性值回车后，自动补全分号，并智能移动光标位置
+    * 提示css方法时敲回车，光标自动放到括号中
+* 完善部分汉化描述
+* 新增chrome35语法：新增类ShadowRoot;node对象新增方法createShadowRoot;css新增backface-visibility、transform、transform-origin、transform-style等
+* 修复新建移动App报客户端参数错误的bug
+* 解决使用代理后App打包下载失败的问题
+* 解决new plus.net.XMLHttpRequestz在连接失败情况下获取statusText不正确；在返回数据为空情况下responseText无法访问的问题；
+* 解决某些情况窗口关闭后未及时释放资源的问题；
+* 解决android平台二维码扫描在部分设备上操作时可能导致异常退出的问题；
+* 解决android平台在弹出软键盘时会覆盖输入框的问题；
+* 解决android平台推送消息图标不正确，点击推送消息无法启动APP的问题；
+* 解决在iPad上日期选择控件默认显示位置不正确的问题；* 
+
+--------------------------------------
+
+### 2.7.1.201405272206
+
+* Android平台解决地图API无法触发click事件、标点对象显示不正常、气泡显示逻辑不正确的问题
+
+--------------------------------------
+
+### 2.7.0.201405260401
+
+* 解决某些情况下同一项目会同时触发多个构建的问题
+* 优化文档打开速度
+* 解决plus.ui.enumWindow()获取窗口对象不正确的问题
+* 解决plus.uploader无法正确上传文件的问题
+* 解决plus.io.FileWriter写入文件时，没有删除旧数据的问题
+* 解决plus.android.importClass无法导入操作蓝牙原生代码android.bluetooth.BluetoothAdapter 的问题
+* Android平台打包支持自定义添加系统权限（permission）
+* iOS平台打包支持自定义要引用的系统库（framework）
+
+--------------------------------------
+
+### 2.6.2.201405171907
+
+* plus.android.import()方法由于在某些低版本android手机报关键字冲突，该方法变更为plus.android.importClass()；原import()方法仍然可以使用，但是由于在某些2.x的系统上不生效，所以不推荐使用。已经使用Native.JS开发APP的开发者如果要兼容2.x系统，请修改该方法。
+* 修复PHP、JSP、ASP、ASPX文件中的JS方法、属性；CSS中已定义的颜色；HTML的ID等代码助手无法提示的问题
+* 解决夜间模式下标签卡字体看不清的问题
+* 修改搜索条“范围”选项文字描述，将"封闭项目"改为"当前项目"、"工作空间"改为"所有项目"
+
+--------------------------------------
+
+### 2.6.1.201405132054
+
+* 批量改词的功能补充快捷键Ctrl+Shift+A
+* 解决移动APP项目manifest.json的可视化视图中推送插件无法修改的问题
+* 解决Android打包应用无法调用Native.JS的问题
+
+--------------------------------------
+
+### 2.6.0.201405122310
+
+* 转到定义从Ctrl改为Alt+鼠标左键。快捷键Ctrl+Alt+D不变。本次修改统一了快捷键语法，Alt为"转到"，以及解放Ctrl为多光标输入让路
+* 新增批量改词的功能 ，比sublime的Ctrl+d更有优势的地方是可以使用Ctrl+鼠标去除一个不想选中的词。快捷键为Ctrl+Shift+D或Ctrl+鼠标左键
+* 重复插入当前行快捷键修改为Ctrl+Shift+R，打开文件快捷键变更为Ctrl+T；新增重复插入当前选区的功能
+* 优化启动速度,调整了部分插件、上次打开的文件的加载顺序。
+* 优化JS解析引擎，解决同一属性在不同作用域下赋值会解析错误的问题
+* 完善js语法提示，解决部分情况下this变量解析错误的问题
+* 完善js语法提示，优化命名空间形式和闭包形式创建的JS对象的处理
+* 新增Zepto框架语法提示库，对工程点右键"引入框架语法"来使用
+* 完善JQuery框架语法提示库，新增部分描述和示例
+* 暂时关闭文件重命名或移动时同步修改其他文件对本文件引用的功能
+* 移动APP：优化扩展API的执行效率
+* 移动APP：完善Native.JS
+* 移动APP：完善第三方分享插件（新浪微博、腾讯微博、微信）    
+* 新增Android真机调试控制台可以输出console日志的功能
+* 解决Android真机调试APP资源没有被正确替换的问题
+* 解决Android真机调试使用的终端安装包无法自动更新的问题
+* 语法库新增一批伪元素-webkit-media-controls-panel等
+* 语法库调整对firefox29的浏览器支持数据,新增部分语法如html的input属性值number、color，js的URLSearchParams、Gamepad、HTMLShadowElement；移除部分firefox29的浏览器不再支持的数据，如：js的属性CRMFObject、XULControllers、LoadStatus。详情参考https://developer.mozilla.org/en-US/Firefox/Releases/29
+
+--------------------------------------
+
+### 2.5.0.201404262022
+
+* 新增预编译器，可在保存文档时调用外部命令编译sass、coffee等文件。除了编译，还可实现压缩、混淆、提交ftp或git等多种功能
+* 修改PHP无法高亮相同字符的问题。
+* 优化Emmet和代码块的多光标输入
+* 修改某些情况下JS代码注释再取消注释,代码前会出现空格的问题
+* 解决启动后偶尔HBuilder会报JS源载入错误的问题
+* css新增伪类required等及浏览器兼容数据
+* 校正了js的queryselector、queryselectorAll等语法的浏览器兼容性
+    
+--------------------------------------
+
+### 2.4.0.201404192403
+
+* 优化含有JQuery的项目的性能和体验，检测到JQuery相关文件时自动挂载扩展语法库
+* 优化因项目中文件太多导致的文件列表提示卡的问题
+* 优化语法树算法，降低js编写时CPU的占用
+* 解决代码助手在某些情况下会崩溃的问题
+* 解决修改html标签时触发代码助手后，使用数字选择对应提示，有时出现数字不消失的问题
+* 解决代码助手中提示的图片大小不正确的问题
+* 解决HBuilder启动时，由于打开过其他的eclipse、myeclipse等项目导致启动失败的问题
+* 新增一批css方法，如-webkit-linear-gradient()等
+* 优化不选择文字时复制剪切当前行的体验，自动处理行首行尾的空格、缩进
+* 优化外部web服务器的配置界面描述，补充示例
+* 推荐有礼，向好友推荐HBuilder，赢取cherry机械键盘，详见官方微博
+* 
+--------------------------------------
+
+### 2.3.0.201404131325
+
+* 框架语法提示支持自定义语法文件的导入了
+* 由于语法验证器插件影响性能，默认关闭了，如果需要，请在菜单工具- 语法验证器中打开
+* 修复在if、while等条件判断中，instanceof的 提示结果不正确的问题
+* CTRL+X可以剪切折叠代码了
+* 按下CTRL+X时如没有选中任何代码则默认为剪 切光标所在行 
+* 修复了部分代码块的错误，如css的height代码块缺少：号等
+* 移动APP：修复manifest.json代码视图切与可视化视图时，数据保存错误的问题
+* 移动APP：修复App打包失败时没有给出错误原因提示的问题
+* 语法库： 新 增chrome 34的新语法
+* 语法库： 更 正一批浏览器兼容数据的错误
+* 语法库： 补充了hsl、hsla、calc等CSS值域
+* 修复更新版本时偶尔会误报错误提示的问题
+
+--------------------------------------
+
+### 2.2.1.201404062147
+
+* 大幅优化JS提示速度
+* 完善智能补齐代码的撤销机制：
+*   - 解决html中TR、TD、LI等回车自动补全后，使用CTRL+Z撤消不对的问题
+*   - 解决输入'"[{(自动补全相应配对符号后,使用CTRL+Z撤消时,两个配对符号均被去除的问题
+*   - 解决在触发代码助手后,想输入数字,却选中数字对应的值,现在通过CTRL+Z将选中的值直接还原为数字
+*   - 解决在HTML中输入>完成标签编写时，自动将该标签的结束标签补全，现在通过CTRL+Z可去除结束标签
+* 增加FTP、SFTP、FTPS插件，在工具-插件安装中，安装FTP Sync插件即可
+* 解决CSS的backgourd、font等使用空格分隔的多个css属性值时提示不全的问题
+* 优化HTML标签显示外框,解决引用多个class值时或存在下划线时，与边框重叠显示的问题
+* less预编译不再在添加less文件时自动编译，仅在保存的时候自动编译
+* 解决用户自行导入其他主题时,重启后不保存的问题
+* 新增一批css属性值域：-moz-calc、calc等
+* 移动APP："查看App打包状态"界面, 添加每30秒自动刷新打包状态功能
+* 移动APP：添加App打包完成的消息通知
+* 移动APP：解决引入Push插件，打包完成后不生效的问题
+* 移动APP: 增加Ratchet模板,包含常用手机UI控件
+* 
+
+--------------------------------------
+
+### 2.1.1.201403311216
+
+#### [CHANGE]
+* 修改lesson，将回车符号修改为Enter，以免在某些情况下出现乱码
+* 修改JS DOC代码块,增加参数提示
+
+--------------------------------------
+
+### 2.1.0.201403302417
+
+#### [FIX]
+* 解决script标签如果type为text/javascript,但javascript不是全部小写时,js提示错误的问题
+* 解决在css属性值后面回车换行时,有时不会自动添加分号的问题
+* 解决less预编译有时会失败的问题
+* 解决启动时因索引失败导致无法提示的问题
+* 修正canvas.getContext第一个参数值域，由2D改为2d
+* 解决HTML中如果引用太多的js文件,提示会卡的问题
+* 解决部分参数不提示的问题
+* 移动APP：Android修复上传管理模块中存在的问题
+* 移动APP：修复在Android2.3及以下版本无法启动的问题
+* 移动APP：修复页面不支持<input type="file"></input>的问题
+* 解决某些情况下解析JS时发生死循环的问题
+* 优化了部分JS提示慢的问题
+#### [CHANGE]
+* 边看边改视图下关掉浏览器,自动切回到开发视图
+* 工具菜单中的"自定义代码块"菜单项变更为"扩展代码块"
+* 用户自定义的代码块与官方发布的代码块分离
+* 在HTML、CSS中定义ID、Class时，代码助手的数字选项默认带下划线，即通过ALT+相应数字可以选中对应的项
+    * 绿柔配色方案中新增夜间模式
+#### [ADD]
+* 新增了还原配置的选项，在DIY HBuilder配置时，当配置出现问题或需要还原窗口布局时，可以在帮助菜单中点击还原配置还原HBuilder到初始状态。该操作不会影响代码。
+* 右键菜单里新增显示方法参数提示的菜单项，快捷键为 ALT+SHIFT+/(即ALT+?)
+
+
+--------------------------------------
+
+### 2.0.0.201403212345
+
+#### [FIX]
+* 解决启动会有很多ruby加载错误的问题
+* 解决使用"打开目录"导入的项目会丢失原有项目（如myeclipse项目）信息的问题
+* 解决在引入框架JS中去掉jquery时，仍然提示jquery的问题
+* 解决HBuilder在某些情况下崩溃的问题
+* 优化itunes dll调用方式，解决部分情况下因dll调用失败导致无法启动的问题
+* 解决div嵌套时，回车排版混乱的问题
+* 解决某些情况下不触发代码助手的问题
+* 解决部分jqueryAPI的值域不提示的问题
+#### [CHANGE]
+* 修改部分内容的中文翻译
+* css在代码助手中选择提示的代码后，不再直接替换当前的整个元素、属性、属性值
+* 跳转菜单添加"快速跳转选项卡"项
+* 完善在进行移动App打包时，Android打包的App包名校验规则
+* 将帮助菜单的eclipse帮助及搜索合并至eclipse帮助
+* 修改查找为搜索条，将高级搜索修改为搜索框，去掉重复功能查找/替换
+#### [ADD]
+* 开放了jquery的语法库定义文件，托管在https://github.com/dcloudio/WebFrameworkGrammar，欢迎大家修改、更新
+* 帮助菜单新增“在线帮助”
+* 支持离线安装插件，用户可以将eclipse3.x的插件放置在HBuilder安装目录下的dropins，HBuilder即会加载该插件（解压到相应目录后，HBuilder需重启两次）
+
+
+--------------------------------------
+
+### 1.9.0.201403170114
+
+#### [FIX]
+* 紧急修复因JQUERY构建引起的软件崩溃
+* 移动APP：iOS平台修复基座在iPhone5s及iPad上的图标错误；
+* 移动APP：iOS平台修复Push API中无法创建本地消息的bug;
+#### [ADD]
+* 构建器增加JQUERY1.8的构建
+* 工具和项目的右键菜单增加引入框架语法提示的子项，在引入框架语法提示中可以选择JQUERY的解析版本
+* 移动APP：iOS平台增加距离感应器API（plus.proximity）
+* 移动APP：iOS平台增加文件系统中绝对路径和相对路径的转换API
+* 移动APP：iOS平台增加直接调用原生系统API（plus.ios）
+
+
+--------------------------------------
+
+### 1.8.0.201403151832
+
+#### [FIX]
+* 解决移动App云端打包失败时, 弹出错误信息提示不正确的问题
+* 解决安装php插件重启后，某些情况下,启动时自动打开的php文件没有使用php编辑器的问题
+* 解决css在编辑注释代码会出现代码提示的问题
+* 解决安装php插件后，拖入文件到HBuilder直接编辑报错的问题
+* 解决在非移动App应用中,manifest.json文件打开异常的问题
+* 解决修改高亮和显示空白字符在toolbar和菜单或快捷键操作时状态不同步的问题
+* 解决部分js方法属性ie兼容性不对的问题，如setAttribute、getAttribute等
+* 解决在php编辑器点击右键多出"公开宣布"菜单的问题
+* 解决移动App打的包会重复下载的问题
+* 语法库：解决canvas.arc等方法的参数顺序不对的问题
+* 移动APP：解决创建多个XMLHttpRequest请求后无法正确获取数据的问题
+#### [CHANGE]
+* 修改部分原Eclipse英文描述为中文
+* 完善后台升级功能，升级进度可视化，升级后提示更准确
+* 增加Emmet默认支持的文件类型
+* 修改自动换行的逻辑，视图菜单里的自动换行对所有文档生效，右键菜单中的自动换行仅对本文档生效
+* 修改显示高亮字符、显示空白字符、显示行号，这些操作将对所有文档生效
+#### [ADD]
+* 添加了在菜单-文件里增加以“其他编码方式打开”的菜单
+* 增加自定义代码块菜单，在工具->自定义代码块菜单中可选择编辑HTML、js、css、xml、php、jq代码块
+* 代码助手的详细信息中，添加代码块触发字符、来源信息、详细信息标题 
+* 移动APP：添加文件系统中绝对路径和相对路径的转换API
+* 移动APP：添加系统事件：“pause”、“resume”、“netchange”、“newintent”
+
+
+--------------------------------------
+
+### 1.7.0.201403100201
+
+#### [CHANGE] 
+* 优化JS解析引擎，对暂时无法解析的或解析不准确的参数、对象等增加模糊提示列表，在模糊提示列表中以斜体提示可能正确的方法或属性
+* 修改egit插件的配色方案
+* 补充一批使用教程到Tips,在帮助->编辑Tips中查看
+#### [ADD] 
+* 增加JS方法参数的字符串值域提示
+
+
+--------------------------------------
+
+### 1.6.0.201403060132
+
+#### [CHANGE]
+* APP打包时，提交云端时的进度界面现在可以后台运行了
+#### [ADD] 
+* JS语法库更新，完善AudioBuffer等类型的方法及浏览器兼容数据
+#### [FIX]
+* 修复因语法库升级造成的lesson1.txt提示数字错误的问题。请老用户删除原有Hello HBuilder项目，在新建web项目处重新选择Hello HBuilder模板
+
+
+--------------------------------------
+
+### 1.5.0.201402211858
+
+#### [CHANGE]
+* 没有安装AptanaPhp插件时,打开Php文件默认使用HTML编辑器。安装AptanaPhp插件后打开Php文件使用Php编辑器
+#### [ADD]
+* 打开可能含有HTML代码的文件如ASP、PHP、JSP等时，默认使用HTML编辑器打开，但在写PHP、ASP、JSP代码时不提示html的代码助手。
+* 完善部分JS对象如IDBRequest等的解析及浏览器兼容数据
+#### [FIX]
+* 解决在别的机器修改密码后，打开HBuilder新建移动项目无法成功的问题
+
+
+--------------------------------------
+
+### 1.4.0.201402182325
+
+#### [ADD]
+* CSS：支持没有任何限定的CSS选择器 如 [.在此位置输入.]{}  
+* CSS：可精确提示ID限定的CSS选择属性 如 #id1[.在此位置输入.]{}
+* JS：新增 document.querySelectorAll() 结果类型可精确提示 如 document.querySelectorAll("#div1")[0].dataset = foo...
+* JS：增强对一些设备相关JS对象的支持如 navigator.battery DOMCursor SVGAElement IDBFacotry等，使得语法提示更为精确
+* CSS：新增一些属性的支持 grid-template、touch-action、-webkit-flex、-webkit-border-bottom-left-radius、-webkit-text-decoration、-webkit-border-top-left-radius、shape-padding、-webkit-binding等
+* CSS: 增加一些属性值域：bottom、right、lr、chained、inherit、match-parent、-webkit-crisp-edges等
+* Canvas: 改善对WebGL的支持 如 gl = document.getElementById("canvas1").getContext('webgl',{ antialias: false,stencil: true })，第二个参数能自动提示
+#### [CHANGE]
+* 代码助手：修改在HTML的空白区域输入不再激活代码助手，更快捷
+* 编辑器：选中的配对符号的一侧如‘“[{(修改，另一侧自动匹配修改
+* 菜单：修改文件菜单的打开方式项，增加所有现在已支持的文件编辑器
+#### [FIX]
+* 移动开发：增加移动App项目Android打包App包名格式校验
+* 编辑器：修改提示锚点时，先输#然后选择，结果重复#的问题
+* 编辑器：修改空行有缩进的情况下使用ctrl+/注释时，出现了多个注释块的问题
+
+
+--------------------------------------
+
+### 1.3.0.201401231922
+
+###[FIX]
+* 解决更换了新UI后，如果使用黑色主题的界面，选项卡会变黑的问题
+
+
+--------------------------------------
+
+### 1.3.0.201401230310
+
+###[FIX]
+* 解决项目构建器信息不正确的项目不能正确自动预编译的问题
+###[CHANGE]* 
+* 自动预编译修改为仅在修改文件保存时进行编译
+* 修改自动预编译失败时提示信息的格式
+* 补充了一批chrome32的 新语法
+
+
+--------------------------------------
+
+### 1.2.0.201401211204
+
+###[FIX]
+* 解决因某些补丁更新失败，导致新建移动应用失败的问题
+* 解决在某些情况下HBuilder莫名被置前的问题
+* 增加下载时断点续传，解决app打包状态查看有时显示"由于网络原因,下载失败"的问题
+* 解决app打包时，某些情况下会出现下载的安装包数据不全的问题* 
+###[CHANGE]
+* 补充了一批chrome32的 新语法
+
+
+--------------------------------------
+
+### 1.2.0.201401182349
+
+###[FIX]
+* 解决在边看边改模式下,从外部拖拽文件进 HBuilder,浏览器不响应的问题
+* 解决在导航树双击不展开文件夹的问题，同时增加回车响应事件
+* 解决在HTML文件中按下h键后，再选择数字会出现IE6注释的问题
+* 解决如果代码助手第一位是数字的情况下，也必须用Alt+数字进行选择的问题
+###[CHANGE]
+* js引擎优化对数组和DOM函数的解析
+* 美化了界面
+###[ADD]
+* 代码块可以自己编辑了，在代码块提示栏右下角点编辑图标
+
+
+--------------------------------------
+
+### 1.1.0.201401151750
+
+###[FIX]
+* 解决试用HBuilder关联某些文件后，双击该文件HBuilder打不开的问题
+###[CHANGE]
+* 完善了语法库
+
+
+--------------------------------------
+
+### 1.1.0.201401102048
+
+###[FIX]
+* 解决代码助手在某些情况下会出现多余字符的问题
+* 解决有些情况下代码助手不激活的问题
+* 解决重构时如果重构内容包含未保存文件时，不提示保存的问题
+###[CHANGE]
+* 完善了语法库
+
+
+--------------------------------------
+
+### 1.0.0.201401091853
+
+###[FIX]
+* 解决打开工具→选项有时弹出错误提示的问题
+* 解决使用css属性选择器时，若属性值包含在双引号中时，无法正确提示的问题
+* 解决因启动器与主程序之间调用冲突问题无法启动的问题
+* 解决从外部拖拽文件进 HBuilder，边看边改模式浏览器无响应的问题
+* 解决在边看边改模式下，新建菜单与task任务栏不显示的问题
+###[ADD]
+* 添加ruby、less、sass、coffeescript、yml、haml、markdown文件的着色
+* 增加了代码助手如含有数字时，可使用alt+数字键选择
+* 常用插件安装增加ftp与markdown
+###[CHANGE]
+* 修改 边看边改模式 中浏览器的分辨率，适配当前主流分辨率
+* 修改部分国际化
+* 文件编码添加GBK、GB2312。在项目管理器中，右键点击项目或需要改变编码的文件，在属性中可修改文件打开、编辑、保存时使用的编码
+* 完善了语法库
+
+
+--------------------------------------
+
+### 1.0.0.201401012223
+
+###[FIX] 
+* 修复css部分值域不提示的问题
+* 修复php文件中，浏览器兼容提示缺失的问题
+* 修复js中css对象属性的部分值域不提示的问题
+###[CHANGE]
+* 第一次启动默认加入HelloHBuilder项目
+* 编辑器右键菜单去除"显示位置"并添加"打开文件所在目录"
+* 优化了启动速度
+
+
+--------------------------------------
+
+### 0.5.4.201312271808
+
+###[FIX] 
+* 优化安装PHP插件流程，在未选择是否安装PHP插件前，PHP文件将不会新建
+* 解决某些css着色错误的问题
+* 解决css RGB颜色及属性选择器中属性值有时着色不正确的问题
+* 优化文件索引创建流程，打开文件时将不创建文件索引
+* 修复浏览器运行，现在可以预览非项目下html文件
+* 优化大文档解析速度和提示速度
+
+
+--------------------------------------
+
+### 0.5.4.201312202051
+
+###[ADD]
+* 在右键菜单新增创建php功能
+* 增加常用插件配置，请在工具->插件安装
+###[CHANGE]
+* 在编辑器内进行copy操作时, 如当前没有选择文字, 则复制当前行
+* 修改边改边看
+* -打开方式变更，由原来的直接打开硬盘文件修改为打开部署于HBuilder内部服务器的URL地址。
+        -关闭所有HTML文件时，清空原来打开的界面。
+* -当修改与当前浏览的HTML无关的css文件时，浏览器将不再刷新。
+
+
+--------------------------------------
+
+### 0.5.4.201312132308
+
+###[FIX] 
+* 解决编辑css文件时，光标在两个;中间的属性名提示不准确的问题
+* 解决编辑css文件时id或class连写的情况下，使用代码助手补全代码不正确的问题
+* 解决代码助手在css文件中紧靠分号的情况下，有时提示不正确的问题
+* 优化构建器，使项目在构建时可以保存文件及删除项目
+* 解决修改验证器设置后会重新构建索引的问题
+* 解决在js文件中对<!-- -->的解析报错的问题
+* 解决JS对出现某些特殊字符时无法解析的问题
+* 修复创建默认的移动应用因权限缺失无法进行真机联调的问题
+###[ADD]
+* 在工具菜单及编辑器左侧添加"验证器设置"按钮
+* 增加 实时预览透视图，编辑html、 css保存,可在该视图实时预览效果
+* 常用插件一键安装。点击工具->常用插件安装可安装svn、git、js压缩插件
+* 优化JS解析，使JS在出现无法解析的情况时，仍然可以进行代码提示
+* 添加模糊查询默认按照分类优先显示以输入的字符开头的，然后在按照分类显示模糊查询的内容
+###[CHANGE]
+* 修改部分国际化
+* 修改html中输入标签和属性时，去掉tab键切换点
+* 修改div等相关代码块，使之更符合用户用法
+* 修改代码助手在上下移动时如果在第一条或最后一条进行相应的翻页操作
+* 修改拖动一个目录到HBuilder操作，改为拖动后直接打开
+
+
+--------------------------------------
+
+### 0.5.4.201311291943
+
+###[FIX]
+* 修改部分文档作色错误的bug
+###[CHANGE]
+* 完善语法库
+
+
+--------------------------------------
+
+### 0.5.4.201311281925
+
+###[CHANGE]
+* HTML、CSS属性及值域的浏览器兼容性提示更加准确。
+* 完善语法库
+
+
+--------------------------------------
+
+### 0.5.4.201311272312
+
+###[FIX]
+* 解决项目管理器中与打开的文件同步的选项，每次开启时都自动选中的问题
+* 解决css提示expression()表达式错误的问题
+* 解决css属性值的浏览器兼容显示的是属性的浏览器兼容问题   
+###[CHANGE]
+* 修改JavaScript引擎解析不同作用域下变量引用解析方式不正确的问题  
+###[ADD]
+* 在</option>、</td>、</li>、</dd>、video的</source>、object的</param>节点后输入回车，则自动为其添加一行默认的代码
+* 增加一个dl的代码块，格式为
+*     <dl>
+* <dt></dt>
+* <dd></dd>
+* </dl>*         
+
+
+--------------------------------------
+
+### 0.5.4.201311230455
+
+###[FIX]
+     1.解决css属性选择器中错误提示元素, 没有提示元素对应属性及属性值的问题
+     2.解决win8下拖动workspace下的文件时会提示对话框的问题
+     3.解决全部关闭编辑器时，再次打开编辑器时出现空白的问题         
+###[CHANGE]
+   * 更新编辑器左侧任务及书签的图标
+   * 修改部分国际化
+   * 优化拖动文件时如果发现拖动的时.project文件执行导入项目操作
+   * 优化拖动文件时，当发现目录中存在.project文件时，提示用户执行导入项目操作
+     * 修改浏览器兼容性在索引中不存在时不显示
+     * 修改首选项设置主题时同步修改视觉主题设置的界面
+     * 优化启动速度      
+     * 优化jquery支持，并加入写$（""）时可以写css selector的功能  
+###[ADD]
+     * 添加启动代理设置功能
+     * 添加启动初始化升级代理设置
+     * 增加代理支持，用户可以使用代理正常登录、使用HBuilder
+
+
+--------------------------------------
+
+### 0.5.4.201311160348
+
+###[FIX]
+     * 解决css在import后追加media_query_list会报错误的问题
+     * 解决css不兼容keyframe的animationname不能使用引号包围的问题
+     * 解决启动后工具栏上的放大缩小字体按钮禁用的问题
+     * 解决运行会等待build结束才进行的问题
+     * 解决工具栏上的列选择、高亮和显示空白字符的显示状态与实际不符的问题
+     * 视图菜单： 新建窗口， 欢迎向导也没有出现。
+     * 解决html中事件函数追踪时，出现多个语句时不正确的问题
+     * 解决js中url的追踪问题
+     * 修复新建移动应用时appid没有修改的问题
+     * 修改在div标签内输入<div时无法选中的问题。
+     * 修改script、a、link等代码块选中时自动拉出相关的内容
+###[CHANGE]
+     * 升级后不再提示是否立即应用,只提示是否立即重启
+     * 默认添加eclipse indigo及hbuilder plugin的升级地址
+     * php代码助手及outline图标更新
+     * 导入CodeDir下已存在的项目,并删除CodeDir下的多余metadata目录
+     * "视图"菜单下的"新建窗口"改名为"新建HBuilder窗体"
+     * 片断视图改名为代码块视图
+     * 运行前提示所有未保存文件保存修改为只提示当前项目的未保存文件保存
+     * 将欢迎向导集成到了编辑器中间空白的区域
+* 将欢迎向导拦截的快捷键发布出来一部分，主要是Ctrl、Shift、Alt组合的快捷键。
+* JS typeof值域
+* 加入switch case的解析
+* 修改了部分配置文件编辑器界面
+* 优化代码助手，略微提升执行效率
+* 当提示的内容中有可能是数字时，去掉数字选择提示内容       
+###[ADD]
+     * 添加android App云端打包功能
+     * 添加没有php插件时打开php文件提示安装php插件的功能
+     * 添加更改代码存放目录
+     * 修改select代码块，只含有一个option标签，回车时自动添加option标签
+     * 加入debugger关键字
+
+###[已知问题]
+     * 终端界面输出中文时界面排列不正确
+     * html代码提示在紧靠</style>或</script>的左侧时不会提示对应css或js代码块
+     * php在添加以IE浏览器运行调试时，连接xdebug有时会卡住
+
+
+--------------------------------------
+
+### 0.5.4.201311062356
+
+###[FIX]
+     * 解决JS内置对象、方法在js文件中被覆盖时, 使用此对象、方法的HTML文件会报没引入对应js文件的问题
+     * 解决html文件引入了网络地址的js,仍会报js文件未引入的问题
+     * 解决html文件的js引入校验编辑后保存有时校验结果不正确的问题
+     * 解决css格式校验不能正确识别一些hack的问题
+     * 解决html文件的js引入校验会报catch节点中的异常变量未引入对应js文件的问题
+     * 解决菜单中的"上一个/下一个滚动条标记点"无法跳转到任务和书签上的问题
+     * 解决浏览器内运行html使用firefox有时没有打开对应网页的问题
+  * 解决 在左边已经有项目的情况下，如果上次只打开过欢迎向导，下次启动是右边就变光秃秃灰溜溜了，不会再自动打开欢迎向导。
+  * 解决 新建移动App时，不检查目录同名的问题了.
+  * 解决代码助手偶尔出现在右边很远的位置的问题
+  * 解决加包围时，从代码助手选择标签出现有多余的闭合标签的问题
+  * 解决在HTML区域输入空格后立即按小键盘的+号，结果出来的是= 的问题
+  * 解决data- 代码块在闭合标签上也提示的问题
+  * 解决html中输入&无法选择代码助手中的提示的问题         
+###[CHANGE]
+     * 修改部分国际化
+     * 项目管理界面与编辑器界面的链接修改为默认启用
+     * 更新浏览器运行的IETester的图标
+     * 调整右键菜单顺序
+     * JS函数提示补全带（），并自动激活参数提示
+     * 重新定义移动应用目录结构
+     * 用户配置信息与代码存放目录分离
+     * 修改link、script代码块
+     * 修改ctrl+/兼容选择代码注释功能
+     * 修改选中补全‘“ < [ { ( 符号时，选中的字符仍然处于选中状态 
+     * 修改在HTML中引用class时，优先提示HTML引用的css文件中的class 
+     * 修改使代码助手右下角的蓝色问题适时出现        
+###[ADD]
+     * 浏览器运行添加对IETester的默认支持
+     * 针对在不同PC上的显示器亮度及灰阶程度，新增两套绿柔主题，并自动给开发者推荐健康环保的主题。
+###[已知问题]
+     * 终端界面输出中文时界面排列不正确
+     * html代码提示在紧靠</style>或</script>的左侧时不会提示对应css或js代码块         
+
+
+--------------------------------------
+
+### 0.5.4.201310211156
+
+###[FIX]
+     * 解决浏览器器内运行html，有时找不到当前文件的问题
+     * 解决有时无法启动nginx之类的外部Web Server服务器的问题
+     * 解决ico文件在工程目录下显示的图标是空白的问题
+     * 解决css中url()链接跳转，有时跳转的地址不正确的问题
+     * 解决css在属性值里使用Rgba()等方法时，在方法参数区域内出现属性值的代码提示的问题
+     * 解决IDE界面布局重置时会在IDE右侧出现一个空白框的问题
+     * 修改代码助手和代码提示信息示例内容显示不全的问题
+* 修改a标签href属性输入#号时不自动提示锚点的问题
+* 修改html中添加包围时，如果选中的内容中包含js，并且js内容中含有{}时，会在末尾加上}号的问题
+* 修改加包围时多加了闭合标签的问题
+* 修改data-代码块在闭合标签提示的问题
+* 解决因JS中子类和父类的一样造成的死循环问题
+* 解决欢迎向导多次打开的问题
+* 修复某些情况下无法获取当前项目的问题
+###[CHANGE]
+* 补全部分国际化
+* 补全部分菜单的&快捷键
+* 去除了集成的GIT及相关的终端视图
+* 去除了安装bundle的菜单
+* 修改了浏览器运行的浏览器配置界面
+* 修改代码助手在不同的主题配色下显示一致
+* 去掉代码助手和代码提示信息的示例中的超链接
+* 修改link代码块输入后默认光标应该在href里，并且不需要title属性
+* 修改手动选中一行文字，按 ‘ “ < [ { ( 这6个字符，自动在选中文字左右加上对应包围符号，并选中的字符仍然处于选中状态。
+* HTML中引用class时，优先提示HTML引用的css文件中的class
+* 修改代码助手右下角的蓝色问号在没有意义的时候不出现
+* 优化JS返回值以及多层返回值的解析
+     * 优化JS闭包的解析
+* 优化JSthis的解析
+* 真机联调时更改取消按钮的位置以及优化了文字显示的布局
+* 修改真机联调时手机连接时的提示信息位置为状态信息栏* 
+###[ADD]
+* 代码助手二次提示时不重新绘制界面，直接用原来的界面
+* html中修改属性时，选中原来的value值，并自动提示新的value值域，选中替换原来的值
+* 添加jquery百度CDN代码块
+
+</textarea>
+		<div id="preview" class="markdown-body"> </div>
+		<script type="text/javascript">
+			var $ = function (id) { return document.getElementById(id); };
+			var converter = new showdown.Converter({ extensions: ['toc'], 'tasklists':true, 'tables':true});
+			$("preview").innerHTML = converter.makeHtml($("text-input").value);
+			hljs.initHighlighting();
+		</script>
+	</body>
+</html>

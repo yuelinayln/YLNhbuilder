@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>股小蜜公众号</title>
+	    <link rel="stylesheet" href="js/Mui/css/mui.css"/>
+	    <link rel="stylesheet" href="js/Mui/css/feedback.css"/>
+	    <link rel="stylesheet" href="css/iconfont.css"/>
+	    <link rel="stylesheet" href="css/optionalStock.css" />
+	    <link rel="stylesheet" href="css/optionalStock_detail.css" />
+	    <link rel="stylesheet" href="js/Mui/css/mui.picker.css"/> 
+	    <link rel="stylesheet" href="js/Mui/css/mui.poppicker.css"/> 
+	    <link rel="stylesheet" href="js/Mui/css/mui.dtpicker.css"/>
+	    <script src="js/jquery-1.9.1.js"></script>  
+	    <script src="js/Mui/js/mui.min.js"></script> 
+	    <script src="js/Mui/js/mui.picker.js"></script> 
+	    <script src="js/Mui/js/mui.poppicker.js"></script> 
+	    <script src="js/Mui/js/mui.dtpicker.js"></script>
+	    
+	    <!--echarts相关js-->
+	    <script type="text/javascript" src="js/echarts/echarts.min.js"></script>
+		<script type="text/javascript" src="js/echarts/echarts-all-3.js"></script>
+		<script src="js/optionalStock_detail.js"></script>
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav mui-bar-transparent" data-top='0' data-offset='150' data-duration='16' data-scrollby=".mui-scroll-wrapper" style="background: rgba(170,170,170,1);">
+		<a href="javascript:back()" class="mui-icon mui-icon-undo" id="back"></a>
+		<h3 class="mui-title">股小蜜</h3>
+	</header>
+	<div class="mui-content">
+		<div id="detail_head">
+			<div class="fl">
+				<p class="fontSize_1_down">5.68</p>
+				<p class="fontSize_3_down">
+					<span>-0.07</span>
+					<span>-1.22%</span>
+				</p>
+			</div>
+			<div id="detail_head_list">
+				<ul class="fr" id="detail_head_list_more">
+					<li>∨</li>
+				</ul>
+				<ul class="fr aaa">
+					<li>成交量</li>
+					<li class="font_color_0">4.51万</li>
+					<li>换手率</li>
+					<li class="font_color_0">0.13%</li>
+				</ul>
+				<ul class="fr aaa">
+					<li>今开</li>
+					<li class="fontSize_2_down">5.73</li>
+					<li>昨收</li>
+					<li class="font_color_0">5.75</li>
+				</ul>
+				<ul class="fr aaa">
+					<li>最高</li>
+					<li class="fontSize_2_down">5.73</li>
+					<li>最低</li>
+					<li class="fontSize_2_down">5.66</li>
+				</ul>
+			</div>
+			<div id="detail_head_list_toggle">
+				<ul class="fr aaa">
+					<li class="font_color_0">26.90</li>
+					<li>市盈率</li>
+					<li class="font_color_0">2.55</li>
+					<li>市净率</li>
+				</ul>
+				<ul class="fr aaa">
+					<li class="font_color_0">344.40亿</li>
+					<li>总市值</li>
+					<li class="font_color_0">204.73亿</li>
+					<li>流通市值</li>
+				</ul>
+				<ul class="fr aaa">
+					<li class="fontSize_2_down">3.63万</li>
+					<li>内盘</li>
+					<li class="fontSize_2_up">0.88万</li>
+					<li>外盘</li>
+				</ul>
+				<ul class="fr aaa">
+					<li class="fontSize_2_up">6.33</li>
+					<li>涨停</li>
+					<li class="fontSize_2_down">5.18</li>
+					<li>跌停</li>
+				</ul>
+			</div>	
+		</div>
+		<div id="detail_charts">
+			<ul id="detail_charts_head">
+				<li class="fl color_border">分时</li>
+				<li class="fl">日K</li>
+				<li class="fl">周K</li>
+				<li class="fl">月K</li>
+			</ul>
+			<ul id="detail_charts_now" class="aaa">
+				<li class="fl">时: <span class="font_color_0">15:00</span></li>
+				<li class="fl blue">价:5.68</li>
+				<li class="fl yellow">均:5.69</li>
+				<li class="fl">涨幅: <span class="fontSize_2_down">1.22%</span></li>
+			</ul>
+			<br />
+			<div class="overflow">
+				<div class="fl" style="width: 60%;">
+					<div id="detail_charts_top">
+						
+					</div>
+					<div id="detail_charts_bottom">
+						
+					</div>
+				</div>
+				<div class="fr" style="width: 35%;">
+					<ul id="five" class="overflow">
+						<li class="fl five color_border">五档</li>
+						<li class="fl five">明细</li>
+						<br />
+						<br />
+						<li class="fl aaa">卖五</li>
+						<li class="fl green">5.72</li>
+						<li class="fl blue">1050</li>
+						<br />
+						<li class="fl aaa">卖四</li>
+						<li class="fl green">5.72</li>
+						<li class="fl blue">989</li>
+						<br />
+						<li class="fl aaa">卖三</li>
+						<li class="fl green">5.71</li>
+						<li class="fl blue">978</li>
+						<br />
+						<li class="fl aaa">卖二</li>
+						<li class="fl green">5.70</li>
+						<li class="fl blue">1086</li>
+						<br />
+						<li class="fl aaa">卖一</li>
+						<li class="fl green">5.69</li>
+						<li class="fl blue">363</li>
+						<br />
+						<br />
+						<li class="fl aaa">买一</li>
+						<li class="fl green">5.68</li>
+						<li class="fl blue">25</li>
+						<br />
+						<li class="fl aaa">买二</li>
+						<li class="fl green">5.67</li>
+						<li class="fl blue">390</li>
+						<br />
+						<li class="fl aaa">买三</li>
+						<li class="fl green">5.66</li>
+						<li class="fl blue">818</li>
+						<br />
+						<li class="fl aaa">买四</li>
+						<li class="fl green">5.65</li>
+						<li class="fl blue">2196</li>
+						<br />
+						<li class="fl aaa">买五</li>
+						<li class="fl green">5.64</li>
+						<li class="fl blue">259</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div id="detail_news">
+			<ul id="detail_news_head" class="overflow">
+				<li class="fl color_border">新闻</li>
+				<li class="fl">公告</li>
+				<li class="fl">研报</li>
+			</ul>
+			<br />
+			<ul id="detail_news_detail">
+				<li>桂冠电力调整上网电价</li>
+			</ul>
+		</div>
+		
+	</div>
+	<script type="text/javascript">	
+		
+	</script>
+</body>
+</html>

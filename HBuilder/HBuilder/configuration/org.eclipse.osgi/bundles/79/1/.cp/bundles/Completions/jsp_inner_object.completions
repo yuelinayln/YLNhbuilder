@@ -1,0 +1,15 @@
+{
+    "scope": "source.jsp",
+
+    "completions": [
+        "request",
+        "response",
+        "out",
+        "session",
+        "application",
+        "config",
+        "pageContext",
+        "page",
+        "Exception"
+    ]
+}

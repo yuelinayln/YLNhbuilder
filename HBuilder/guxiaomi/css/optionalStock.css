@@ -1,0 +1,147 @@
+body,.mui-content{
+	background: rgba(255,255,255,1);
+}
+.fontSize_1_down{
+	font-size: 22px;
+	color: #2AC845;
+}
+.fontSize_1_up{
+	font-size: 22px;
+	color: #CF2D28;
+	font-weight: bold;
+}
+.fontSize_2_down{
+	font-size: 18px;
+	color: #2AC845;
+}
+.fontSize_2_up{
+	font-size: 18px;
+	color: #CF2D28;
+}
+.fontSize_3_down{
+	font-size: 12px;
+	color: #2AC845;
+}
+.fontSize_3_up{
+	font-size: 12px;
+	color: #CF2D28;
+}
+.font_color_0{
+	color: #000;
+	font-size: 18px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+li{
+	list-style: none;
+}
+.aaa{
+	color: #aaa;
+}
+
+
+
+
+
+.search{
+	background: rgba(255,255,255,1);
+	width: 80%;
+	margin: 0 auto;
+	/*margin-bottom: 2%;*/
+	margin-top: 5%;
+}
+.mui-search .mui-placeholder,input[type="search"]{
+	background: rgba(255,255,255,1);
+	border: 1px solid #ddd;
+}
+#table_top{
+	width: 90%;
+	margin: 0 auto;
+}
+#table_top tr td{
+	text-align: center;
+	width: 30%;
+}
+#table_top th{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+#add_border{
+	width: 30%;
+	margin: 40% auto;
+	display: none;
+}
+#add_border>div{
+	border: 2px dotted #ddd;
+	text-align: center;
+	font-size: 70px;
+	color: #aaa;
+	padding:20% 10%;
+	margin: 0 20%;
+}
+#add_border p{
+	text-align: center;
+	margin-top: 5%;
+}
+#add_list table{
+	width: 80%;
+	margin: 3% auto;
+}
+#add_list table tr{
+	border-bottom: 1px solid #ddd;
+}
+#add_list table th{
+	text-align: right;
+	padding-bottom: 2%;
+	font-size: 14px;
+	color: #aaa;
+}
+#add_list table th:nth-child(1),#add_list table td:nth-child(1){
+	width: 50%;
+	text-align: left;
+}
+#add_list table td{
+	width: 20%;
+	text-align: right;
+	padding: 2% 0;
+}
+#add_list table td:nth-child(1) p{
+	margin: 0;
+	padding: 0;
+}
+#add_list .add_list_name{
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 10%;
+}
+#add_list .add_list_id{
+	font-size: 12px;
+}
+#add_list .add_list_price{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10%;
+}
+#add_list .add_list_fluctuation_down,#add_list .add_list_fluctuation_up{
+	font-size: 12px;
+	margin-top: 10%;
+	background: rgba(42,200,69,1);
+	width: 70%;
+	padding: 5%;
+	color: #fff;
+	margin-left: 30%;
+	border-radius: 5px;
+}
+#add_list .add_list_fluctuation_up{
+	background: rgba(207,45,40,1);
+}
+
+
+
+
+

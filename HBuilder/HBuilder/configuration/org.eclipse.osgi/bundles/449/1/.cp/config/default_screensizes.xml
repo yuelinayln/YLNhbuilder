@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screensizes>
+	<screensize id="iPhone4"  width="640" height="960" dpr="2" touch="true" mobile="true" priority="99"/>
+	<screensize id="iPhone5"  width="640" height="1136" dpr="2" touch="true" mobile="true" priority="98" />
+	<screensize id="iPhone6"  width="750" height="1334" dpr="2" touch="true" mobile="true" priority="97" />
+	<screensize id="iPhone6 Plus"  width="1242" height="2208" dpr="3" touch="true" mobile="true" priority="96" />
+	<screensize id="ipad"  width="768" height="1004" dpr="2" touch="true" mobile="true" priority="95" />
+	<screensize id="ipad-横屏"  width="1024" height="748" dpr="2" touch="true" mobile="true" priority="94" />
+	<screensize id="ipad-IOS7/8"  width="768" height="1024" dpr="2" touch="true" mobile="true" priority="93" />
+	<screensize id="ipad-ios7/8-横屏"  width="1024" height="768" dpr="2" touch="true" mobile="true" priority="92" />
+	<screensize id="hdpi"  width="480" height="800" dpr="2" touch="true" mobile="true" priority="90" />
+	<screensize id="xhdpi"  width="720" height="1242" dpr="2" touch="true" mobile="true" priority="89" />
+	<screensize id="xxhdpi"  width="1080" height="1882" dpr="3" touch="true" mobile="true" priority="87" />
+</screensizes>

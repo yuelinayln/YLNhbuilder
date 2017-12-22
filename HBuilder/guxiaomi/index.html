@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>股小蜜公众号</title>
+    <link rel="stylesheet" href="js/Mui/fonts/mui.ttf"/> 
+    <link rel="stylesheet" href="js/Mui/css/mui.css"/> 
+    <link rel="stylesheet" href="js/Mui/css/mui.picker.css"/> 
+    <link rel="stylesheet" href="js/Mui/css/mui.poppicker.css"/> 
+    <link rel="stylesheet" href="js/Mui/css/mui.dtpicker.css"/>
+    <script src="js/jquery-1.9.1.js"></script>  
+    <script src="js/Mui/js/mui.min.js"></script> 
+    <script src="js/Mui/js/mui.picker.js"></script> 
+    <script src="js/Mui/js/mui.poppicker.js"></script> 
+    <script src="js/Mui/js/mui.dtpicker.js"></script> 
+</head>
+	<body style="background:#fff">
+		<!--<header class="mui-bar mui-bar-nav" style="background:#ccc;">
+		  <a class="mui-icon mui-action-menu mui-icon-undo mui-pull-left" id="back"></a>
+	      <h1 class="mui-title">股小蜜</h1>
+	   </header>
+	   <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="margin-top:45px">
+		    <div class="tabs">
+		        <a class="mui-control-item mui-active" id="page_yatai" target="list.html">
+		           	 亚太
+		        </a>
+		        <a class="mui-control-item">
+		           	 北美
+		        </a>
+		        <a class="mui-control-item">
+		           	 欧洲
+		        </a>
+		        <a class="mui-control-item">
+		          	 期货
+		        </a>
+		        <a class="mui-control-item" >
+		                        外汇
+		        </a>
+		    </div>
+		</div>-->
+		<script type="text/javascript">
+			 mui.init({
+			    subpages:[{
+			      url:'financial.html',
+			      id:'financial.html',
+			      styles:{
+			          top: '90px',
+	                  bottom: '51px', 
+			        
+			      }
+			    }]
+			});
+			$.page_nav = function() {
+            navs = document.querySelectorAll(".mui-control-item");
+            for(n in navs)
+            {
+                obj = navs[n].getAttributeNode('id').value;
+
+                if(obj!='page_list') {
+                	mui.init({
+					  preloadPages:[
+					    {
+						    "id": obj,
+	                        "url": obj.replace("page_", "")+'.html',
+	                        "styles":{
+                             top: '45px',
+	                  		 bottom: '51px', 
+                        }
+					    }
+					  ],
+					  preloadLimit:5//预加载窗口数量限制(一旦超出,先进先出)默认不限制
+					});
+                }
+
+                document.getElementById(obj).addEventListener("tap", function(){              
+                    	 mui.openWindow({
+                            "id":this.id,
+                            "url": this.id.replace("page_", "")+'.html',
+                            "crateNew":false,
+                             styles:{
+						          top: '45px',
+				                  bottom: '51px', 
+						        
+						      }
+                       });
+                });
+            }
+        }
+
+        //顶部导航菜单绑定
+        $.page_nav();
+		</script>
+	</body>
+</html>
